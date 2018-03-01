@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{084B1CF4-5D6D-4A7D-B2AA-3F2AE85399A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Second_Sens___Devis</RootNamespace>
+    <AssemblyName>Second Sens - Devis</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.10.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.6\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classMetier\indemKm.cs" />
+    <Compile Include="fenAide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenAide.Designer.cs">
+      <DependentUpon>fenAide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenAjoutModelPersoPersonnalisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenAjoutModelPersoPersonnalisation.Designer.cs">
+      <DependentUpon>fenAjoutModelPersoPersonnalisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenAjoutPersoElementStreetMarketingPredifini.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenAjoutPersoElementStreetMarketingPredifini.Designer.cs">
+      <DependentUpon>fenAjoutPersoElementStreetMarketingPredifini.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenChargement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenChargement.Designer.cs">
+      <DependentUpon>fenChargement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenHonoraire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenHonoraire.Designer.cs">
+      <DependentUpon>fenHonoraire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouveauPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouveauPersonnel.Designer.cs">
+      <DependentUpon>fenNouveauPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenMajTarifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenMajTarifs.Designer.cs">
+      <DependentUpon>fenMajTarifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenMenuPrincipal.Designer.cs">
+      <DependentUpon>fenMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouveauDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouveauDevis.Designer.cs">
+      <DependentUpon>fenNouveauDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouveauFraisTechnique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouveauFraisTechnique.Designer.cs">
+      <DependentUpon>fenNouveauFraisTechnique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouveauPeage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouveauPeage.Designer.cs">
+      <DependentUpon>fenNouveauPeage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouvelElementStreetMarketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouvelElementStreetMarketing.Designer.cs">
+      <DependentUpon>fenNouvelElementStreetMarketing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouvelElementVehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouvelElementVehicule.Designer.cs">
+      <DependentUpon>fenNouvelElementVehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouvelElement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouvelElement.Designer.cs">
+      <DependentUpon>fenNouvelElement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenNouvelleEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenNouvelleEquipe.Designer.cs">
+      <DependentUpon>fenNouvelleEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fenResumeDevis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fenResumeDevis.Designer.cs">
+      <DependentUpon>fenResumeDevis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="requetesMySQL.cs" />
+    <Compile Include="lienBdD.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fenAide.resx">
+      <DependentUpon>fenAide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenAjoutModelPersoPersonnalisation.resx">
+      <DependentUpon>fenAjoutModelPersoPersonnalisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenAjoutPersoElementStreetMarketingPredifini.resx">
+      <DependentUpon>fenAjoutPersoElementStreetMarketingPredifini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenChargement.resx">
+      <DependentUpon>fenChargement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenHonoraire.resx">
+      <DependentUpon>fenHonoraire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouveauPersonnel.resx">
+      <DependentUpon>fenNouveauPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenMajTarifs.resx">
+      <DependentUpon>fenMajTarifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenMenuPrincipal.resx">
+      <DependentUpon>fenMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouveauDevis.resx">
+      <DependentUpon>fenNouveauDevis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouveauFraisTechnique.resx">
+      <DependentUpon>fenNouveauFraisTechnique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouveauPeage.resx">
+      <DependentUpon>fenNouveauPeage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouvelElementStreetMarketing.resx">
+      <DependentUpon>fenNouvelElementStreetMarketing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouvelElementVehicule.resx">
+      <DependentUpon>fenNouvelElementVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouvelElement.resx">
+      <DependentUpon>fenNouvelElement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenNouvelleEquipe.resx">
+      <DependentUpon>fenNouvelleEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fenResumeDevis.resx">
+      <DependentUpon>fenResumeDevis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\MySqlCommand.xml" />
+    <Content Include="docs\MySqlCommandBuilder.xml" />
+    <Content Include="docs\MySqlConnection.xml" />
+    <Content Include="docs\MySqlConnectionStringBuilder.xml" />
+    <Content Include="docs\MySqlDataAdapter.xml" />
+    <Content Include="docs\MySqlDataReader.xml" />
+    <Content Include="docs\MySqlException.xml" />
+    <Content Include="docs\MySqlHelper.xml" />
+    <Content Include="docs\MySqlParameter.xml" />
+    <Content Include="docs\MySqlParameterCollection.xml" />
+    <Content Include="docs\MySqlTransaction.xml" />
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
