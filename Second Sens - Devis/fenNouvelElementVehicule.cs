@@ -157,7 +157,7 @@ namespace Second_Sens___Devis
 
             // Ajout a la fenetre 
             laEquipe.dataGridViewVehiculesAjoutes.Rows.Add(textBoxNomVehicule.Text, calculTotal.ToString());
-            this.Hide()
+            this.Hide();
         }
     }
 }
