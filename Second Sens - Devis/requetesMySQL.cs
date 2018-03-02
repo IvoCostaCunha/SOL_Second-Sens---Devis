@@ -88,7 +88,7 @@ namespace Second_Sens___Devis
                     {
                         /* 
                          * Pour eviter le plantage suite la GetValue(NULL)
-                         * ignoré car les valeurs nulless sont inintérréssantes 
+                         * ignoré car les valeurs NULL sont inintérréssantes 
                          */
                     }
 

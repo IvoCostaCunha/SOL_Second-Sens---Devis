@@ -36,6 +36,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBoxTypeVehicule = new System.Windows.Forms.ComboBox();
             this.panelTypeVehiculeLocation = new System.Windows.Forms.Panel();
+            this.textBoxTarifCarburant = new System.Windows.Forms.TextBox();
             this.textBoxPrixLocationVehicule = new System.Windows.Forms.TextBox();
             this.labelPrixLocation = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -53,14 +54,13 @@
             this.label = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridViewPeages = new System.Windows.Forms.DataGridView();
+            this.colNomPeage = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifPeage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonAjoutPeage = new System.Windows.Forms.Button();
             this.buttonValiderAjoutVehicule = new System.Windows.Forms.Button();
             this.buttonAnnulerAjoutVehicule = new System.Windows.Forms.Button();
             this.buttonSupprimerPeage = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.colNomPeage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifPeage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBoxTarifCarburant = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxNbJoursLocation = new System.Windows.Forms.TextBox();
             this.panelTypeVehiculeLocation.SuspendLayout();
@@ -142,6 +142,13 @@
             this.panelTypeVehiculeLocation.Size = new System.Drawing.Size(405, 227);
             this.panelTypeVehiculeLocation.TabIndex = 8;
             this.panelTypeVehiculeLocation.Visible = false;
+            // 
+            // textBoxTarifCarburant
+            // 
+            this.textBoxTarifCarburant.Location = new System.Drawing.Point(180, 11);
+            this.textBoxTarifCarburant.Name = "textBoxTarifCarburant";
+            this.textBoxTarifCarburant.Size = new System.Drawing.Size(209, 26);
+            this.textBoxTarifCarburant.TabIndex = 17;
             // 
             // textBoxPrixLocationVehicule
             // 
@@ -303,6 +310,16 @@
             this.dataGridViewPeages.Size = new System.Drawing.Size(625, 341);
             this.dataGridViewPeages.TabIndex = 16;
             // 
+            // colNomPeage
+            // 
+            this.colNomPeage.HeaderText = "Nom péage";
+            this.colNomPeage.Name = "colNomPeage";
+            // 
+            // colTarifPeage
+            // 
+            this.colTarifPeage.HeaderText = "Tarif";
+            this.colTarifPeage.Name = "colTarifPeage";
+            // 
             // buttonAjoutPeage
             // 
             this.buttonAjoutPeage.Location = new System.Drawing.Point(447, 111);
@@ -351,32 +368,15 @@
             this.label11.Size = new System.Drawing.Size(0, 29);
             this.label11.TabIndex = 22;
             // 
-            // colNomPeage
-            // 
-            this.colNomPeage.HeaderText = "Nom péage";
-            this.colNomPeage.Name = "colNomPeage";
-            // 
-            // colTarifPeage
-            // 
-            this.colTarifPeage.HeaderText = "Tarif";
-            this.colTarifPeage.Name = "colTarifPeage";
-            // 
-            // textBoxTarifCarburant
-            // 
-            this.textBoxTarifCarburant.Location = new System.Drawing.Point(180, 11);
-            this.textBoxTarifCarburant.Name = "textBoxTarifCarburant";
-            this.textBoxTarifCarburant.Size = new System.Drawing.Size(209, 26);
-            this.textBoxTarifCarburant.TabIndex = 17;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(14, 223);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(155, 29);
+            this.label12.Size = new System.Drawing.Size(104, 29);
             this.label12.TabIndex = 23;
-            this.label12.Text = "Nb jours Loc.";
+            this.label12.Text = "Nb jours";
             // 
             // textBoxNbJoursLocation
             // 

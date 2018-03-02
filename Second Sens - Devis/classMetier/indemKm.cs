@@ -17,8 +17,8 @@ namespace Second_Sens___Devis.classMetier
         /// <summary>
         /// Récupere les coefs d'indemnité selon 
         /// </summary>
-        /// <param name="unNbKmAn"></param>
-        /// <param name="nbCV"></param>
+        /// <param name="unNbKmAn">Le nb de km par an</param>
+        /// <param name="nbCV">Le nb de chevaux du vehicule</param>
         /// <returns>La contenant les coeficients de l'indem Kilometrique</returns>
         public static List<double> getCoeficients(String unNbKmAn, int nbCV)
         {
@@ -26,7 +26,7 @@ namespace Second_Sens___Devis.classMetier
             requetesMySQL laRequete = new requetesMySQL();
             lesCoeficients = laRequete.queryDouble("select coef,coef2 from indemKm where nbKmAn =" 
                 + unNbKmAn + " and nbCV =" + nbCV.ToString());
-           
+
             return lesCoeficients;
         }
     }
