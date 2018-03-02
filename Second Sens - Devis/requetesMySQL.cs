@@ -86,7 +86,10 @@ namespace Second_Sens___Devis
                     }
                     catch(Exception erreur)
                     {
-                        /* ignoré blblablabla */
+                        /* 
+                         * Pour eviter le plantage suite la GetValue(NULL)
+                         * ignoré car les valeurs nulless sont inintérréssantes 
+                         */
                     }
 
                 }

@@ -36,7 +36,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.labelPeageTarif = new System.Windows.Forms.Label();
             this.textBoxTarifPeage = new System.Windows.Forms.TextBox();
-            this.checkBoxAllerRetour = new System.Windows.Forms.CheckBox();
             this.buttonAjouterPeage = new System.Windows.Forms.Button();
             this.buttonAnnulerAjouterPeage = new System.Windows.Forms.Button();
             this.labelNomPeage = new System.Windows.Forms.Label();
@@ -114,20 +113,9 @@
             this.textBoxTarifPeage.Size = new System.Drawing.Size(280, 26);
             this.textBoxTarifPeage.TabIndex = 7;
             // 
-            // checkBoxAllerRetour
-            // 
-            this.checkBoxAllerRetour.AutoSize = true;
-            this.checkBoxAllerRetour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxAllerRetour.Location = new System.Drawing.Point(20, 259);
-            this.checkBoxAllerRetour.Name = "checkBoxAllerRetour";
-            this.checkBoxAllerRetour.Size = new System.Drawing.Size(159, 33);
-            this.checkBoxAllerRetour.TabIndex = 8;
-            this.checkBoxAllerRetour.Text = "Aller-retour";
-            this.checkBoxAllerRetour.UseVisualStyleBackColor = true;
-            // 
             // buttonAjouterPeage
             // 
-            this.buttonAjouterPeage.Location = new System.Drawing.Point(240, 299);
+            this.buttonAjouterPeage.Location = new System.Drawing.Point(240, 277);
             this.buttonAjouterPeage.Name = "buttonAjouterPeage";
             this.buttonAjouterPeage.Size = new System.Drawing.Size(203, 31);
             this.buttonAjouterPeage.TabIndex = 9;
@@ -137,7 +125,7 @@
             // 
             // buttonAnnulerAjouterPeage
             // 
-            this.buttonAnnulerAjouterPeage.Location = new System.Drawing.Point(242, 336);
+            this.buttonAnnulerAjouterPeage.Location = new System.Drawing.Point(242, 314);
             this.buttonAnnulerAjouterPeage.Name = "buttonAnnulerAjouterPeage";
             this.buttonAnnulerAjouterPeage.Size = new System.Drawing.Size(203, 31);
             this.buttonAnnulerAjouterPeage.TabIndex = 10;
@@ -165,12 +153,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 380);
+            this.ClientSize = new System.Drawing.Size(457, 352);
             this.Controls.Add(this.textBoxNomPeage);
             this.Controls.Add(this.labelNomPeage);
             this.Controls.Add(this.buttonAnnulerAjouterPeage);
             this.Controls.Add(this.buttonAjouterPeage);
-            this.Controls.Add(this.checkBoxAllerRetour);
             this.Controls.Add(this.textBoxTarifPeage);
             this.Controls.Add(this.labelPeageTarif);
             this.Controls.Add(this.label4);
@@ -195,7 +182,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelPeageTarif;
         private System.Windows.Forms.TextBox textBoxTarifPeage;
-        private System.Windows.Forms.CheckBox checkBoxAllerRetour;
         private System.Windows.Forms.Button buttonAjouterPeage;
         private System.Windows.Forms.Button buttonAnnulerAjouterPeage;
         private System.Windows.Forms.Label labelNomPeage;

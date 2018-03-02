@@ -28,14 +28,7 @@ namespace Second_Sens___Devis
 
         private void buttonAjouterPeage_Click(object sender, EventArgs e)
         {
-            if (this.checkBoxAllerRetour.Checked)
-            {
-                leNouveauElementVehicule.dataGridViewPeages.Rows.Add(this.textBoxNomPeage.Text, (Convert.ToInt32(this.textBoxTarifPeage.Text) * 2).ToString(), "Oui");
-            }
-            else
-            {
-                leNouveauElementVehicule.dataGridViewPeages.Rows.Add(this.textBoxNomPeage.Text, this.textBoxTarifPeage.Text, "Non");
-            }
+            leNouveauElementVehicule.dataGridViewPeages.Rows.Add(this.textBoxNomPeage.Text, (Convert.ToInt32(this.textBoxTarifPeage.Text) * 2).ToString());
             this.Hide();
         }
     }

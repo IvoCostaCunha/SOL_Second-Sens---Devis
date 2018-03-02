@@ -87,9 +87,10 @@ namespace Second_Sens___Devis
             leResumeDevis.Show();
         }
 
-        void fenMenuPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        //ne fonctionne pas
+        void fenMenuPrincipal_FormClosing(object sender, EventArgs e)
         {
-            leChargement.Close();
+            Application.Exit();
         }
     }
 }

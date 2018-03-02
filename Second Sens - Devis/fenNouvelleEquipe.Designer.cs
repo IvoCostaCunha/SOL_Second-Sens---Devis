@@ -51,9 +51,7 @@
             this.labelVehiculesAjoutés = new System.Windows.Forms.Label();
             this.dataGridViewVehiculesAjoutes = new System.Windows.Forms.DataGridView();
             this.colNomVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNbJoursLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifLocationVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifSupplementaires = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementsAjoutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonorairesAjoutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculesAjoutes)).BeginInit();
@@ -268,9 +266,7 @@
             this.dataGridViewVehiculesAjoutes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewVehiculesAjoutes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNomVehicule,
-            this.colNbJoursLocation,
-            this.colTarifLocationVehicule,
-            this.colTarifSupplementaires});
+            this.colTarifVehicule});
             this.dataGridViewVehiculesAjoutes.Location = new System.Drawing.Point(1054, 49);
             this.dataGridViewVehiculesAjoutes.Name = "dataGridViewVehiculesAjoutes";
             this.dataGridViewVehiculesAjoutes.RowTemplate.Height = 28;
@@ -282,20 +278,10 @@
             this.colNomVehicule.HeaderText = "Nom Vehicule";
             this.colNomVehicule.Name = "colNomVehicule";
             // 
-            // colNbJoursLocation
+            // colTarifVehicule
             // 
-            this.colNbJoursLocation.HeaderText = "Jours location";
-            this.colNbJoursLocation.Name = "colNbJoursLocation";
-            // 
-            // colTarifLocationVehicule
-            // 
-            this.colTarifLocationVehicule.HeaderText = "Tarif location";
-            this.colTarifLocationVehicule.Name = "colTarifLocationVehicule";
-            // 
-            // colTarifSupplementaires
-            // 
-            this.colTarifSupplementaires.HeaderText = "Tarifs aditionnels";
-            this.colTarifSupplementaires.Name = "colTarifSupplementaires";
+            this.colTarifVehicule.HeaderText = "Tarif";
+            this.colTarifVehicule.Name = "colTarifVehicule";
             // 
             // fenNouvelleEquipe
             // 
@@ -356,12 +342,10 @@
         private System.Windows.Forms.Label labelAjouterVehicule;
         private System.Windows.Forms.Button buttonAjouterVehicule;
         private System.Windows.Forms.Label labelVehiculesAjoutés;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNomVehicule;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNbJoursLocation;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifLocationVehicule;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifSupplementaires;
         public System.Windows.Forms.DataGridView dataGridViewVehiculesAjoutes;
         public System.Windows.Forms.DataGridView dataGridViewElementsAjoutes;
         protected System.Windows.Forms.DataGridView dataGridViewHonorairesAjoutes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNomVehicule;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifVehicule;
     }
 }
