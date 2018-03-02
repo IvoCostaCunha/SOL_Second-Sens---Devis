@@ -27,9 +27,9 @@ namespace Second_Sens___Devis
                 this.progressBarChargement.Value = 100;
                 leMenuPrincipal.ShowDialog();
             }
-            catch(Exception e)
+            catch(Exception erreur)
             {
-                MessageBox.Show("Erreur de connexion a la base de données\nErreur : " + e.ToString());
+                MessageBox.Show("Erreur de connexion a la base de données\nErreur : " + erreur.ToString());
                 Application.Exit();
             }
             

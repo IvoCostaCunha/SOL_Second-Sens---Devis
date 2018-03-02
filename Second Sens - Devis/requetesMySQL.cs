@@ -84,7 +84,7 @@ namespace Second_Sens___Devis
                     {
                         listResultats.Add(Convert.ToDouble(lesResultats.GetValue(i)));
                     }
-                    catch(Exception e)
+                    catch(Exception erreur)
                     {
                         /* ignoré */
                     }
