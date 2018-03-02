@@ -19,6 +19,7 @@ namespace Second_Sens___Devis
 
         private void fenChargement_Load(object sender, EventArgs e)
         {
+            // En d'erreur lors de l'établissment de l'accès a la BdD
             try
             {
                 lienBdD.startConnection();
