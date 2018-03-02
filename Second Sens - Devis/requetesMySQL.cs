@@ -86,7 +86,7 @@ namespace Second_Sens___Devis
                     }
                     catch(Exception erreur)
                     {
-                        /* ignoré */
+                        /* ignoré blblablabla */
                     }
 
                 }
