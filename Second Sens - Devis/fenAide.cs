@@ -19,7 +19,11 @@ namespace Second_Sens___Devis
             leMenuPrincipal = unMenuPrincipal;
             InitializeComponent();
         }
-
+        /// <summary>
+        /// LOLOLOLPOLOLOLOLOLOL
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void fenAide_Load(object sender, EventArgs e)
         {
 
