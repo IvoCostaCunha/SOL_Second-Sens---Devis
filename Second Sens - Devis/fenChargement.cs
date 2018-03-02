@@ -19,11 +19,20 @@ namespace Second_Sens___Devis
 
         private void fenChargement_Load(object sender, EventArgs e)
         {
-            lienBdD.startConnection();
-            fenMenuPrincipal leMenuPrincipal = new fenMenuPrincipal(this);
-            this.progressBarChargement.Maximum = 100;
-            this.progressBarChargement.Value = 100;
-            leMenuPrincipal.ShowDialog();
+            try
+            {
+                lienBdD.startConnection();
+                fenMenuPrincipal leMenuPrincipal = new fenMenuPrincipal(this);
+                this.progressBarChargement.Maximum = 100;
+                this.progressBarChargement.Value = 100;
+                leMenuPrincipal.ShowDialog();
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Erreur de connexion a la base de données\nErreur : " + e.ToString());
+                Application.Exit();
+            }
+            
         }
     }
 }
