@@ -389,6 +389,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1115, 596);
             this.Controls.Add(this.textBoxNbJoursLocation);
             this.Controls.Add(this.label12);
