@@ -19,7 +19,7 @@ namespace Second_Sens___Devis
 
         private void fenChargement_Load(object sender, EventArgs e)
         {
-            // En d'erreur lors de l'établissment de l'accès a la BdD
+            //Essai de connexion à la base de données
             try
             {
                 lienBdD.startConnection();
@@ -28,7 +28,8 @@ namespace Second_Sens___Devis
                 this.progressBarChargement.Value = 100;
                 leMenuPrincipal.ShowDialog();
             }
-            catch(Exception erreur)
+            // En d'erreur lors de l'établissment de l'accès a la BdD
+            catch (Exception erreur)
             {
                 MessageBox.Show("Erreur de connexion a la base de données\nErreur : " + erreur.ToString());
                 Application.Exit();
