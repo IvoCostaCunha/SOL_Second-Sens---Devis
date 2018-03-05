@@ -50,8 +50,6 @@
             this.textBoxNbJoursLocation = new System.Windows.Forms.TextBox();
             this.buttonAjouterAjoutElementStreetMarketing = new System.Windows.Forms.Button();
             this.labelAideAjoutsElementStreetMarketing = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBoxTypeElementAjout = new System.Windows.Forms.ComboBox();
             this.dataGridViewElementsAjoutesStreetMarketing = new System.Windows.Forms.DataGridView();
             this.buttonSupprimerAjoutElementStreetMarketing = new System.Windows.Forms.Button();
             this.buttonValiderElementStreetMarketing = new System.Windows.Forms.Button();
@@ -254,12 +252,13 @@
             // 
             // buttonAjouterAjoutElementStreetMarketing
             // 
-            this.buttonAjouterAjoutElementStreetMarketing.Location = new System.Drawing.Point(238, 400);
+            this.buttonAjouterAjoutElementStreetMarketing.Location = new System.Drawing.Point(238, 350);
             this.buttonAjouterAjoutElementStreetMarketing.Name = "buttonAjouterAjoutElementStreetMarketing";
             this.buttonAjouterAjoutElementStreetMarketing.Size = new System.Drawing.Size(327, 32);
             this.buttonAjouterAjoutElementStreetMarketing.TabIndex = 17;
             this.buttonAjouterAjoutElementStreetMarketing.Text = "Ajouter";
             this.buttonAjouterAjoutElementStreetMarketing.UseVisualStyleBackColor = true;
+            this.buttonAjouterAjoutElementStreetMarketing.Click += new System.EventHandler(this.buttonAjouterAjoutElementStreetMarketing_Click);
             // 
             // labelAideAjoutsElementStreetMarketing
             // 
@@ -267,35 +266,17 @@
             this.labelAideAjoutsElementStreetMarketing.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAideAjoutsElementStreetMarketing.Location = new System.Drawing.Point(12, 310);
             this.labelAideAjoutsElementStreetMarketing.Name = "labelAideAjoutsElementStreetMarketing";
-            this.labelAideAjoutsElementStreetMarketing.Size = new System.Drawing.Size(107, 37);
+            this.labelAideAjoutsElementStreetMarketing.Size = new System.Drawing.Size(300, 37);
             this.labelAideAjoutsElementStreetMarketing.TabIndex = 18;
-            this.labelAideAjoutsElementStreetMarketing.Text = "Ajouts";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(14, 365);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 29);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Type élément";
-            // 
-            // comboBoxTypeElementAjout
-            // 
-            this.comboBoxTypeElementAjout.FormattingEnabled = true;
-            this.comboBoxTypeElementAjout.Location = new System.Drawing.Point(238, 366);
-            this.comboBoxTypeElementAjout.Name = "comboBoxTypeElementAjout";
-            this.comboBoxTypeElementAjout.Size = new System.Drawing.Size(327, 28);
-            this.comboBoxTypeElementAjout.TabIndex = 20;
+            this.labelAideAjoutsElementStreetMarketing.Text = "Ajouts de personnel";
             // 
             // dataGridViewElementsAjoutesStreetMarketing
             // 
             this.dataGridViewElementsAjoutesStreetMarketing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewElementsAjoutesStreetMarketing.Location = new System.Drawing.Point(19, 438);
+            this.dataGridViewElementsAjoutesStreetMarketing.Location = new System.Drawing.Point(19, 388);
             this.dataGridViewElementsAjoutesStreetMarketing.Name = "dataGridViewElementsAjoutesStreetMarketing";
             this.dataGridViewElementsAjoutesStreetMarketing.RowTemplate.Height = 28;
-            this.dataGridViewElementsAjoutesStreetMarketing.Size = new System.Drawing.Size(546, 169);
+            this.dataGridViewElementsAjoutesStreetMarketing.Size = new System.Drawing.Size(546, 219);
             this.dataGridViewElementsAjoutesStreetMarketing.TabIndex = 21;
             // 
             // buttonSupprimerAjoutElementStreetMarketing
@@ -334,8 +315,6 @@
             this.Controls.Add(this.buttonValiderElementStreetMarketing);
             this.Controls.Add(this.buttonSupprimerAjoutElementStreetMarketing);
             this.Controls.Add(this.dataGridViewElementsAjoutesStreetMarketing);
-            this.Controls.Add(this.comboBoxTypeElementAjout);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.labelAideAjoutsElementStreetMarketing);
             this.Controls.Add(this.buttonAjouterAjoutElementStreetMarketing);
             this.Controls.Add(this.textBoxNbJoursLocation);
@@ -384,8 +363,6 @@
         private System.Windows.Forms.Button buttonSupprimerPersonnalisation;
         private System.Windows.Forms.Button buttonAjouterAjoutElementStreetMarketing;
         private System.Windows.Forms.Label labelAideAjoutsElementStreetMarketing;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBoxTypeElementAjout;
         private System.Windows.Forms.DataGridView dataGridViewElementsAjoutesStreetMarketing;
         private System.Windows.Forms.Button buttonSupprimerAjoutElementStreetMarketing;
         private System.Windows.Forms.Button buttonValiderElementStreetMarketing;

@@ -79,7 +79,7 @@
             this.tabControlTarifsElement.Location = new System.Drawing.Point(12, 233);
             this.tabControlTarifsElement.Name = "tabControlTarifsElement";
             this.tabControlTarifsElement.SelectedIndex = 0;
-            this.tabControlTarifsElement.Size = new System.Drawing.Size(461, 145);
+            this.tabControlTarifsElement.Size = new System.Drawing.Size(461, 175);
             this.tabControlTarifsElement.TabIndex = 2;
             // 
             // tabTarifHeure
@@ -88,7 +88,7 @@
             this.tabTarifHeure.Location = new System.Drawing.Point(4, 29);
             this.tabTarifHeure.Name = "tabTarifHeure";
             this.tabTarifHeure.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTarifHeure.Size = new System.Drawing.Size(453, 112);
+            this.tabTarifHeure.Size = new System.Drawing.Size(453, 142);
             this.tabTarifHeure.TabIndex = 0;
             this.tabTarifHeure.Text = "Tarif / Heure";
             this.tabTarifHeure.UseVisualStyleBackColor = true;
@@ -128,7 +128,7 @@
             this.tabTarifJour.Location = new System.Drawing.Point(4, 29);
             this.tabTarifJour.Name = "tabTarifJour";
             this.tabTarifJour.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTarifJour.Size = new System.Drawing.Size(453, 112);
+            this.tabTarifJour.Size = new System.Drawing.Size(453, 142);
             this.tabTarifJour.TabIndex = 1;
             this.tabTarifJour.Text = "Tarif / Jour";
             this.tabTarifJour.UseVisualStyleBackColor = true;
@@ -199,7 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 627);
+            this.ClientSize = new System.Drawing.Size(515, 627);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBoxNomElement);
             this.Controls.Add(this.labelNomElement);

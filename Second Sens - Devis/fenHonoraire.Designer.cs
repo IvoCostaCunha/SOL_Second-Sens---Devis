@@ -38,10 +38,10 @@
             this.checkBoxModeleExistant = new System.Windows.Forms.CheckBox();
             this.panelModeleExistant = new System.Windows.Forms.Panel();
             this.labelTypeHonoraire = new System.Windows.Forms.Label();
-            this.textBoxTarifHeureModeleEx = new System.Windows.Forms.TextBox();
+            this.textBoxTarifModeleEx = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNbHeureModeleEx = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTarif = new System.Windows.Forms.Label();
             this.comboBoxTypeHonoraire = new System.Windows.Forms.ComboBox();
             this.panelModelePerso = new System.Windows.Forms.Panel();
             this.textBoxNomHonoraireModPerso = new System.Windows.Forms.TextBox();
@@ -49,13 +49,23 @@
             this.textBoxTarifHeureModPerso = new System.Windows.Forms.TextBox();
             this.labelNbHeuresHonoraire = new System.Windows.Forms.Label();
             this.textBoxNbHeuresHonoraireModPerso = new System.Windows.Forms.TextBox();
-            this.labelTarifHeure = new System.Windows.Forms.Label();
+            this.labelTarifTotalPerso = new System.Windows.Forms.Label();
             this.labelListHonoraires = new System.Windows.Forms.Label();
             this.dataGridViewListeHonoraires = new System.Windows.Forms.DataGridView();
             this.colNomHon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTarifHonoraireHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifMarge = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNbHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNbJours = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxTarifRevientEx = new System.Windows.Forms.TextBox();
+            this.labelTarifMargeEx = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelTarifRevientPerso = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.labelTarifMargePerso = new System.Windows.Forms.Label();
             this.panelFenHonoraire.SuspendLayout();
             this.panelModeleExistant.SuspendLayout();
             this.panelModelePerso.SuspendLayout();
@@ -91,7 +101,6 @@
             this.panelFenHonoraire.Controls.Add(this.buttonAjouterHonoraire);
             this.panelFenHonoraire.Controls.Add(this.checkBoxModelePerso);
             this.panelFenHonoraire.Controls.Add(this.checkBoxModeleExistant);
-            this.panelFenHonoraire.Controls.Add(this.panelModeleExistant);
             this.panelFenHonoraire.Controls.Add(this.panelModelePerso);
             this.panelFenHonoraire.Controls.Add(this.labelListHonoraires);
             this.panelFenHonoraire.Controls.Add(this.dataGridViewListeHonoraires);
@@ -157,13 +166,17 @@
             // 
             // panelModeleExistant
             // 
+            this.panelModeleExistant.Controls.Add(this.textBox1);
+            this.panelModeleExistant.Controls.Add(this.labelTarifMargeEx);
+            this.panelModeleExistant.Controls.Add(this.textBoxTarifRevientEx);
+            this.panelModeleExistant.Controls.Add(this.label2);
             this.panelModeleExistant.Controls.Add(this.labelTypeHonoraire);
-            this.panelModeleExistant.Controls.Add(this.textBoxTarifHeureModeleEx);
+            this.panelModeleExistant.Controls.Add(this.textBoxTarifModeleEx);
             this.panelModeleExistant.Controls.Add(this.label1);
             this.panelModeleExistant.Controls.Add(this.textBoxNbHeureModeleEx);
-            this.panelModeleExistant.Controls.Add(this.label2);
+            this.panelModeleExistant.Controls.Add(this.labelTarif);
             this.panelModeleExistant.Controls.Add(this.comboBoxTypeHonoraire);
-            this.panelModeleExistant.Location = new System.Drawing.Point(3, 110);
+            this.panelModeleExistant.Location = new System.Drawing.Point(0, 0);
             this.panelModeleExistant.Name = "panelModeleExistant";
             this.panelModeleExistant.Size = new System.Drawing.Size(521, 323);
             this.panelModeleExistant.TabIndex = 11;
@@ -179,12 +192,12 @@
             this.labelTypeHonoraire.TabIndex = 5;
             this.labelTypeHonoraire.Text = "Type honoraire";
             // 
-            // textBoxTarifHeureModeleEx
+            // textBoxTarifModeleEx
             // 
-            this.textBoxTarifHeureModeleEx.Location = new System.Drawing.Point(243, 79);
-            this.textBoxTarifHeureModeleEx.Name = "textBoxTarifHeureModeleEx";
-            this.textBoxTarifHeureModeleEx.Size = new System.Drawing.Size(254, 26);
-            this.textBoxTarifHeureModeleEx.TabIndex = 10;
+            this.textBoxTarifModeleEx.Location = new System.Drawing.Point(243, 79);
+            this.textBoxTarifModeleEx.Name = "textBoxTarifModeleEx";
+            this.textBoxTarifModeleEx.Size = new System.Drawing.Size(254, 26);
+            this.textBoxTarifModeleEx.TabIndex = 10;
             // 
             // label1
             // 
@@ -203,15 +216,15 @@
             this.textBoxNbHeureModeleEx.Size = new System.Drawing.Size(254, 26);
             this.textBoxNbHeureModeleEx.TabIndex = 9;
             // 
-            // label2
+            // labelTarif
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 76);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 29);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Tarif a l\'heure";
+            this.labelTarif.AutoSize = true;
+            this.labelTarif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTarif.Location = new System.Drawing.Point(3, 76);
+            this.labelTarif.Name = "labelTarif";
+            this.labelTarif.Size = new System.Drawing.Size(261, 29);
+            this.labelTarif.TabIndex = 8;
+            this.labelTarif.Text = "Tarif Total Heure / Jour";
             // 
             // comboBoxTypeHonoraire
             // 
@@ -223,12 +236,17 @@
             // 
             // panelModelePerso
             // 
+            this.panelModelePerso.Controls.Add(this.labelTarifMargePerso);
+            this.panelModelePerso.Controls.Add(this.textBox3);
+            this.panelModelePerso.Controls.Add(this.textBox2);
+            this.panelModelePerso.Controls.Add(this.labelTarifRevientPerso);
             this.panelModelePerso.Controls.Add(this.textBoxNomHonoraireModPerso);
+            this.panelModelePerso.Controls.Add(this.panelModeleExistant);
             this.panelModelePerso.Controls.Add(this.labelNomHonoraire);
             this.panelModelePerso.Controls.Add(this.textBoxTarifHeureModPerso);
             this.panelModelePerso.Controls.Add(this.labelNbHeuresHonoraire);
             this.panelModelePerso.Controls.Add(this.textBoxNbHeuresHonoraireModPerso);
-            this.panelModelePerso.Controls.Add(this.labelTarifHeure);
+            this.panelModelePerso.Controls.Add(this.labelTarifTotalPerso);
             this.panelModelePerso.Location = new System.Drawing.Point(3, 110);
             this.panelModelePerso.Name = "panelModelePerso";
             this.panelModelePerso.Size = new System.Drawing.Size(521, 323);
@@ -265,9 +283,9 @@
             this.labelNbHeuresHonoraire.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNbHeuresHonoraire.Location = new System.Drawing.Point(3, 44);
             this.labelNbHeuresHonoraire.Name = "labelNbHeuresHonoraire";
-            this.labelNbHeuresHonoraire.Size = new System.Drawing.Size(234, 29);
+            this.labelNbHeuresHonoraire.Size = new System.Drawing.Size(304, 29);
             this.labelNbHeuresHonoraire.TabIndex = 7;
-            this.labelNbHeuresHonoraire.Text = "Nb heures honoraire";
+            this.labelNbHeuresHonoraire.Text = "Nb Heures / Jour honoraire";
             // 
             // textBoxNbHeuresHonoraireModPerso
             // 
@@ -276,15 +294,15 @@
             this.textBoxNbHeuresHonoraireModPerso.Size = new System.Drawing.Size(254, 26);
             this.textBoxNbHeuresHonoraireModPerso.TabIndex = 9;
             // 
-            // labelTarifHeure
+            // labelTarifTotalPerso
             // 
-            this.labelTarifHeure.AutoSize = true;
-            this.labelTarifHeure.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTarifHeure.Location = new System.Drawing.Point(3, 76);
-            this.labelTarifHeure.Name = "labelTarifHeure";
-            this.labelTarifHeure.Size = new System.Drawing.Size(159, 29);
-            this.labelTarifHeure.TabIndex = 8;
-            this.labelTarifHeure.Text = "Tarif a l\'heure";
+            this.labelTarifTotalPerso.AutoSize = true;
+            this.labelTarifTotalPerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTarifTotalPerso.Location = new System.Drawing.Point(3, 76);
+            this.labelTarifTotalPerso.Name = "labelTarifTotalPerso";
+            this.labelTarifTotalPerso.Size = new System.Drawing.Size(261, 29);
+            this.labelTarifTotalPerso.TabIndex = 8;
+            this.labelTarifTotalPerso.Text = "Tarif Total Heure / Jour";
             // 
             // labelListHonoraires
             // 
@@ -302,6 +320,8 @@
             this.dataGridViewListeHonoraires.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNomHon,
             this.colTarifHonoraireHeure,
+            this.colTarifRevient,
+            this.colTarifMarge,
             this.colNbHeure,
             this.colNbJours});
             this.dataGridViewListeHonoraires.Location = new System.Drawing.Point(530, 46);
@@ -318,8 +338,18 @@
             // 
             // colTarifHonoraireHeure
             // 
-            this.colTarifHonoraireHeure.HeaderText = "Tarif Honoraire / heure";
+            this.colTarifHonoraireHeure.HeaderText = "Tarif Total Heure / Jour";
             this.colTarifHonoraireHeure.Name = "colTarifHonoraireHeure";
+            // 
+            // colTarifRevient
+            // 
+            this.colTarifRevient.HeaderText = "Tarif Revient Heure / Jour";
+            this.colTarifRevient.Name = "colTarifRevient";
+            // 
+            // colTarifMarge
+            // 
+            this.colTarifMarge.HeaderText = "Marge Heure / Jour";
+            this.colTarifMarge.Name = "colTarifMarge";
             // 
             // colNbHeure
             // 
@@ -332,6 +362,74 @@
             this.colNbJours.HeaderText = "Nb Jours";
             this.colNbJours.Name = "colNbJours";
             this.colNbJours.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 108);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(287, 29);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Tarif Revient Heure / Jour";
+            // 
+            // textBoxTarifRevientEx
+            // 
+            this.textBoxTarifRevientEx.Location = new System.Drawing.Point(243, 111);
+            this.textBoxTarifRevientEx.Name = "textBoxTarifRevientEx";
+            this.textBoxTarifRevientEx.Size = new System.Drawing.Size(254, 26);
+            this.textBoxTarifRevientEx.TabIndex = 12;
+            // 
+            // labelTarifMargeEx
+            // 
+            this.labelTarifMargeEx.AutoSize = true;
+            this.labelTarifMargeEx.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTarifMargeEx.Location = new System.Drawing.Point(3, 140);
+            this.labelTarifMargeEx.Name = "labelTarifMargeEx";
+            this.labelTarifMargeEx.Size = new System.Drawing.Size(220, 29);
+            this.labelTarifMargeEx.TabIndex = 13;
+            this.labelTarifMargeEx.Text = "Marge Heure / Jour";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(243, 143);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(254, 26);
+            this.textBox1.TabIndex = 14;
+            // 
+            // labelTarifRevientPerso
+            // 
+            this.labelTarifRevientPerso.AutoSize = true;
+            this.labelTarifRevientPerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTarifRevientPerso.Location = new System.Drawing.Point(3, 108);
+            this.labelTarifRevientPerso.Name = "labelTarifRevientPerso";
+            this.labelTarifRevientPerso.Size = new System.Drawing.Size(287, 29);
+            this.labelTarifRevientPerso.TabIndex = 12;
+            this.labelTarifRevientPerso.Text = "Tarif Revient Heure / Jour";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(243, 111);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(254, 26);
+            this.textBox2.TabIndex = 13;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(243, 143);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(254, 26);
+            this.textBox3.TabIndex = 14;
+            // 
+            // labelTarifMargePerso
+            // 
+            this.labelTarifMargePerso.AutoSize = true;
+            this.labelTarifMargePerso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTarifMargePerso.Location = new System.Drawing.Point(3, 140);
+            this.labelTarifMargePerso.Name = "labelTarifMargePerso";
+            this.labelTarifMargePerso.Size = new System.Drawing.Size(275, 29);
+            this.labelTarifMargePerso.TabIndex = 15;
+            this.labelTarifMargePerso.Text = "Tarif Marge Heure / Jour";
             // 
             // fenHonoraire
             // 
@@ -368,10 +466,10 @@
         private System.Windows.Forms.CheckBox checkBoxModeleExistant;
         private System.Windows.Forms.Panel panelModeleExistant;
         private System.Windows.Forms.Label labelTypeHonoraire;
-        private System.Windows.Forms.TextBox textBoxTarifHeureModeleEx;
+        private System.Windows.Forms.TextBox textBoxTarifModeleEx;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNbHeureModeleEx;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTarif;
         private System.Windows.Forms.ComboBox comboBoxTypeHonoraire;
         private System.Windows.Forms.Panel panelModelePerso;
         private System.Windows.Forms.TextBox textBoxNomHonoraireModPerso;
@@ -379,12 +477,22 @@
         private System.Windows.Forms.TextBox textBoxTarifHeureModPerso;
         private System.Windows.Forms.Label labelNbHeuresHonoraire;
         private System.Windows.Forms.TextBox textBoxNbHeuresHonoraireModPerso;
-        private System.Windows.Forms.Label labelTarifHeure;
+        private System.Windows.Forms.Label labelTarifTotalPerso;
         private System.Windows.Forms.Label labelListHonoraires;
         private System.Windows.Forms.DataGridView dataGridViewListeHonoraires;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomHon;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTarifHonoraireHeure;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifRevient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifMarge;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNbHeure;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNbJours;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelTarifMargeEx;
+        private System.Windows.Forms.TextBox textBoxTarifRevientEx;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTarifMargePerso;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label labelTarifRevientPerso;
     }
 }

@@ -72,13 +72,13 @@ namespace Second_Sens___Devis
             if (checkBoxModeleExistant.Checked)
             { 
                 // a vérifier si comboBoxTypeHonoraire.SelectedItem peut être null si le champ est vide
-                if(comboBoxTypeHonoraire.SelectedItem != null && textBoxNbHeureModeleEx.Text != "" && textBoxTarifHeureModeleEx.Text != "")
+                if(comboBoxTypeHonoraire.SelectedItem != null && textBoxNbHeureModeleEx.Text != "" && textBoxTarifModeleEx.Text != "")
                 {
                     //Ajout d'un entier devant le nom de l'honoraire existant pour le direncier des autres
                     nomHon = comboBoxTypeHonoraire.SelectedItem.ToString() + numNomHon.ToString();
                     numNomHon += 1;
 
-                    tarifHon = Convert.ToDouble(textBoxTarifHeureModeleEx.Text);
+                    tarifHon = Convert.ToDouble(textBoxTarifModeleEx.Text);
                     nbHeureJourHon = Convert.ToDouble(textBoxNbHeureModeleEx.Text);
 
                     //ajout dans la dataGridView

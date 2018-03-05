@@ -24,5 +24,23 @@ namespace Second_Sens___Devis
         {
             
         }
+
+        private void buttonQuitter_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonNouveauDevis_Click(object sender, EventArgs e)
+        {
+            leMenuPrincipal.panelNouveauDevis.Hide();
+            fenNouveauDevis unNouveauDevis = new fenNouveauDevis(leMenuPrincipal);
+            unNouveauDevis.Show();
+            this.Hide();
+        }
+
+        private void buttonAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

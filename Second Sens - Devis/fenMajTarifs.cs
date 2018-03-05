@@ -24,5 +24,15 @@ namespace Second_Sens___Devis
         {
 
         }
+
+        private void buttonAnnulerModif_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void buttonValiderModif_Click(object sender, EventArgs e)
+        {
+            /* MàJ de la base de données */
+        }
     }
 }

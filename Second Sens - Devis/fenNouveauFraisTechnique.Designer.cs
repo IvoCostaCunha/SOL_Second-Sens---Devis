@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1042, 639);
             this.Name = "fenNouveauFraisTechnique";
-            this.Text = "fenNouveauFraisTechnique";
+            this.Text = "Ajouter frais technique";
             this.Load += new System.EventHandler(this.fenNouveauFraisTechnique_Load);
             this.ResumeLayout(false);
 

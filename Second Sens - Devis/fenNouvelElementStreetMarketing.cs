@@ -43,5 +43,11 @@ namespace Second_Sens___Devis
                 /* +virer tout ce qui était dedans */
             }
         }
+
+        private void buttonAjouterAjoutElementStreetMarketing_Click(object sender, EventArgs e)
+        {
+            fenAjoutPersonnel unNouveauPersonnel = new fenAjoutPersonnel(this);
+            unNouveauPersonnel.Show();
+        }
     }
 }
