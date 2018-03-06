@@ -65,6 +65,7 @@
     <Compile Include="classMetier\classIndemKm.cs" />
     <Compile Include="classMetier\classPersonnalisation.cs" />
     <Compile Include="classMetier\classPersonnel.cs" />
+    <Compile Include="classMetier\classStreetMarketing.cs" />
     <Compile Include="classMetier\classTarif.cs" />
     <Compile Include="classMetier\classVehicule.cs" />
     <Compile Include="classMetier\classVehiculeSociete.cs" />
@@ -225,6 +226,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -253,6 +256,7 @@
     <Content Include="docs\MySqlTransaction.xml" />
     <Content Include="media\2S_DEVIS_LOGO2.png" />
     <Content Include="media\2S_DEVIS_LOGO_OMBRE.png" />
+    <Content Include="media\FORM_CHARGEMENT.png" />
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup />

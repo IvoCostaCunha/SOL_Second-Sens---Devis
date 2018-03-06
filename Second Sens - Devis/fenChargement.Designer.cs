@@ -28,33 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelLogo = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fenChargement));
             this.progressBarChargement = new System.Windows.Forms.ProgressBar();
             this.labelChargement = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // labelLogo
-            // 
-            this.labelLogo.AutoSize = true;
-            this.labelLogo.Font = new System.Drawing.Font("Arial Narrow", 48F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLogo.Location = new System.Drawing.Point(-3, 69);
-            this.labelLogo.Name = "labelLogo";
-            this.labelLogo.Size = new System.Drawing.Size(783, 110);
-            this.labelLogo.TabIndex = 0;
-            this.labelLogo.Text = "Second Sens - Devis";
-            // 
             // progressBarChargement
             // 
-            this.progressBarChargement.Location = new System.Drawing.Point(16, 241);
+            this.progressBarChargement.Location = new System.Drawing.Point(12, 241);
             this.progressBarChargement.Name = "progressBarChargement";
-            this.progressBarChargement.Size = new System.Drawing.Size(775, 34);
+            this.progressBarChargement.Size = new System.Drawing.Size(776, 34);
             this.progressBarChargement.TabIndex = 1;
             this.progressBarChargement.Click += new System.EventHandler(this.progressBarChargement_Click);
             // 
             // labelChargement
             // 
             this.labelChargement.AutoSize = true;
+            this.labelChargement.BackColor = System.Drawing.Color.Transparent;
             this.labelChargement.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChargement.ForeColor = System.Drawing.Color.White;
             this.labelChargement.Location = new System.Drawing.Point(12, 218);
             this.labelChargement.Name = "labelChargement";
             this.labelChargement.Size = new System.Drawing.Size(95, 20);
@@ -65,10 +57,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 287);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(800, 300);
             this.Controls.Add(this.labelChargement);
             this.Controls.Add(this.progressBarChargement);
-            this.Controls.Add(this.labelLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -83,8 +75,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelLogo;
         private System.Windows.Forms.Label labelChargement;
         public System.Windows.Forms.ProgressBar progressBarChargement;
     }
