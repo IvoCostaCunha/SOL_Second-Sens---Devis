@@ -12,6 +12,8 @@ namespace Second_Sens___Devis.classMetier
         private int leNbCV;
         private double leCoef;
         private double leCoef2;
+        private int leAn;
+        private double leNbKmAn;
 
         /// <summary>
         /// Constructeur de la classe classIndem si prédefinie
@@ -19,11 +21,13 @@ namespace Second_Sens___Devis.classMetier
         /// <param name="unNbCV"></param>
         /// <param name="unCoef"></param>
         /// <param name="unCoef2">Le 2eme coef de l'indemKm, si n'existe pas valoriser avec la valeur NULL</param>
-        public classIndemKm(int unNbCV, double unCoef, double unCoef2)
+        public classIndemKm(int unNbCV, double unCoef, double unCoef2, int unAn, double unNbKmAn)
         {
             this.leNbCV = unNbCV;
             this.leCoef = unCoef;
             this.leCoef2 = unCoef2;
+            this.leAn = unAn;
+            this.leNbKmAn = unNbKmAn;
         }
 
         /// <summary>

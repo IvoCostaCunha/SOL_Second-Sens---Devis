@@ -59,7 +59,6 @@
     <Compile Include="classMetier\classDevis.cs" />
     <Compile Include="classMetier\classElement.cs" />
     <Compile Include="classMetier\classEquipe.cs" />
-    <Compile Include="classMetier\classEstIndemn.cs" />
     <Compile Include="classMetier\classHonoraire.cs" />
     <Compile Include="classMetier\classHotesse.cs" />
     <Compile Include="classMetier\classIndemKm.cs" />
