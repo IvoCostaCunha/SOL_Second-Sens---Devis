@@ -49,6 +49,7 @@
             this.progressBarChargement.Name = "progressBarChargement";
             this.progressBarChargement.Size = new System.Drawing.Size(775, 34);
             this.progressBarChargement.TabIndex = 1;
+            this.progressBarChargement.Click += new System.EventHandler(this.progressBarChargement_Click);
             // 
             // labelChargement
             // 

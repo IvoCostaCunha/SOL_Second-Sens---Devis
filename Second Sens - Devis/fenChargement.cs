@@ -36,5 +36,10 @@ namespace Second_Sens___Devis
             }
             
         }
+
+        private void progressBarChargement_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
