@@ -350,6 +350,7 @@
             this.ClientSize = new System.Drawing.Size(1409, 706);
             this.Controls.Add(this.panelNouveauDevis);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fenMenuPrincipal";
             this.Text = "Menu Principal";
