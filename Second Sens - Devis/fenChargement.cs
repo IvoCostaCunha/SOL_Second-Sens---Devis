@@ -19,14 +19,19 @@ namespace Second_Sens___Devis
 
         private void fenChargement_Load(object sender, EventArgs e)
         {
+            this.progressBarChargement.Maximum = 10000;
+            for (int i = 0; i < 9000; i ++)
+            {
+                this.progressBarChargement.Value = i;
+            }
             //Essai de connexion à la base de données
             try
             {
                 lienBdD.startConnection();
                 fenMenuPrincipal leMenuPrincipal = new fenMenuPrincipal(this);
-                this.progressBarChargement.Maximum = 100;
-                this.progressBarChargement.Value = 100;
-                leMenuPrincipal.ShowDialog();
+                
+                this.progressBarChargement.Value = 10000;
+                //leMenuPrincipal.ShowDialog();
             }
             // En d'erreur lors de l'établissment de l'accès a la BdD
             catch (Exception erreur)
