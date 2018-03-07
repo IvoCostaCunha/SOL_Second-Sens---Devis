@@ -35,9 +35,9 @@
             // 
             // progressBarChargement
             // 
-            this.progressBarChargement.Location = new System.Drawing.Point(12, 241);
+            this.progressBarChargement.Location = new System.Drawing.Point(12, 156);
             this.progressBarChargement.Name = "progressBarChargement";
-            this.progressBarChargement.Size = new System.Drawing.Size(776, 34);
+            this.progressBarChargement.Size = new System.Drawing.Size(476, 20);
             this.progressBarChargement.TabIndex = 1;
             this.progressBarChargement.Click += new System.EventHandler(this.progressBarChargement_Click);
             // 
@@ -47,7 +47,7 @@
             this.labelChargement.BackColor = System.Drawing.Color.Transparent;
             this.labelChargement.Font = new System.Drawing.Font("Arial Narrow", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChargement.ForeColor = System.Drawing.Color.White;
-            this.labelChargement.Location = new System.Drawing.Point(12, 218);
+            this.labelChargement.Location = new System.Drawing.Point(12, 133);
             this.labelChargement.Name = "labelChargement";
             this.labelChargement.Size = new System.Drawing.Size(95, 20);
             this.labelChargement.TabIndex = 2;
@@ -55,11 +55,11 @@
             // 
             // fenChargement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(800, 300);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(500, 188);
             this.Controls.Add(this.labelChargement);
             this.Controls.Add(this.progressBarChargement);
             this.DoubleBuffered = true;

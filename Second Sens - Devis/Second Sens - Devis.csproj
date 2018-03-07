@@ -256,6 +256,7 @@
     <Content Include="media\2S_DEVIS_LOGO2.png" />
     <Content Include="media\2S_DEVIS_LOGO_OMBRE.png" />
     <Content Include="media\FORM_CHARGEMENT.png" />
+    <Content Include="media\FORM_CHARGEMENT_ROSE3_500x188.png" />
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup />
