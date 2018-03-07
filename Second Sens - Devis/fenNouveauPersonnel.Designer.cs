@@ -53,9 +53,10 @@
             // 
             this.labelTypePersonnel.AutoSize = true;
             this.labelTypePersonnel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTypePersonnel.Location = new System.Drawing.Point(12, 9);
+            this.labelTypePersonnel.Location = new System.Drawing.Point(8, 6);
+            this.labelTypePersonnel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTypePersonnel.Name = "labelTypePersonnel";
-            this.labelTypePersonnel.Size = new System.Drawing.Size(182, 29);
+            this.labelTypePersonnel.Size = new System.Drawing.Size(117, 20);
             this.labelTypePersonnel.TabIndex = 0;
             this.labelTypePersonnel.Text = "Type personnel";
             // 
@@ -66,9 +67,10 @@
             "Hôtesse",
             "Manutentioniste",
             "Conducteur"});
-            this.comboBoxTypePersonnel.Location = new System.Drawing.Point(200, 10);
+            this.comboBoxTypePersonnel.Location = new System.Drawing.Point(133, 6);
+            this.comboBoxTypePersonnel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxTypePersonnel.Name = "comboBoxTypePersonnel";
-            this.comboBoxTypePersonnel.Size = new System.Drawing.Size(296, 28);
+            this.comboBoxTypePersonnel.Size = new System.Drawing.Size(199, 21);
             this.comboBoxTypePersonnel.TabIndex = 1;
             this.comboBoxTypePersonnel.SelectedIndexChanged += new System.EventHandler(this.comboBoxTypePersonnel_SelectedIndexChanged);
             // 
@@ -79,25 +81,28 @@
             this.panelPersoHot.Controls.Add(this.dataGridViewListePerso);
             this.panelPersoHot.Controls.Add(this.labelAidePersonnalisation);
             this.panelPersoHot.Enabled = false;
-            this.panelPersoHot.Location = new System.Drawing.Point(502, 12);
+            this.panelPersoHot.Location = new System.Drawing.Point(335, 8);
+            this.panelPersoHot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panelPersoHot.Name = "panelPersoHot";
-            this.panelPersoHot.Size = new System.Drawing.Size(395, 309);
+            this.panelPersoHot.Size = new System.Drawing.Size(263, 201);
             this.panelPersoHot.TabIndex = 2;
             // 
             // buttonSupprimerPerso
             // 
-            this.buttonSupprimerPerso.Location = new System.Drawing.Point(8, 51);
+            this.buttonSupprimerPerso.Location = new System.Drawing.Point(5, 33);
+            this.buttonSupprimerPerso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSupprimerPerso.Name = "buttonSupprimerPerso";
-            this.buttonSupprimerPerso.Size = new System.Drawing.Size(187, 36);
+            this.buttonSupprimerPerso.Size = new System.Drawing.Size(125, 23);
             this.buttonSupprimerPerso.TabIndex = 14;
             this.buttonSupprimerPerso.Text = "Supprimer";
             this.buttonSupprimerPerso.UseVisualStyleBackColor = true;
             // 
             // buttonAjouterPerso
             // 
-            this.buttonAjouterPerso.Location = new System.Drawing.Point(201, 51);
+            this.buttonAjouterPerso.Location = new System.Drawing.Point(134, 33);
+            this.buttonAjouterPerso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAjouterPerso.Name = "buttonAjouterPerso";
-            this.buttonAjouterPerso.Size = new System.Drawing.Size(179, 36);
+            this.buttonAjouterPerso.Size = new System.Drawing.Size(119, 23);
             this.buttonAjouterPerso.TabIndex = 13;
             this.buttonAjouterPerso.Text = "Ajouter";
             this.buttonAjouterPerso.UseVisualStyleBackColor = true;
@@ -105,19 +110,21 @@
             // dataGridViewListePerso
             // 
             this.dataGridViewListePerso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewListePerso.Location = new System.Drawing.Point(8, 93);
+            this.dataGridViewListePerso.Location = new System.Drawing.Point(5, 60);
+            this.dataGridViewListePerso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewListePerso.Name = "dataGridViewListePerso";
             this.dataGridViewListePerso.RowTemplate.Height = 28;
-            this.dataGridViewListePerso.Size = new System.Drawing.Size(372, 209);
+            this.dataGridViewListePerso.Size = new System.Drawing.Size(248, 136);
             this.dataGridViewListePerso.TabIndex = 13;
             // 
             // labelAidePersonnalisation
             // 
             this.labelAidePersonnalisation.AutoSize = true;
             this.labelAidePersonnalisation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAidePersonnalisation.Location = new System.Drawing.Point(3, 10);
+            this.labelAidePersonnalisation.Location = new System.Drawing.Point(2, 6);
+            this.labelAidePersonnalisation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAidePersonnalisation.Name = "labelAidePersonnalisation";
-            this.labelAidePersonnalisation.Size = new System.Drawing.Size(192, 29);
+            this.labelAidePersonnalisation.Size = new System.Drawing.Size(126, 20);
             this.labelAidePersonnalisation.TabIndex = 10;
             this.labelAidePersonnalisation.Text = "Personnalisation";
             // 
@@ -125,50 +132,56 @@
             // 
             this.labelNomPersonnel.AutoSize = true;
             this.labelNomPersonnel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomPersonnel.Location = new System.Drawing.Point(12, 44);
+            this.labelNomPersonnel.Location = new System.Drawing.Point(8, 29);
+            this.labelNomPersonnel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNomPersonnel.Name = "labelNomPersonnel";
-            this.labelNomPersonnel.Size = new System.Drawing.Size(179, 29);
+            this.labelNomPersonnel.Size = new System.Drawing.Size(116, 20);
             this.labelNomPersonnel.TabIndex = 3;
             this.labelNomPersonnel.Text = "Nom personnel";
             // 
             // textBoxNomPersonnel
             // 
-            this.textBoxNomPersonnel.Location = new System.Drawing.Point(200, 44);
+            this.textBoxNomPersonnel.Location = new System.Drawing.Point(133, 29);
+            this.textBoxNomPersonnel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNomPersonnel.Name = "textBoxNomPersonnel";
-            this.textBoxNomPersonnel.Size = new System.Drawing.Size(296, 26);
+            this.textBoxNomPersonnel.Size = new System.Drawing.Size(199, 20);
             this.textBoxNomPersonnel.TabIndex = 4;
             // 
             // labelQtePersonnel
             // 
             this.labelQtePersonnel.AutoSize = true;
             this.labelQtePersonnel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQtePersonnel.Location = new System.Drawing.Point(253, 91);
+            this.labelQtePersonnel.Location = new System.Drawing.Point(169, 59);
+            this.labelQtePersonnel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelQtePersonnel.Name = "labelQtePersonnel";
-            this.labelQtePersonnel.Size = new System.Drawing.Size(58, 29);
+            this.labelQtePersonnel.Size = new System.Drawing.Size(39, 20);
             this.labelQtePersonnel.TabIndex = 5;
             this.labelQtePersonnel.Text = "Qte ";
             // 
             // textBoxQtePersonnel
             // 
-            this.textBoxQtePersonnel.Location = new System.Drawing.Point(317, 94);
+            this.textBoxQtePersonnel.Location = new System.Drawing.Point(211, 61);
+            this.textBoxQtePersonnel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxQtePersonnel.Name = "textBoxQtePersonnel";
-            this.textBoxQtePersonnel.Size = new System.Drawing.Size(179, 26);
+            this.textBoxQtePersonnel.Size = new System.Drawing.Size(121, 20);
             this.textBoxQtePersonnel.TabIndex = 6;
             // 
             // textBoxTarifH
             // 
-            this.textBoxTarifH.Location = new System.Drawing.Point(165, 95);
+            this.textBoxTarifH.Location = new System.Drawing.Point(110, 62);
+            this.textBoxTarifH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxTarifH.Name = "textBoxTarifH";
-            this.textBoxTarifH.Size = new System.Drawing.Size(82, 26);
+            this.textBoxTarifH.Size = new System.Drawing.Size(56, 20);
             this.textBoxTarifH.TabIndex = 7;
             // 
             // labelTarifH
             // 
             this.labelTarifH.AutoSize = true;
             this.labelTarifH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTarifH.Location = new System.Drawing.Point(12, 95);
+            this.labelTarifH.Location = new System.Drawing.Point(8, 62);
+            this.labelTarifH.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTarifH.Name = "labelTarifH";
-            this.labelTarifH.Size = new System.Drawing.Size(147, 29);
+            this.labelTarifH.Size = new System.Drawing.Size(96, 20);
             this.labelTarifH.TabIndex = 6;
             this.labelTarifH.Text = "Tarif / Heure";
             // 
@@ -176,42 +189,46 @@
             // 
             this.labelNbHJour.AutoSize = true;
             this.labelNbHJour.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNbHJour.Location = new System.Drawing.Point(12, 124);
+            this.labelNbHJour.Location = new System.Drawing.Point(4, 86);
+            this.labelNbHJour.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNbHJour.Name = "labelNbHJour";
-            this.labelNbHJour.Size = new System.Drawing.Size(185, 29);
+            this.labelNbHJour.Size = new System.Drawing.Size(120, 20);
             this.labelNbHJour.TabIndex = 8;
             this.labelNbHJour.Text = "Nb heures / jour";
             // 
             // textBoxNbHJour
             // 
-            this.textBoxNbHJour.Location = new System.Drawing.Point(200, 128);
+            this.textBoxNbHJour.Location = new System.Drawing.Point(135, 86);
+            this.textBoxNbHJour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNbHJour.Name = "textBoxNbHJour";
-            this.textBoxNbHJour.Size = new System.Drawing.Size(293, 26);
+            this.textBoxNbHJour.Size = new System.Drawing.Size(197, 20);
             this.textBoxNbHJour.TabIndex = 9;
             // 
             // buttonAjouterPersonnel
             // 
-            this.buttonAjouterPersonnel.Location = new System.Drawing.Point(317, 285);
+            this.buttonAjouterPersonnel.Location = new System.Drawing.Point(211, 185);
+            this.buttonAjouterPersonnel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAjouterPersonnel.Name = "buttonAjouterPersonnel";
-            this.buttonAjouterPersonnel.Size = new System.Drawing.Size(179, 36);
+            this.buttonAjouterPersonnel.Size = new System.Drawing.Size(119, 23);
             this.buttonAjouterPersonnel.TabIndex = 10;
             this.buttonAjouterPersonnel.Text = "Ajouter";
             this.buttonAjouterPersonnel.UseVisualStyleBackColor = true;
             // 
             // buttonAnnulerPersonnel
             // 
-            this.buttonAnnulerPersonnel.Location = new System.Drawing.Point(132, 285);
+            this.buttonAnnulerPersonnel.Location = new System.Drawing.Point(88, 185);
+            this.buttonAnnulerPersonnel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAnnulerPersonnel.Name = "buttonAnnulerPersonnel";
-            this.buttonAnnulerPersonnel.Size = new System.Drawing.Size(179, 36);
+            this.buttonAnnulerPersonnel.Size = new System.Drawing.Size(119, 23);
             this.buttonAnnulerPersonnel.TabIndex = 11;
             this.buttonAnnulerPersonnel.Text = "Annuler";
             this.buttonAnnulerPersonnel.UseVisualStyleBackColor = true;
             // 
             // fenAjoutPersonnel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(906, 332);
+            this.ClientSize = new System.Drawing.Size(604, 216);
             this.Controls.Add(this.buttonAnnulerPersonnel);
             this.Controls.Add(this.buttonAjouterPersonnel);
             this.Controls.Add(this.textBoxNbHJour);
@@ -225,6 +242,7 @@
             this.Controls.Add(this.panelPersoHot);
             this.Controls.Add(this.comboBoxTypePersonnel);
             this.Controls.Add(this.labelTypePersonnel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fenAjoutPersonnel";
             this.Text = "Ajouter Personnel";
             this.Load += new System.EventHandler(this.fenHotesse_Load);

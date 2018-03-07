@@ -60,7 +60,7 @@
             // 
             // buttonSupprimerElement
             // 
-            this.buttonSupprimerElement.Location = new System.Drawing.Point(210, 382);
+            this.buttonSupprimerElement.Location = new System.Drawing.Point(210, 452);
             this.buttonSupprimerElement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSupprimerElement.Name = "buttonSupprimerElement";
             this.buttonSupprimerElement.Size = new System.Drawing.Size(199, 25);
@@ -70,7 +70,7 @@
             // 
             // buttonAnnulerEquipe
             // 
-            this.buttonAnnulerEquipe.Location = new System.Drawing.Point(210, 411);
+            this.buttonAnnulerEquipe.Location = new System.Drawing.Point(210, 481);
             this.buttonAnnulerEquipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAnnulerEquipe.Name = "buttonAnnulerEquipe";
             this.buttonAnnulerEquipe.Size = new System.Drawing.Size(199, 25);
@@ -81,7 +81,7 @@
             // 
             // buttonValiderEquipe
             // 
-            this.buttonValiderEquipe.Location = new System.Drawing.Point(8, 411);
+            this.buttonValiderEquipe.Location = new System.Drawing.Point(8, 481);
             this.buttonValiderEquipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonValiderEquipe.Name = "buttonValiderEquipe";
             this.buttonValiderEquipe.Size = new System.Drawing.Size(198, 25);
@@ -91,7 +91,7 @@
             // 
             // buttonModifierElement
             // 
-            this.buttonModifierElement.Location = new System.Drawing.Point(8, 382);
+            this.buttonModifierElement.Location = new System.Drawing.Point(8, 452);
             this.buttonModifierElement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonModifierElement.Name = "buttonModifierElement";
             this.buttonModifierElement.Size = new System.Drawing.Size(198, 25);
@@ -196,7 +196,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(409, 242);
+            this.label5.Location = new System.Drawing.Point(409, 245);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 24);
@@ -206,18 +206,18 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(413, 265);
+            this.dataGridView1.Location = new System.Drawing.Point(413, 271);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(448, 171);
+            this.dataGridView1.Size = new System.Drawing.Size(448, 235);
             this.dataGridView1.TabIndex = 37;
             // 
             // fenNouvelleEquipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(887, 447);
+            this.ClientSize = new System.Drawing.Size(887, 517);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listBox1);

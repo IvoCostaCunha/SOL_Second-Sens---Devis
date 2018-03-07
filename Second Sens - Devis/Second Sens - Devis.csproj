@@ -88,12 +88,6 @@
     <Compile Include="fenChargement.Designer.cs">
       <DependentUpon>fenChargement.cs</DependentUpon>
     </Compile>
-    <Compile Include="fenHonoraire.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fenHonoraire.Designer.cs">
-      <DependentUpon>fenHonoraire.cs</DependentUpon>
-    </Compile>
     <Compile Include="fenNouveauPersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,9 +169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fenChargement.resx">
       <DependentUpon>fenChargement.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fenHonoraire.resx">
-      <DependentUpon>fenHonoraire.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fenNouveauPersonnel.resx">
       <DependentUpon>fenNouveauPersonnel.cs</DependentUpon>

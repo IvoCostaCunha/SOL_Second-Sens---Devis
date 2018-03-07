@@ -58,9 +58,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(8, 6);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(315, 37);
+            this.label1.Size = new System.Drawing.Size(216, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Informations élément";
             // 
@@ -68,9 +69,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 178);
+            this.label2.Location = new System.Drawing.Point(361, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 37);
+            this.label2.Size = new System.Drawing.Size(65, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tarifs";
             // 
@@ -78,19 +80,21 @@
             // 
             this.tabControlTarifsElement.Controls.Add(this.tabTarifHeure);
             this.tabControlTarifsElement.Controls.Add(this.tabTarifJour);
-            this.tabControlTarifsElement.Location = new System.Drawing.Point(12, 233);
+            this.tabControlTarifsElement.Location = new System.Drawing.Point(366, 47);
+            this.tabControlTarifsElement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControlTarifsElement.Name = "tabControlTarifsElement";
             this.tabControlTarifsElement.SelectedIndex = 0;
-            this.tabControlTarifsElement.Size = new System.Drawing.Size(461, 175);
+            this.tabControlTarifsElement.Size = new System.Drawing.Size(477, 171);
             this.tabControlTarifsElement.TabIndex = 2;
             // 
             // tabTarifHeure
             // 
             this.tabTarifHeure.Controls.Add(this.dataGridViewTarifHeure);
-            this.tabTarifHeure.Location = new System.Drawing.Point(4, 29);
+            this.tabTarifHeure.Location = new System.Drawing.Point(4, 22);
+            this.tabTarifHeure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabTarifHeure.Name = "tabTarifHeure";
-            this.tabTarifHeure.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTarifHeure.Size = new System.Drawing.Size(453, 142);
+            this.tabTarifHeure.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabTarifHeure.Size = new System.Drawing.Size(469, 145);
             this.tabTarifHeure.TabIndex = 0;
             this.tabTarifHeure.Text = "Tarif / Heure";
             this.tabTarifHeure.UseVisualStyleBackColor = true;
@@ -102,10 +106,11 @@
             this.colTarifTotalHeure,
             this.colTarifRevientHeure,
             this.colTarifMargeHeure});
-            this.dataGridViewTarifHeure.Location = new System.Drawing.Point(6, 6);
+            this.dataGridViewTarifHeure.Location = new System.Drawing.Point(4, 4);
+            this.dataGridViewTarifHeure.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewTarifHeure.Name = "dataGridViewTarifHeure";
             this.dataGridViewTarifHeure.RowTemplate.Height = 28;
-            this.dataGridViewTarifHeure.Size = new System.Drawing.Size(344, 53);
+            this.dataGridViewTarifHeure.Size = new System.Drawing.Size(461, 122);
             this.dataGridViewTarifHeure.TabIndex = 7;
             // 
             // colTarifTotalHeure
@@ -127,10 +132,11 @@
             // 
             this.tabTarifJour.Controls.Add(this.dataGridViewTarifJour);
             this.tabTarifJour.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabTarifJour.Location = new System.Drawing.Point(4, 29);
+            this.tabTarifJour.Location = new System.Drawing.Point(4, 22);
+            this.tabTarifJour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabTarifJour.Name = "tabTarifJour";
-            this.tabTarifJour.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTarifJour.Size = new System.Drawing.Size(453, 142);
+            this.tabTarifJour.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabTarifJour.Size = new System.Drawing.Size(469, 145);
             this.tabTarifJour.TabIndex = 1;
             this.tabTarifJour.Text = "Tarif / Jour";
             this.tabTarifJour.UseVisualStyleBackColor = true;
@@ -143,9 +149,10 @@
             this.colTarifRevientJour,
             this.colTarifMargeJour});
             this.dataGridViewTarifJour.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewTarifJour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewTarifJour.Name = "dataGridViewTarifJour";
             this.dataGridViewTarifJour.RowTemplate.Height = 28;
-            this.dataGridViewTarifJour.Size = new System.Drawing.Size(447, 104);
+            this.dataGridViewTarifJour.Size = new System.Drawing.Size(473, 141);
             this.dataGridViewTarifJour.TabIndex = 8;
             // 
             // colTarifTotalJour
@@ -167,9 +174,10 @@
             // 
             this.labelQteElement.AutoSize = true;
             this.labelQteElement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQteElement.Location = new System.Drawing.Point(14, 135);
+            this.labelQteElement.Location = new System.Drawing.Point(9, 88);
+            this.labelQteElement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelQteElement.Name = "labelQteElement";
-            this.labelQteElement.Size = new System.Drawing.Size(145, 29);
+            this.labelQteElement.Size = new System.Drawing.Size(96, 20);
             this.labelQteElement.TabIndex = 3;
             this.labelQteElement.Text = "Qte élement";
             // 
@@ -177,49 +185,54 @@
             // 
             this.labelNomElement.AutoSize = true;
             this.labelNomElement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomElement.Location = new System.Drawing.Point(14, 106);
+            this.labelNomElement.Location = new System.Drawing.Point(9, 69);
+            this.labelNomElement.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNomElement.Name = "labelNomElement";
-            this.labelNomElement.Size = new System.Drawing.Size(65, 29);
+            this.labelNomElement.Size = new System.Drawing.Size(42, 20);
             this.labelNomElement.TabIndex = 4;
             this.labelNomElement.Text = "Nom";
             // 
             // textBoxNomElement
             // 
-            this.textBoxNomElement.Location = new System.Drawing.Point(195, 106);
+            this.textBoxNomElement.Location = new System.Drawing.Point(130, 69);
+            this.textBoxNomElement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNomElement.Name = "textBoxNomElement";
-            this.textBoxNomElement.Size = new System.Drawing.Size(306, 26);
+            this.textBoxNomElement.Size = new System.Drawing.Size(205, 20);
             this.textBoxNomElement.TabIndex = 5;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 138);
+            this.textBox1.Location = new System.Drawing.Point(130, 90);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(306, 26);
+            this.textBox1.Size = new System.Drawing.Size(205, 20);
             this.textBox1.TabIndex = 6;
             // 
             // comboBoxTypeElem
             // 
             this.comboBoxTypeElem.FormattingEnabled = true;
-            this.comboBoxTypeElem.Location = new System.Drawing.Point(195, 72);
+            this.comboBoxTypeElem.Location = new System.Drawing.Point(130, 47);
+            this.comboBoxTypeElem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxTypeElem.Name = "comboBoxTypeElem";
-            this.comboBoxTypeElem.Size = new System.Drawing.Size(306, 28);
+            this.comboBoxTypeElem.Size = new System.Drawing.Size(205, 21);
             this.comboBoxTypeElem.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 71);
+            this.label3.Location = new System.Drawing.Point(11, 46);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 29);
+            this.label3.Size = new System.Drawing.Size(104, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Type élément";
             // 
             // fenNouvelElement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 627);
+            this.ClientSize = new System.Drawing.Size(854, 229);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxTypeElem);
             this.Controls.Add(this.textBox1);
@@ -229,6 +242,7 @@
             this.Controls.Add(this.tabControlTarifsElement);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "fenNouvelElement";
             this.Text = "Nouvel Elément";
             this.Load += new System.EventHandler(this.fenNouvelElement_Load);

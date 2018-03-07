@@ -90,6 +90,5 @@ namespace Second_Sens___Devis
         {
             Application.Exit();
         }
-
     }
 }
