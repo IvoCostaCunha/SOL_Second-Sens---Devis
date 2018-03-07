@@ -23,6 +23,13 @@ namespace Second_Sens___Devis
             laCommande.Connection = laConnexion;
         }
 
+        private void checkConnection()
+        {
+            if(laCommande.Connection.State == System.Data.ConnectionState.Closed)
+            {
+                lienBdD.startConnection();
+            }
+        }
         /// <summary>
         /// Traite une requête MySQL de type query qui returne un liste de objets String
         /// </summary>
@@ -30,17 +37,19 @@ namespace Second_Sens___Devis
         /// <returns>La liste correspodant résultat de la requête MySQL</returns>
         public List<String> queryString(String uneRequete)
         {
+            checkConnection();
             laCommande.CommandText = uneRequete;
             List<String> listResultats = new List<String>();
             MySqlDataReader lesResultats = laCommande.ExecuteReader();
             while (lesResultats.Read())
             {
                 int nbRows = lesResultats.FieldCount;
-                for (int i = 0; i <= nbRows; i++)
+                for (int i = 0; i <= nbRows-1; i++)
                 {
                     listResultats.Add(lesResultats.GetValue(i).ToString());
                 }
             }
+            lienBdD.stopConnection();
             return listResultats;
         }
 
@@ -51,13 +60,14 @@ namespace Second_Sens___Devis
         /// <returns>La liste correspodant résultat de la requête MySQL</returns>
         public List<int> queryInt(String uneRequete)
         {
+            checkConnection();
             laCommande.CommandText = uneRequete;
             List<int> listResultats = new List<int>();
             MySqlDataReader lesResultats = laCommande.ExecuteReader();
             while (lesResultats.Read())
             {
                 int nbRows = lesResultats.FieldCount;
-                for (int i = 0; i <= nbRows; i++)
+                for (int i = 0; i <= nbRows-1; i++)
                 {
                     listResultats.Add(Convert.ToInt32(lesResultats.GetValue(i)));
                 }
@@ -72,13 +82,14 @@ namespace Second_Sens___Devis
         /// <returns>La liste correspodant résultat de la requête MySQL</returns>
         public List<double> queryDouble(String uneRequete)
         {
+            checkConnection();
             laCommande.CommandText = uneRequete;
             List<double> listResultats = new List<double>();
             MySqlDataReader lesResultats = laCommande.ExecuteReader();
             while (lesResultats.Read())
             {
                 int nbRows = lesResultats.FieldCount;
-                for(int i=0; i<=nbRows; i++)
+                for(int i=0; i<=nbRows-1; i++)
                 {
                     try
                     {
@@ -105,6 +116,8 @@ namespace Second_Sens___Devis
         /// <returns>Retourne true si l'intéraction avec la base a lieu avec succès sinon retourne false</returns>
         public bool modifBdD(String uneRequete)
         {
+            checkConnection();
+
             bool confirmation = false;
             int rowsAffected;
             laCommande.CommandText = uneRequete;

@@ -14,6 +14,13 @@ namespace Second_Sens___Devis
     {
         fenNouvelleEquipe laNouvelleEquipe;
 
+        private List<String> getNomsElem()
+        {
+            String requete = "SELECT nomElement from elements";
+            requetesMySQL laRequete = new requetesMySQL();
+            return laRequete.queryString(requete);
+        }
+
         public fenNouvelElement(fenNouvelleEquipe uneNouvelleEquipe)
         {
             laNouvelleEquipe = uneNouvelleEquipe;
@@ -22,7 +29,10 @@ namespace Second_Sens___Devis
 
         private void fenNouvelElement_Load(object sender, EventArgs e)
         {
-
+            foreach(String unElement in getNomsElem())
+            {
+                comboBoxTypeElem.Items.Add(unElement);
+            }
         }
     }
 }

@@ -28,54 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelAideAjouterElement = new System.Windows.Forms.Label();
-            this.labelAideAjouterHonoraire = new System.Windows.Forms.Label();
             this.labelElementsAjoutes = new System.Windows.Forms.Label();
             this.dataGridViewElementsAjoutes = new System.Windows.Forms.DataGridView();
             this.dataGridViewHonorairesAjoutes = new System.Windows.Forms.DataGridView();
             this.labelHonorairesAjoutes = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.buttonAjouterElementPredefini = new System.Windows.Forms.Button();
-            this.buttonAjouterHonorairePredifini = new System.Windows.Forms.Button();
-            this.buttonAjouterElementStreetMarketing = new System.Windows.Forms.Button();
             this.buttonSupprimerElement = new System.Windows.Forms.Button();
             this.buttonAnnulerEquipe = new System.Windows.Forms.Button();
             this.buttonValiderEquipe = new System.Windows.Forms.Button();
             this.buttonModifierElement = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.buttonAjouterElementPersonnalise = new System.Windows.Forms.Button();
-            this.labelAideAjoutPersonnel = new System.Windows.Forms.Label();
-            this.buttonAjouterPersonnel = new System.Windows.Forms.Button();
-            this.labelAjouterVehicule = new System.Windows.Forms.Label();
-            this.buttonAjouterVehicule = new System.Windows.Forms.Button();
             this.labelVehiculesAjoutés = new System.Windows.Forms.Label();
             this.dataGridViewVehiculesAjoutes = new System.Windows.Forms.DataGridView();
             this.colNomVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTarifVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementsAjoutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonorairesAjoutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculesAjoutes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelAideAjouterElement
-            // 
-            this.labelAideAjouterElement.AutoSize = true;
-            this.labelAideAjouterElement.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAideAjouterElement.Location = new System.Drawing.Point(12, 9);
-            this.labelAideAjouterElement.Name = "labelAideAjouterElement";
-            this.labelAideAjouterElement.Size = new System.Drawing.Size(398, 37);
-            this.labelAideAjouterElement.TabIndex = 0;
-            this.labelAideAjouterElement.Text = "Ajouter un élément modèle";
-            // 
-            // labelAideAjouterHonoraire
-            // 
-            this.labelAideAjouterHonoraire.AutoSize = true;
-            this.labelAideAjouterHonoraire.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAideAjouterHonoraire.Location = new System.Drawing.Point(12, 91);
-            this.labelAideAjouterHonoraire.Name = "labelAideAjouterHonoraire";
-            this.labelAideAjouterHonoraire.Size = new System.Drawing.Size(422, 37);
-            this.labelAideAjouterHonoraire.TabIndex = 1;
-            this.labelAideAjouterHonoraire.Text = "Ajouter un honoraire modèle";
             // 
             // labelElementsAjoutes
             // 
@@ -115,46 +90,6 @@
             this.labelHonorairesAjoutes.TabIndex = 5;
             this.labelHonorairesAjoutes.Text = "Honoraires ajoutés";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 419);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(475, 37);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Ajouter un élément personnalisé";
-            // 
-            // buttonAjouterElementPredefini
-            // 
-            this.buttonAjouterElementPredefini.Location = new System.Drawing.Point(19, 49);
-            this.buttonAjouterElementPredefini.Name = "buttonAjouterElementPredefini";
-            this.buttonAjouterElementPredefini.Size = new System.Drawing.Size(595, 39);
-            this.buttonAjouterElementPredefini.TabIndex = 11;
-            this.buttonAjouterElementPredefini.Text = "Ajouter élement";
-            this.buttonAjouterElementPredefini.UseVisualStyleBackColor = true;
-            this.buttonAjouterElementPredefini.Click += new System.EventHandler(this.buttonAjouterElementPredefini_Click);
-            // 
-            // buttonAjouterHonorairePredifini
-            // 
-            this.buttonAjouterHonorairePredifini.Location = new System.Drawing.Point(19, 131);
-            this.buttonAjouterHonorairePredifini.Name = "buttonAjouterHonorairePredifini";
-            this.buttonAjouterHonorairePredifini.Size = new System.Drawing.Size(595, 39);
-            this.buttonAjouterHonorairePredifini.TabIndex = 12;
-            this.buttonAjouterHonorairePredifini.Text = "Ajouter honoraire";
-            this.buttonAjouterHonorairePredifini.UseVisualStyleBackColor = true;
-            this.buttonAjouterHonorairePredifini.Click += new System.EventHandler(this.buttonAjouterHonorairePredifini_Click);
-            // 
-            // buttonAjouterElementStreetMarketing
-            // 
-            this.buttonAjouterElementStreetMarketing.Location = new System.Drawing.Point(19, 213);
-            this.buttonAjouterElementStreetMarketing.Name = "buttonAjouterElementStreetMarketing";
-            this.buttonAjouterElementStreetMarketing.Size = new System.Drawing.Size(595, 39);
-            this.buttonAjouterElementStreetMarketing.TabIndex = 13;
-            this.buttonAjouterElementStreetMarketing.Text = "Ajouter Elem. Street Marketing";
-            this.buttonAjouterElementStreetMarketing.UseVisualStyleBackColor = true;
-            this.buttonAjouterElementStreetMarketing.Click += new System.EventHandler(this.buttonAjouterElementStreetMarketing_Click);
-            // 
             // buttonSupprimerElement
             // 
             this.buttonSupprimerElement.Location = new System.Drawing.Point(315, 531);
@@ -192,65 +127,6 @@
             this.buttonModifierElement.Text = "Modifier élément";
             this.buttonModifierElement.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 173);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(527, 37);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Ajouter un élément Street Marketing";
-            // 
-            // buttonAjouterElementPersonnalise
-            // 
-            this.buttonAjouterElementPersonnalise.Location = new System.Drawing.Point(19, 459);
-            this.buttonAjouterElementPersonnalise.Name = "buttonAjouterElementPersonnalise";
-            this.buttonAjouterElementPersonnalise.Size = new System.Drawing.Size(595, 39);
-            this.buttonAjouterElementPersonnalise.TabIndex = 19;
-            this.buttonAjouterElementPersonnalise.Text = "Ajouter Elem. Personnalisé";
-            this.buttonAjouterElementPersonnalise.UseVisualStyleBackColor = true;
-            // 
-            // labelAideAjoutPersonnel
-            // 
-            this.labelAideAjoutPersonnel.AutoSize = true;
-            this.labelAideAjoutPersonnel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAideAjoutPersonnel.Location = new System.Drawing.Point(12, 255);
-            this.labelAideAjoutPersonnel.Name = "labelAideAjoutPersonnel";
-            this.labelAideAjoutPersonnel.Size = new System.Drawing.Size(313, 37);
-            this.labelAideAjoutPersonnel.TabIndex = 20;
-            this.labelAideAjoutPersonnel.Text = "Ajouter du personnel";
-            // 
-            // buttonAjouterPersonnel
-            // 
-            this.buttonAjouterPersonnel.Location = new System.Drawing.Point(19, 295);
-            this.buttonAjouterPersonnel.Name = "buttonAjouterPersonnel";
-            this.buttonAjouterPersonnel.Size = new System.Drawing.Size(595, 39);
-            this.buttonAjouterPersonnel.TabIndex = 21;
-            this.buttonAjouterPersonnel.Text = "Ajouter personnel";
-            this.buttonAjouterPersonnel.UseVisualStyleBackColor = true;
-            this.buttonAjouterPersonnel.Click += new System.EventHandler(this.buttonAjouterPersonnel_Click);
-            // 
-            // labelAjouterVehicule
-            // 
-            this.labelAjouterVehicule.AutoSize = true;
-            this.labelAjouterVehicule.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAjouterVehicule.Location = new System.Drawing.Point(12, 337);
-            this.labelAjouterVehicule.Name = "labelAjouterVehicule";
-            this.labelAjouterVehicule.Size = new System.Drawing.Size(288, 37);
-            this.labelAjouterVehicule.TabIndex = 22;
-            this.labelAjouterVehicule.Text = "Ajouter un vehicule";
-            // 
-            // buttonAjouterVehicule
-            // 
-            this.buttonAjouterVehicule.Location = new System.Drawing.Point(19, 377);
-            this.buttonAjouterVehicule.Name = "buttonAjouterVehicule";
-            this.buttonAjouterVehicule.Size = new System.Drawing.Size(595, 39);
-            this.buttonAjouterVehicule.TabIndex = 23;
-            this.buttonAjouterVehicule.Text = "Ajouter un vehicule";
-            this.buttonAjouterVehicule.UseVisualStyleBackColor = true;
-            this.buttonAjouterVehicule.Click += new System.EventHandler(this.buttonAjouterVehicule_Click);
-            // 
             // labelVehiculesAjoutés
             // 
             this.labelVehiculesAjoutés.AutoSize = true;
@@ -283,33 +159,94 @@
             this.colTarifVehicule.HeaderText = "Tarif";
             this.colTarifVehicule.Name = "colTarifVehicule";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(78, 124);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(416, 42);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Composant d\'equipe standart";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 32);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Ajouts possibles";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(78, 172);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(416, 42);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Composant d\'équipe personnalisable";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(78, 381);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(416, 42);
+            this.button3.TabIndex = 30;
+            this.button3.Text = "Ajouter vehicule société";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 287);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 32);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Vehicules";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(78, 333);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(416, 42);
+            this.button4.TabIndex = 32;
+            this.button4.Text = "Ajouter vehicule loué";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 32);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Composants";
+            // 
             // fenNouvelleEquipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1531, 625);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridViewVehiculesAjoutes);
             this.Controls.Add(this.labelVehiculesAjoutés);
-            this.Controls.Add(this.buttonAjouterVehicule);
-            this.Controls.Add(this.labelAjouterVehicule);
-            this.Controls.Add(this.buttonAjouterPersonnel);
-            this.Controls.Add(this.labelAideAjoutPersonnel);
-            this.Controls.Add(this.buttonAjouterElementPersonnalise);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.buttonModifierElement);
             this.Controls.Add(this.buttonValiderEquipe);
             this.Controls.Add(this.buttonAnnulerEquipe);
             this.Controls.Add(this.buttonSupprimerElement);
-            this.Controls.Add(this.buttonAjouterElementStreetMarketing);
-            this.Controls.Add(this.buttonAjouterHonorairePredifini);
-            this.Controls.Add(this.buttonAjouterElementPredefini);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.labelHonorairesAjoutes);
             this.Controls.Add(this.dataGridViewHonorairesAjoutes);
             this.Controls.Add(this.dataGridViewElementsAjoutes);
             this.Controls.Add(this.labelElementsAjoutes);
-            this.Controls.Add(this.labelAideAjouterHonoraire);
-            this.Controls.Add(this.labelAideAjouterElement);
             this.Name = "fenNouvelleEquipe";
             this.Text = "Nouvelle équipe";
             this.Load += new System.EventHandler(this.fenNouvelleEquipe_Load);
@@ -322,30 +259,24 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelAideAjouterElement;
-        private System.Windows.Forms.Label labelAideAjouterHonoraire;
         private System.Windows.Forms.Label labelElementsAjoutes;
         private System.Windows.Forms.Label labelHonorairesAjoutes;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonAjouterElementPredefini;
-        private System.Windows.Forms.Button buttonAjouterHonorairePredifini;
-        private System.Windows.Forms.Button buttonAjouterElementStreetMarketing;
         private System.Windows.Forms.Button buttonSupprimerElement;
         private System.Windows.Forms.Button buttonAnnulerEquipe;
         private System.Windows.Forms.Button buttonValiderEquipe;
         private System.Windows.Forms.Button buttonModifierElement;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button buttonAjouterElementPersonnalise;
-        private System.Windows.Forms.Label labelAideAjoutPersonnel;
-        private System.Windows.Forms.Button buttonAjouterPersonnel;
-        private System.Windows.Forms.Label labelAjouterVehicule;
-        private System.Windows.Forms.Button buttonAjouterVehicule;
         private System.Windows.Forms.Label labelVehiculesAjoutés;
         public System.Windows.Forms.DataGridView dataGridViewVehiculesAjoutes;
         public System.Windows.Forms.DataGridView dataGridViewElementsAjoutes;
         protected System.Windows.Forms.DataGridView dataGridViewHonorairesAjoutes;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomVehicule;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTarifVehicule;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
     }
 }

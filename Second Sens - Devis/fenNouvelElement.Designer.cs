@@ -45,6 +45,8 @@
             this.labelNomElement = new System.Windows.Forms.Label();
             this.textBoxNomElement = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxTypeElem = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControlTarifsElement.SuspendLayout();
             this.tabTarifHeure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifHeure)).BeginInit();
@@ -165,7 +167,7 @@
             // 
             this.labelQteElement.AutoSize = true;
             this.labelQteElement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQteElement.Location = new System.Drawing.Point(17, 107);
+            this.labelQteElement.Location = new System.Drawing.Point(14, 135);
             this.labelQteElement.Name = "labelQteElement";
             this.labelQteElement.Size = new System.Drawing.Size(145, 29);
             this.labelQteElement.TabIndex = 3;
@@ -175,7 +177,7 @@
             // 
             this.labelNomElement.AutoSize = true;
             this.labelNomElement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomElement.Location = new System.Drawing.Point(17, 75);
+            this.labelNomElement.Location = new System.Drawing.Point(14, 106);
             this.labelNomElement.Name = "labelNomElement";
             this.labelNomElement.Size = new System.Drawing.Size(65, 29);
             this.labelNomElement.TabIndex = 4;
@@ -183,23 +185,43 @@
             // 
             // textBoxNomElement
             // 
-            this.textBoxNomElement.Location = new System.Drawing.Point(195, 78);
+            this.textBoxNomElement.Location = new System.Drawing.Point(195, 106);
             this.textBoxNomElement.Name = "textBoxNomElement";
             this.textBoxNomElement.Size = new System.Drawing.Size(306, 26);
             this.textBoxNomElement.TabIndex = 5;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 110);
+            this.textBox1.Location = new System.Drawing.Point(195, 138);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(306, 26);
             this.textBox1.TabIndex = 6;
+            // 
+            // comboBoxTypeElem
+            // 
+            this.comboBoxTypeElem.FormattingEnabled = true;
+            this.comboBoxTypeElem.Location = new System.Drawing.Point(195, 72);
+            this.comboBoxTypeElem.Name = "comboBoxTypeElem";
+            this.comboBoxTypeElem.Size = new System.Drawing.Size(306, 28);
+            this.comboBoxTypeElem.TabIndex = 7;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(17, 71);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(161, 29);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Type élément";
             // 
             // fenNouvelElement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 627);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBoxTypeElem);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.textBoxNomElement);
             this.Controls.Add(this.labelNomElement);
@@ -239,5 +261,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTarifTotalJour;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTarifRevientJour;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTarifMargeJour;
+        private System.Windows.Forms.ComboBox comboBoxTypeElem;
+        private System.Windows.Forms.Label label3;
     }
 }

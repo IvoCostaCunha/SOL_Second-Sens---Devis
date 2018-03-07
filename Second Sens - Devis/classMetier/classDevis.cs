@@ -11,7 +11,6 @@ namespace Second_Sens___Devis.classMetier
         private String leNomDevis;
         private DateTime laDateCreationDevis;
         private List<classEquipe> lesEquipes = new List<classEquipe>();
-        private List<classHonoraire> lesHonoraires  = new List<classHonoraire>();
         
         /// <summary>
         /// Constructeur de la classe classDevis

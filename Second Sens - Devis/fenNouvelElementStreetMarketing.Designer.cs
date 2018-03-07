@@ -64,9 +64,9 @@
             this.labelAideInfosElementStreetMarketing.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAideInfosElementStreetMarketing.Location = new System.Drawing.Point(12, 9);
             this.labelAideInfosElementStreetMarketing.Name = "labelAideInfosElementStreetMarketing";
-            this.labelAideInfosElementStreetMarketing.Size = new System.Drawing.Size(611, 37);
+            this.labelAideInfosElementStreetMarketing.Size = new System.Drawing.Size(342, 37);
             this.labelAideInfosElementStreetMarketing.TabIndex = 0;
-            this.labelAideInfosElementStreetMarketing.Text = "Informations de l\'élément street marketing";
+            this.labelAideInfosElementStreetMarketing.Text = "Informations générales";
             // 
             // labelNomElementStreetMarketing
             // 

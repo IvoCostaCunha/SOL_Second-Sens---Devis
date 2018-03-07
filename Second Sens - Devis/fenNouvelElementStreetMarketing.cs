@@ -14,6 +14,17 @@ namespace Second_Sens___Devis
     {
         fenNouvelleEquipe laNouvelleEquipe;
 
+        /// <summary>
+        /// Fonction qui retourne la liste des éléménts personnalisables de la BdD
+        /// </summary>
+        /// <returns></returns>
+        private List<String> getNomsElementsPersonnalisables()
+        {
+            String requete = "SELECT nomElementPerso FROM element_personnalisable";
+            requetesMySQL laRequete = new requetesMySQL();
+            return laRequete.queryString(requete);
+        }
+
         public fenNouvelElementStreetMarketing(fenNouvelleEquipe uneNouvelleEquipe)
         {
             laNouvelleEquipe = uneNouvelleEquipe;
@@ -22,7 +33,10 @@ namespace Second_Sens___Devis
 
         private void fenNouvelElementStreetMarketing_Load(object sender, EventArgs e)
         {
-
+            foreach(String unElement in getNomsElementsPersonnalisables())
+            {
+                comboBoxTypeElementStreetMarketing.Items.Add(unElement);
+            }
         }
 
         private void buttonAjouterPersonnalisation_Click(object sender, EventArgs e)

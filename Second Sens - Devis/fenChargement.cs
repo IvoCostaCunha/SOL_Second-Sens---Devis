@@ -31,7 +31,7 @@ namespace Second_Sens___Devis
                 fenMenuPrincipal leMenuPrincipal = new fenMenuPrincipal(this);
                 
                 this.progressBarChargement.Value = 10000;
-                //leMenuPrincipal.ShowDialog();
+                leMenuPrincipal.ShowDialog();
             }
             // En d'erreur lors de l'établissment de l'accès a la BdD
             catch (Exception erreur)

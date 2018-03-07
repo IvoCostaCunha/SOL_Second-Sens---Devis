@@ -57,5 +57,7 @@ namespace Second_Sens___Devis.classMetier
         {
             leTarif = unTarif;
         }
+
+        
     }
 }
