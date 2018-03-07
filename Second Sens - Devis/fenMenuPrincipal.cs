@@ -21,7 +21,6 @@ namespace Second_Sens___Devis
 
         private void fenMenuPrincipal_Load(object sender, EventArgs e)
         {
-            this.textBoxDateDevis.Enabled = false;
             this.buttonAjouterEquipePredefinie.Enabled = false;
             /* champ ajouté exclusivement pour tester */
             this.comboBoxEquipesPrédefinies.Items.Add("test");
@@ -91,5 +90,6 @@ namespace Second_Sens___Devis
         {
             Application.Exit();
         }
+
     }
 }

@@ -252,7 +252,6 @@
         private System.Windows.Forms.TextBox textBoxNbHJour;
         private System.Windows.Forms.Button buttonAjouterPersonnel;
         private System.Windows.Forms.Button buttonAnnulerPersonnel;
-        private System.Windows.Forms.CheckBox checkBoxPersoHot;
         private System.Windows.Forms.Button buttonSupprimerPerso;
         private System.Windows.Forms.Button buttonAjouterPerso;
         private System.Windows.Forms.DataGridView dataGridViewListePerso;

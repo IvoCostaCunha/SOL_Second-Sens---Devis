@@ -34,8 +34,6 @@ namespace Second_Sens___Devis
         private void buttonConfimerInfosDevis_Click(object sender, EventArgs e)
         {
             leMenuPrincipal.panelNouveauDevis.Show();
-            leMenuPrincipal.textBoxNomDevis.Text = "Devis " + this.textBoxNomOperation.Text;
-            leMenuPrincipal.textBoxDateDevis.Text = this.textBoxDateOperation.Text;
             this.Hide();
         }
     }
