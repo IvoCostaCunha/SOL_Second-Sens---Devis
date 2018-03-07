@@ -45,8 +45,7 @@ namespace Second_Sens___Devis
 
         private void buttonAjouterHonorairePredifini_Click(object sender, EventArgs e)
         {
-            fenHonoraire leNouveauHonoraire = new fenHonoraire(this);
-            leNouveauHonoraire.Show();
+
         }
 
         private void buttonAjouterPersonnel_Click(object sender, EventArgs e)
