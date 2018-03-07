@@ -58,15 +58,11 @@
   <ItemGroup>
     <Compile Include="classMetier\classDevis.cs" />
     <Compile Include="classMetier\classElement.cs" />
+    <Compile Include="classMetier\classElementPersonnalisable.cs" />
     <Compile Include="classMetier\classEquipe.cs" />
-    <Compile Include="classMetier\classHonoraire.cs" />
-    <Compile Include="classMetier\classHotesse.cs" />
     <Compile Include="classMetier\classIndemKm.cs" />
     <Compile Include="classMetier\classPersonnalisation.cs" />
-    <Compile Include="classMetier\classPersonnel.cs" />
-    <Compile Include="classMetier\classStreetMarketing.cs" />
     <Compile Include="classMetier\classTarif.cs" />
-    <Compile Include="classMetier\classVehicule.cs" />
     <Compile Include="classMetier\classVehiculeSociete.cs" />
     <Compile Include="fenAide.cs">
       <SubType>Form</SubType>

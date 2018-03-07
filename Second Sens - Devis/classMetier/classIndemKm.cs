@@ -40,14 +40,6 @@ namespace Second_Sens___Devis.classMetier
         }
 
         /// <summary>
-        /// Constructeur pour instancier une classIndemKm si les proriétes ne sont pas connues
-        /// </summary>
-        public classIndemKm()
-        {
-            /* vide ... */
-        }
-
-        /// <summary>
         /// Methode qui set le nb de CV du vehicule concerné
         /// </summary>
         /// <param name="unNbCV"></param>
