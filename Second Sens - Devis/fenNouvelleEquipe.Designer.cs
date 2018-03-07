@@ -29,17 +29,10 @@
         private void InitializeComponent()
         {
             this.labelElementsAjoutes = new System.Windows.Forms.Label();
-            this.dataGridViewElementsAjoutes = new System.Windows.Forms.DataGridView();
-            this.dataGridViewHonorairesAjoutes = new System.Windows.Forms.DataGridView();
-            this.labelHonorairesAjoutes = new System.Windows.Forms.Label();
             this.buttonSupprimerElement = new System.Windows.Forms.Button();
             this.buttonAnnulerEquipe = new System.Windows.Forms.Button();
             this.buttonValiderEquipe = new System.Windows.Forms.Button();
             this.buttonModifierElement = new System.Windows.Forms.Button();
-            this.labelVehiculesAjoutés = new System.Windows.Forms.Label();
-            this.dataGridViewVehiculesAjoutes = new System.Windows.Forms.DataGridView();
-            this.colNomVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifVehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -47,9 +40,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementsAjoutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonorairesAjoutes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculesAjoutes)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelElementsAjoutes
@@ -58,37 +53,9 @@
             this.labelElementsAjoutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelElementsAjoutes.Location = new System.Drawing.Point(614, 9);
             this.labelElementsAjoutes.Name = "labelElementsAjoutes";
-            this.labelElementsAjoutes.Size = new System.Drawing.Size(234, 32);
+            this.labelElementsAjoutes.Size = new System.Drawing.Size(218, 32);
             this.labelElementsAjoutes.TabIndex = 2;
-            this.labelElementsAjoutes.Text = "Eléments ajoutés";
-            // 
-            // dataGridViewElementsAjoutes
-            // 
-            this.dataGridViewElementsAjoutes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewElementsAjoutes.Location = new System.Drawing.Point(620, 49);
-            this.dataGridViewElementsAjoutes.Name = "dataGridViewElementsAjoutes";
-            this.dataGridViewElementsAjoutes.RowTemplate.Height = 28;
-            this.dataGridViewElementsAjoutes.Size = new System.Drawing.Size(428, 564);
-            this.dataGridViewElementsAjoutes.TabIndex = 3;
-            // 
-            // dataGridViewHonorairesAjoutes
-            // 
-            this.dataGridViewHonorairesAjoutes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHonorairesAjoutes.Location = new System.Drawing.Point(1054, 416);
-            this.dataGridViewHonorairesAjoutes.Name = "dataGridViewHonorairesAjoutes";
-            this.dataGridViewHonorairesAjoutes.RowTemplate.Height = 28;
-            this.dataGridViewHonorairesAjoutes.Size = new System.Drawing.Size(465, 197);
-            this.dataGridViewHonorairesAjoutes.TabIndex = 4;
-            // 
-            // labelHonorairesAjoutes
-            // 
-            this.labelHonorairesAjoutes.AutoSize = true;
-            this.labelHonorairesAjoutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHonorairesAjoutes.Location = new System.Drawing.Point(1054, 381);
-            this.labelHonorairesAjoutes.Name = "labelHonorairesAjoutes";
-            this.labelHonorairesAjoutes.Size = new System.Drawing.Size(254, 32);
-            this.labelHonorairesAjoutes.TabIndex = 5;
-            this.labelHonorairesAjoutes.Text = "Honoraires ajoutés";
+            this.labelElementsAjoutes.Text = "Ajouts effectués";
             // 
             // buttonSupprimerElement
             // 
@@ -127,41 +94,9 @@
             this.buttonModifierElement.Text = "Modifier élément";
             this.buttonModifierElement.UseVisualStyleBackColor = true;
             // 
-            // labelVehiculesAjoutés
-            // 
-            this.labelVehiculesAjoutés.AutoSize = true;
-            this.labelVehiculesAjoutés.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVehiculesAjoutés.Location = new System.Drawing.Point(1048, 9);
-            this.labelVehiculesAjoutés.Name = "labelVehiculesAjoutés";
-            this.labelVehiculesAjoutés.Size = new System.Drawing.Size(240, 32);
-            this.labelVehiculesAjoutés.TabIndex = 24;
-            this.labelVehiculesAjoutés.Text = "Vehicules ajoutés";
-            // 
-            // dataGridViewVehiculesAjoutes
-            // 
-            this.dataGridViewVehiculesAjoutes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewVehiculesAjoutes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNomVehicule,
-            this.colTarifVehicule});
-            this.dataGridViewVehiculesAjoutes.Location = new System.Drawing.Point(1054, 49);
-            this.dataGridViewVehiculesAjoutes.Name = "dataGridViewVehiculesAjoutes";
-            this.dataGridViewVehiculesAjoutes.RowTemplate.Height = 28;
-            this.dataGridViewVehiculesAjoutes.Size = new System.Drawing.Size(465, 329);
-            this.dataGridViewVehiculesAjoutes.TabIndex = 25;
-            // 
-            // colNomVehicule
-            // 
-            this.colNomVehicule.HeaderText = "Nom Vehicule";
-            this.colNomVehicule.Name = "colNomVehicule";
-            // 
-            // colTarifVehicule
-            // 
-            this.colTarifVehicule.HeaderText = "Tarif";
-            this.colTarifVehicule.Name = "colTarifVehicule";
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(78, 124);
+            this.button1.Location = new System.Drawing.Point(78, 140);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(416, 42);
             this.button1.TabIndex = 27;
@@ -180,7 +115,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(78, 172);
+            this.button2.Location = new System.Drawing.Point(78, 188);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(416, 42);
             this.button2.TabIndex = 29;
@@ -189,7 +124,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(78, 381);
+            this.button3.Location = new System.Drawing.Point(78, 372);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(416, 42);
             this.button3.TabIndex = 30;
@@ -200,7 +135,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 287);
+            this.label2.Location = new System.Drawing.Point(12, 275);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 32);
             this.label2.TabIndex = 31;
@@ -208,7 +143,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(78, 333);
+            this.button4.Location = new System.Drawing.Point(78, 324);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(416, 42);
             this.button4.TabIndex = 32;
@@ -219,17 +154,59 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 49);
+            this.label3.Location = new System.Drawing.Point(12, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 32);
             this.label3.TabIndex = 33;
             this.label3.Text = "Composants";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(311, 25);
+            this.label4.TabIndex = 34;
+            this.label4.Text = "Comprend le personnel également";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(620, 44);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(428, 304);
+            this.listBox1.TabIndex = 35;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(614, 372);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(187, 32);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Détails ajouts";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(620, 407);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(428, 206);
+            this.dataGridView1.TabIndex = 37;
+            // 
             // fenNouvelleEquipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1531, 625);
+            this.ClientSize = new System.Drawing.Size(1066, 625);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label2);
@@ -237,22 +214,15 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridViewVehiculesAjoutes);
-            this.Controls.Add(this.labelVehiculesAjoutés);
             this.Controls.Add(this.buttonModifierElement);
             this.Controls.Add(this.buttonValiderEquipe);
             this.Controls.Add(this.buttonAnnulerEquipe);
             this.Controls.Add(this.buttonSupprimerElement);
-            this.Controls.Add(this.labelHonorairesAjoutes);
-            this.Controls.Add(this.dataGridViewHonorairesAjoutes);
-            this.Controls.Add(this.dataGridViewElementsAjoutes);
             this.Controls.Add(this.labelElementsAjoutes);
             this.Name = "fenNouvelleEquipe";
             this.Text = "Nouvelle équipe";
             this.Load += new System.EventHandler(this.fenNouvelleEquipe_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementsAjoutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonorairesAjoutes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewVehiculesAjoutes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,17 +230,10 @@
 
         #endregion
         private System.Windows.Forms.Label labelElementsAjoutes;
-        private System.Windows.Forms.Label labelHonorairesAjoutes;
         private System.Windows.Forms.Button buttonSupprimerElement;
         private System.Windows.Forms.Button buttonAnnulerEquipe;
         private System.Windows.Forms.Button buttonValiderEquipe;
         private System.Windows.Forms.Button buttonModifierElement;
-        private System.Windows.Forms.Label labelVehiculesAjoutés;
-        public System.Windows.Forms.DataGridView dataGridViewVehiculesAjoutes;
-        public System.Windows.Forms.DataGridView dataGridViewElementsAjoutes;
-        protected System.Windows.Forms.DataGridView dataGridViewHonorairesAjoutes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNomVehicule;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifVehicule;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
@@ -278,5 +241,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
