@@ -29,6 +29,7 @@ namespace Second_Sens___Devis
             this.buttonAjouterEquipePredefinie.Enabled = false;
             /* champ ajouté exclusivement pour tester */
             this.comboBoxEquipesPrédefinies.Items.Add("test");
+            radioButtonEnHeures.Checked = true;
 
             if(leChargement.progressBarChargement.Value == leChargement.progressBarChargement.Maximum)
             {
@@ -104,9 +105,29 @@ namespace Second_Sens___Devis
 
         private void buttonAjouterHonoraire_Click(object sender, EventArgs e)
         {
+            string typeDuree;
             if(textBoxNomHonoraire.Text != "" && textBoxDuree.Text != "")
             {
-                dataGridViewHonoraire.Rows.Add(textBoxNomHonoraire.Text, textBoxDuree.Text);
+                try
+                {
+                    Convert.ToInt32(textBoxDuree.Text);
+                    Convert.ToInt32(textBoxNombreHonoraires.Text);
+                    if (radioButtonEnHeures.Checked == true) 
+                    {
+                        typeDuree = "heures";
+                    }
+                    else
+	                {
+                        typeDuree = "jours";
+                    }
+                    dataGridViewHonoraire.Rows.Add(textBoxNomHonoraire.Text, textBoxDuree.Text, textBoxNombreHonoraires.Text, typeDuree);
+                }
+                catch (Exception erreur)
+                {
+
+                    MessageBox.Show("Les champs durée et nombre ne peuvent être remplis qu'avec des nombres.");
+                }
+                
             }
             
         }
