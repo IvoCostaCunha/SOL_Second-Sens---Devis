@@ -26,13 +26,7 @@ namespace Second_Sens___Devis
             this.comboBoxTypeVehicule.Items.Add("Vehicule société");
         }
 
-        private void buttonSupprimerPeage_Click(object sender, EventArgs e)
-        {
-            foreach (DataGridViewRow row in dataGridViewPeages.SelectedRows)
-            {
-                dataGridViewPeages.Rows.RemoveAt(row.Index);
-            }
-        }
+        
 
         private void comboBoxTypeVehicule_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -62,24 +56,12 @@ namespace Second_Sens___Devis
             }
         }
 
-        private void buttonAjoutPeage_Click(object sender, EventArgs e)
-        {
-            fenNouveauPeage leNouveauPeage = new fenNouveauPeage(this);
-            leNouveauPeage.textBoxVilleDepartPeage.Text = this.textBoxVilleDepart.Text;
-            leNouveauPeage.textBoxVilleArriveePeage.Text = this.textBoxVilleArrivee.Text;
-            leNouveauPeage.ShowDialog();
-
-        }
-
         private void buttonValiderAjoutVehicule_Click(object sender, EventArgs e)
         {
             double tarifPeages = 0;
             double calculTotal = 0;
 
-            foreach (DataGridViewRow unRow in dataGridViewPeages.Rows)
-            {
-                tarifPeages += Convert.ToDouble(unRow.Cells[1].Value);
-            }
+            
 
             // En cas de vehicule loué
             if (comboBoxTypeVehicule.SelectedIndex == 0)

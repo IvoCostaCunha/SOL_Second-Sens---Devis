@@ -118,12 +118,6 @@
     <Compile Include="fenNouveauFraisTechnique.Designer.cs">
       <DependentUpon>fenNouveauFraisTechnique.cs</DependentUpon>
     </Compile>
-    <Compile Include="fenNouveauPeage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fenNouveauPeage.Designer.cs">
-      <DependentUpon>fenNouveauPeage.cs</DependentUpon>
-    </Compile>
     <Compile Include="fenNouvelElementPersonnalisable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,9 +178,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fenNouveauFraisTechnique.resx">
       <DependentUpon>fenNouveauFraisTechnique.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fenNouveauPeage.resx">
-      <DependentUpon>fenNouveauPeage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fenNouvelElementPersonnalisable.resx">
       <DependentUpon>fenNouvelElementPersonnalisable.cs</DependentUpon>
