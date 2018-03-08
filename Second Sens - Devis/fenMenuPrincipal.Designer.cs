@@ -42,7 +42,7 @@
             this.comboBoxEquipesPrédefinies = new System.Windows.Forms.ComboBox();
             this.listBoxEquipes = new System.Windows.Forms.ListBox();
             this.buttonAjouterEquipePredefinie = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAnnuler = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.buttonResumeDevis = new System.Windows.Forms.Button();
             this.buttonModifierEquipe = new System.Windows.Forms.Button();
@@ -52,12 +52,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewAjoutDivers = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewHonoraires = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDetailEquipe = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnNouvelleEquipePerso = new System.Windows.Forms.Button();
@@ -80,10 +80,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonoraires)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailEquipe)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -214,16 +214,16 @@
             this.buttonAjouterEquipePredefinie.UseVisualStyleBackColor = true;
             this.buttonAjouterEquipePredefinie.Click += new System.EventHandler(this.buttonAjouterEquipePredefinie_Click);
             // 
-            // button1
+            // buttonAnnuler
             // 
-            this.button1.Location = new System.Drawing.Point(11, 823);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 27);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Annuler";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonAnnuler.Location = new System.Drawing.Point(11, 823);
+            this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAnnuler.Name = "buttonAnnuler";
+            this.buttonAnnuler.Size = new System.Drawing.Size(206, 27);
+            this.buttonAnnuler.TabIndex = 15;
+            this.buttonAnnuler.Text = "Annuler";
+            this.buttonAnnuler.UseVisualStyleBackColor = true;
+            this.buttonAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click);
             // 
             // button2
             // 
@@ -263,12 +263,12 @@
             this.panelNouveauDevis.Controls.Add(this.label13);
             this.panelNouveauDevis.Controls.Add(this.textBox3);
             this.panelNouveauDevis.Controls.Add(this.button7);
-            this.panelNouveauDevis.Controls.Add(this.dataGridView4);
+            this.panelNouveauDevis.Controls.Add(this.dataGridViewAjoutDivers);
             this.panelNouveauDevis.Controls.Add(this.button6);
             this.panelNouveauDevis.Controls.Add(this.label11);
             this.panelNouveauDevis.Controls.Add(this.textBox2);
             this.panelNouveauDevis.Controls.Add(this.label3);
-            this.panelNouveauDevis.Controls.Add(this.dataGridView3);
+            this.panelNouveauDevis.Controls.Add(this.dataGridViewHonoraires);
             this.panelNouveauDevis.Controls.Add(this.label2);
             this.panelNouveauDevis.Controls.Add(this.button5);
             this.panelNouveauDevis.Controls.Add(this.label12);
@@ -279,7 +279,7 @@
             this.panelNouveauDevis.Controls.Add(this.radioButton2);
             this.panelNouveauDevis.Controls.Add(this.radioButton1);
             this.panelNouveauDevis.Controls.Add(this.label9);
-            this.panelNouveauDevis.Controls.Add(this.dataGridView1);
+            this.panelNouveauDevis.Controls.Add(this.dataGridViewDetailEquipe);
             this.panelNouveauDevis.Controls.Add(this.label8);
             this.panelNouveauDevis.Controls.Add(this.label7);
             this.panelNouveauDevis.Controls.Add(this.btnNouvelleEquipePerso);
@@ -289,7 +289,7 @@
             this.panelNouveauDevis.Controls.Add(this.buttonModifierEquipe);
             this.panelNouveauDevis.Controls.Add(this.buttonResumeDevis);
             this.panelNouveauDevis.Controls.Add(this.button2);
-            this.panelNouveauDevis.Controls.Add(this.button1);
+            this.panelNouveauDevis.Controls.Add(this.buttonAnnuler);
             this.panelNouveauDevis.Controls.Add(this.buttonAjouterEquipePredefinie);
             this.panelNouveauDevis.Controls.Add(this.listBoxEquipes);
             this.panelNouveauDevis.Controls.Add(this.comboBoxEquipesPrédefinies);
@@ -351,13 +351,13 @@
             this.button7.Text = "Supprimer divers";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // dataGridView4
+            // dataGridViewAjoutDivers
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(1097, 118);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(364, 151);
-            this.dataGridView4.TabIndex = 46;
+            this.dataGridViewAjoutDivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAjoutDivers.Location = new System.Drawing.Point(1097, 118);
+            this.dataGridViewAjoutDivers.Name = "dataGridViewAjoutDivers";
+            this.dataGridViewAjoutDivers.Size = new System.Drawing.Size(364, 151);
+            this.dataGridViewAjoutDivers.TabIndex = 46;
             // 
             // button6
             // 
@@ -399,17 +399,17 @@
             this.label3.TabIndex = 42;
             this.label3.Text = "Ajouts divers";
             // 
-            // dataGridView3
+            // dataGridViewHonoraires
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewHonoraires.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHonoraires.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.colRevient,
             this.colMarge2S});
-            this.dataGridView3.Location = new System.Drawing.Point(11, 102);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(532, 139);
-            this.dataGridView3.TabIndex = 41;
+            this.dataGridViewHonoraires.Location = new System.Drawing.Point(11, 102);
+            this.dataGridViewHonoraires.Name = "dataGridViewHonoraires";
+            this.dataGridViewHonoraires.Size = new System.Drawing.Size(532, 139);
+            this.dataGridViewHonoraires.TabIndex = 41;
             // 
             // Column1
             // 
@@ -528,13 +528,13 @@
             this.label9.TabIndex = 26;
             this.label9.Text = "Ajoutez des honoraires";
             // 
-            // dataGridView1
+            // dataGridViewDetailEquipe
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(576, 412);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(488, 438);
-            this.dataGridView1.TabIndex = 25;
+            this.dataGridViewDetailEquipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetailEquipe.Location = new System.Drawing.Point(576, 412);
+            this.dataGridViewDetailEquipe.Name = "dataGridViewDetailEquipe";
+            this.dataGridViewDetailEquipe.Size = new System.Drawing.Size(488, 438);
+            this.dataGridViewDetailEquipe.TabIndex = 25;
             // 
             // label8
             // 
@@ -567,7 +567,7 @@
             this.btnNouvelleEquipePerso.TabIndex = 22;
             this.btnNouvelleEquipePerso.Text = "Nouvelle équipe personnalisée";
             this.btnNouvelleEquipePerso.UseVisualStyleBackColor = true;
-            this.btnNouvelleEquipePerso.Click += new System.EventHandler(this.button3_Click);
+            this.btnNouvelleEquipePerso.Click += new System.EventHandler(this.btnNouvelleEquipePerso_Click);
             // 
             // label6
             // 
@@ -619,10 +619,10 @@
             this.menuStrip1.PerformLayout();
             this.panelNouveauDevis.ResumeLayout(false);
             this.panelNouveauDevis.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonoraires)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailEquipe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -643,7 +643,7 @@
         private System.Windows.Forms.ComboBox comboBoxEquipesPrédefinies;
         private System.Windows.Forms.ListBox listBoxEquipes;
         private System.Windows.Forms.Button buttonAjouterEquipePredefinie;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAnnuler;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonResumeDevis;
         private System.Windows.Forms.Button buttonModifierEquipe;
@@ -652,7 +652,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridViewHonoraires;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRevient;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMarge2S;
@@ -665,13 +665,13 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewDetailEquipe;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
         public System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridViewAjoutDivers;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label11;
         public System.Windows.Forms.TextBox textBox2;

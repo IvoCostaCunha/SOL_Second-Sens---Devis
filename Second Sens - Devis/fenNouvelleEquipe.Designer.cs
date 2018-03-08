@@ -33,12 +33,11 @@
             this.buttonAnnulerEquipe = new System.Windows.Forms.Button();
             this.buttonValiderEquipe = new System.Windows.Forms.Button();
             this.buttonModifierElement = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bntAjoutElementStandard = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAjoutElementPerso = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.bntAjoutVehicule = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -61,7 +60,7 @@
             // buttonSupprimerElement
             // 
             this.buttonSupprimerElement.Location = new System.Drawing.Point(210, 452);
-            this.buttonSupprimerElement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSupprimerElement.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimerElement.Name = "buttonSupprimerElement";
             this.buttonSupprimerElement.Size = new System.Drawing.Size(199, 25);
             this.buttonSupprimerElement.TabIndex = 14;
@@ -71,7 +70,7 @@
             // buttonAnnulerEquipe
             // 
             this.buttonAnnulerEquipe.Location = new System.Drawing.Point(210, 481);
-            this.buttonAnnulerEquipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAnnulerEquipe.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerEquipe.Name = "buttonAnnulerEquipe";
             this.buttonAnnulerEquipe.Size = new System.Drawing.Size(199, 25);
             this.buttonAnnulerEquipe.TabIndex = 15;
@@ -82,7 +81,7 @@
             // buttonValiderEquipe
             // 
             this.buttonValiderEquipe.Location = new System.Drawing.Point(8, 481);
-            this.buttonValiderEquipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonValiderEquipe.Margin = new System.Windows.Forms.Padding(2);
             this.buttonValiderEquipe.Name = "buttonValiderEquipe";
             this.buttonValiderEquipe.Size = new System.Drawing.Size(198, 25);
             this.buttonValiderEquipe.TabIndex = 16;
@@ -92,22 +91,23 @@
             // buttonModifierElement
             // 
             this.buttonModifierElement.Location = new System.Drawing.Point(8, 452);
-            this.buttonModifierElement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonModifierElement.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModifierElement.Name = "buttonModifierElement";
             this.buttonModifierElement.Size = new System.Drawing.Size(198, 25);
             this.buttonModifierElement.TabIndex = 17;
             this.buttonModifierElement.Text = "Modifier élément";
             this.buttonModifierElement.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // bntAjoutElementStandard
             // 
-            this.button1.Location = new System.Drawing.Point(52, 91);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(277, 27);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Composant d\'equipe standart";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bntAjoutElementStandard.Location = new System.Drawing.Point(52, 91);
+            this.bntAjoutElementStandard.Margin = new System.Windows.Forms.Padding(2);
+            this.bntAjoutElementStandard.Name = "bntAjoutElementStandard";
+            this.bntAjoutElementStandard.Size = new System.Drawing.Size(277, 27);
+            this.bntAjoutElementStandard.TabIndex = 27;
+            this.bntAjoutElementStandard.Text = "Composant d\'equipe standard";
+            this.bntAjoutElementStandard.UseVisualStyleBackColor = true;
+            this.bntAjoutElementStandard.Click += new System.EventHandler(this.bntAjoutElementStandard_Click);
             // 
             // label1
             // 
@@ -120,25 +120,16 @@
             this.label1.TabIndex = 28;
             this.label1.Text = "Ajouts possibles";
             // 
-            // button2
+            // btnAjoutElementPerso
             // 
-            this.button2.Location = new System.Drawing.Point(52, 122);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(277, 27);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Composant d\'équipe personnalisable";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(52, 242);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(277, 27);
-            this.button3.TabIndex = 30;
-            this.button3.Text = "Ajouter vehicule société";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAjoutElementPerso.Location = new System.Drawing.Point(52, 122);
+            this.btnAjoutElementPerso.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAjoutElementPerso.Name = "btnAjoutElementPerso";
+            this.btnAjoutElementPerso.Size = new System.Drawing.Size(277, 27);
+            this.btnAjoutElementPerso.TabIndex = 29;
+            this.btnAjoutElementPerso.Text = "Composant d\'équipe personnalisable";
+            this.btnAjoutElementPerso.UseVisualStyleBackColor = true;
+            this.btnAjoutElementPerso.Click += new System.EventHandler(this.btnAjoutElementPerso_Click);
             // 
             // label2
             // 
@@ -151,15 +142,16 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Vehicules";
             // 
-            // button4
+            // bntAjoutVehicule
             // 
-            this.button4.Location = new System.Drawing.Point(52, 211);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(277, 27);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Ajouter vehicule loué";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bntAjoutVehicule.Location = new System.Drawing.Point(52, 211);
+            this.bntAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
+            this.bntAjoutVehicule.Name = "bntAjoutVehicule";
+            this.bntAjoutVehicule.Size = new System.Drawing.Size(277, 27);
+            this.bntAjoutVehicule.TabIndex = 32;
+            this.bntAjoutVehicule.Text = "Ajouter vehicule";
+            this.bntAjoutVehicule.UseVisualStyleBackColor = true;
+            this.bntAjoutVehicule.Click += new System.EventHandler(this.bntAjoutVehicule_Click);
             // 
             // label3
             // 
@@ -187,7 +179,7 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(413, 29);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(448, 199);
             this.listBox1.TabIndex = 35;
@@ -207,7 +199,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(413, 271);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(448, 235);
@@ -223,18 +215,17 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.bntAjoutVehicule);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAjoutElementPerso);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bntAjoutElementStandard);
             this.Controls.Add(this.buttonModifierElement);
             this.Controls.Add(this.buttonValiderEquipe);
             this.Controls.Add(this.buttonAnnulerEquipe);
             this.Controls.Add(this.buttonSupprimerElement);
             this.Controls.Add(this.labelElementsAjoutes);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenNouvelleEquipe";
             this.Text = "Nouvelle équipe";
             this.Load += new System.EventHandler(this.fenNouvelleEquipe_Load);
@@ -250,12 +241,11 @@
         private System.Windows.Forms.Button buttonAnnulerEquipe;
         private System.Windows.Forms.Button buttonValiderEquipe;
         private System.Windows.Forms.Button buttonModifierElement;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bntAjoutElementStandard;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAjoutElementPerso;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button bntAjoutVehicule;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;

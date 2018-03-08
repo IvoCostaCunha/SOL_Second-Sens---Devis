@@ -58,7 +58,7 @@ namespace Second_Sens___Devis
             }
         }
 
-        private void buttonAjouterAjoutElementStreetMarketing_Click(object sender, EventArgs e)
+        private void buttonAjouterPersonnel_Click(object sender, EventArgs e)
         {
             fenAjoutPersonnel unNouveauPersonnel = new fenAjoutPersonnel(this);
             unNouveauPersonnel.ShowDialog();

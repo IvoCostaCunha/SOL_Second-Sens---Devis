@@ -42,7 +42,7 @@ namespace Second_Sens___Devis
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonAnnuler_Click(object sender, EventArgs e)
         {
             /* button 1 ??? */
             this.panelNouveauDevis.Hide();
@@ -91,9 +91,10 @@ namespace Second_Sens___Devis
             Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnNouvelleEquipePerso_Click(object sender, EventArgs e)
         {
-
+            fenNouvelleEquipe uneNouvelleEquipePerso = new fenNouvelleEquipe(this);
+            uneNouvelleEquipePerso.ShowDialog();
         }
     }
 }

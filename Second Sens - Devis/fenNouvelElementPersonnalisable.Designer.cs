@@ -48,7 +48,7 @@
             this.comboBoxTypeElementStreetMarketing = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.buttonAjouterAjoutElementStreetMarketing = new System.Windows.Forms.Button();
+            this.buttonAjouterPersonnel = new System.Windows.Forms.Button();
             this.labelAideAjoutsElementStreetMarketing = new System.Windows.Forms.Label();
             this.dataGridViewElementsAjoutesStreetMarketing = new System.Windows.Forms.DataGridView();
             this.buttonSupprimerAjoutElementStreetMarketing = new System.Windows.Forms.Button();
@@ -272,16 +272,16 @@
             this.radioButton2.Text = "en heures";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // buttonAjouterAjoutElementStreetMarketing
+            // buttonAjouterPersonnel
             // 
-            this.buttonAjouterAjoutElementStreetMarketing.Location = new System.Drawing.Point(160, 241);
-            this.buttonAjouterAjoutElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonAjouterAjoutElementStreetMarketing.Name = "buttonAjouterAjoutElementStreetMarketing";
-            this.buttonAjouterAjoutElementStreetMarketing.Size = new System.Drawing.Size(218, 21);
-            this.buttonAjouterAjoutElementStreetMarketing.TabIndex = 17;
-            this.buttonAjouterAjoutElementStreetMarketing.Text = "Ajouter";
-            this.buttonAjouterAjoutElementStreetMarketing.UseVisualStyleBackColor = true;
-            this.buttonAjouterAjoutElementStreetMarketing.Click += new System.EventHandler(this.buttonAjouterAjoutElementStreetMarketing_Click);
+            this.buttonAjouterPersonnel.Location = new System.Drawing.Point(160, 241);
+            this.buttonAjouterPersonnel.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAjouterPersonnel.Name = "buttonAjouterPersonnel";
+            this.buttonAjouterPersonnel.Size = new System.Drawing.Size(218, 21);
+            this.buttonAjouterPersonnel.TabIndex = 17;
+            this.buttonAjouterPersonnel.Text = "Ajouter";
+            this.buttonAjouterPersonnel.UseVisualStyleBackColor = true;
+            this.buttonAjouterPersonnel.Click += new System.EventHandler(this.buttonAjouterPersonnel_Click);
             // 
             // labelAideAjoutsElementStreetMarketing
             // 
@@ -346,7 +346,7 @@
             this.Controls.Add(this.buttonSupprimerAjoutElementStreetMarketing);
             this.Controls.Add(this.dataGridViewElementsAjoutesStreetMarketing);
             this.Controls.Add(this.labelAideAjoutsElementStreetMarketing);
-            this.Controls.Add(this.buttonAjouterAjoutElementStreetMarketing);
+            this.Controls.Add(this.buttonAjouterPersonnel);
             this.Controls.Add(this.comboBoxTypeElementStreetMarketing);
             this.Controls.Add(this.textBoxNomElementStreetMarketing);
             this.Controls.Add(this.labelTypeElementStreetMarketing);
@@ -391,7 +391,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button buttonAjouterAjoutElementStreetMarketing;
+        private System.Windows.Forms.Button buttonAjouterPersonnel;
         private System.Windows.Forms.Label labelAideAjoutsElementStreetMarketing;
         private System.Windows.Forms.DataGridView dataGridViewElementsAjoutesStreetMarketing;
         private System.Windows.Forms.Button buttonSupprimerAjoutElementStreetMarketing;

@@ -54,7 +54,19 @@ namespace Second_Sens___Devis
             leNouveauPersonnel.ShowDialog();
         }
 
-        private void buttonAjouterVehicule_Click(object sender, EventArgs e)
+        private void bntAjoutElementStandard_Click(object sender, EventArgs e)
+        {
+            fenNouvelElement unNouvelElement = new fenNouvelElement(this);
+            unNouvelElement.ShowDialog();
+        }
+
+        private void btnAjoutElementPerso_Click(object sender, EventArgs e)
+        {
+            fenNouvelElementPersonnalisable unNouvelElementPerso = new fenNouvelElementPersonnalisable(this);
+            unNouvelElementPerso.ShowDialog();
+        }
+
+        private void bntAjoutVehicule_Click(object sender, EventArgs e)
         {
             fenNouveauElementVehicule leNouveauVehicule = new fenNouveauElementVehicule(this);
             leNouveauVehicule.ShowDialog();
