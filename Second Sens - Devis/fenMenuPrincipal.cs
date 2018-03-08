@@ -22,7 +22,7 @@ namespace Second_Sens___Devis
 
         private void fenMenuPrincipal_Load(object sender, EventArgs e)
         {
-            dataGridViewHonoraire.Rows.Add("Brief", "0");
+            dataGridViewHonoraire.Rows.Add("Brief", "0",);
             dataGridViewHonoraire.Rows.Add("Casting hôtesses", "0.5");
             dataGridViewHonoraire.Rows.Add("Elaboration contrats", "0.5");
             dataGridViewHonoraire.Rows.Add("BAT", "0.25");
@@ -114,6 +114,11 @@ namespace Second_Sens___Devis
         }
 
         private void panelNouveauDevis_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

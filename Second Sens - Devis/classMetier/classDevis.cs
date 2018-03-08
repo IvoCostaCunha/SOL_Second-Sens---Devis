@@ -11,14 +11,16 @@ namespace Second_Sens___Devis.classMetier
         private String leNomDevis;
         private DateTime laDateCreationDevis;
         private List<classEquipe> lesEquipes = new List<classEquipe>();
-        
+        private int leNombreJours;
+
         /// <summary>
         /// Constructeur de la classe classDevis
         /// </summary>
         /// <param name="unNomDevis">Le nom du devis</param>
         /// <param name="uneDateCreation">La date de création du devis</param>
-        public classDevis(String unNomDevis, DateTime uneDateCreation)
+        public classDevis(String unNomDevis, DateTime uneDateCreation, int unNombreJours)
         {
+            leNombreJours = unNombreJours;
             leNomDevis = unNomDevis;
             laDateCreationDevis = uneDateCreation;
         }
