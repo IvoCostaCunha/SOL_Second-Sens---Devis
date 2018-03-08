@@ -33,11 +33,11 @@ namespace Second_Sens___Devis
 
         private void buttonConfimerInfosDevis_Click(object sender, EventArgs e)
         {
-            if (textBoxNomOperation.Text == "")
+            if (textBoxNomOperation.Text != "")
             {
                 MessageBox.Show("Veuillez renseigner un nom.");
             }
-            else
+            else if (textBoxDureeOpe)
             {
                 leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
                 leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
