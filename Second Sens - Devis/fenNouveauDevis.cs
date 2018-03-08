@@ -41,10 +41,6 @@ namespace Second_Sens___Devis
                     leMenuPrincipal.leNouveauDevis = leNouveauDevis;
                     leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
                     leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
-                    leMenuPrincipal.dataGridViewHonoraire.Rows.Add("Brief", "0", leNouveauDevis.getNbJoursOpe().ToString());
-                    leMenuPrincipal.dataGridViewHonoraire.Rows.Add("Casting hôtesses", "0.5", "1");
-                    leMenuPrincipal.dataGridViewHonoraire.Rows.Add("Elaboration contrats", "0.5", "1");
-                    leMenuPrincipal.dataGridViewHonoraire.Rows.Add("BAT", "0.25", "1");
                     leMenuPrincipal.panelNouveauDevis.Show();
                     this.Hide();
                 }
