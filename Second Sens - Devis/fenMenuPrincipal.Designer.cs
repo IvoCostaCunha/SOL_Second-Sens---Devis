@@ -58,6 +58,9 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewHonoraires = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -75,10 +78,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
@@ -259,7 +258,9 @@
             // 
             // panelNouveauDevis
             // 
-            this.panelNouveauDevis.Controls.Add(this.vScrollBar1);
+            this.panelNouveauDevis.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panelNouveauDevis.AutoScroll = true;
+            this.panelNouveauDevis.AutoSize = true;
             this.panelNouveauDevis.Controls.Add(this.textBox4);
             this.panelNouveauDevis.Controls.Add(this.label14);
             this.panelNouveauDevis.Controls.Add(this.label13);
@@ -297,7 +298,6 @@
             this.panelNouveauDevis.Controls.Add(this.comboBoxEquipesPrédefinies);
             this.panelNouveauDevis.Controls.Add(this.label1);
             this.panelNouveauDevis.Controls.Add(this.labelAideAjoutDevis);
-            this.panelNouveauDevis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNouveauDevis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelNouveauDevis.Location = new System.Drawing.Point(0, 24);
             this.panelNouveauDevis.Margin = new System.Windows.Forms.Padding(2);
@@ -414,6 +414,27 @@
             this.dataGridViewHonoraires.ReadOnly = true;
             this.dataGridViewHonoraires.Size = new System.Drawing.Size(532, 80);
             this.dataGridViewHonoraires.TabIndex = 41;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Total Client";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // colRevient
+            // 
+            this.colRevient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colRevient.HeaderText = "Coût de revient SecondSens";
+            this.colRevient.Name = "colRevient";
+            this.colRevient.ReadOnly = true;
+            // 
+            // colMarge2S
+            // 
+            this.colMarge2S.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colMarge2S.HeaderText = "Marge SecondSens";
+            this.colMarge2S.Name = "colMarge2S";
+            this.colMarge2S.ReadOnly = true;
             // 
             // label2
             // 
@@ -591,35 +612,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Nouvelle équipe existante";
             // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Total Client";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // colRevient
-            // 
-            this.colRevient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colRevient.HeaderText = "Coût de revient SecondSens";
-            this.colRevient.Name = "colRevient";
-            this.colRevient.ReadOnly = true;
-            // 
-            // colMarge2S
-            // 
-            this.colMarge2S.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colMarge2S.HeaderText = "Marge SecondSens";
-            this.colMarge2S.Name = "colMarge2S";
-            this.colMarge2S.ReadOnly = true;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(1639, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 892);
-            this.vScrollBar1.TabIndex = 52;
-            // 
             // fenMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -698,6 +690,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRevient;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMarge2S;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
