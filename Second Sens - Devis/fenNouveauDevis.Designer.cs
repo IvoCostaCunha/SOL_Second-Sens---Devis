@@ -41,9 +41,10 @@
             // 
             this.labelAideCreationNouveauDevis.AutoSize = true;
             this.labelAideCreationNouveauDevis.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAideCreationNouveauDevis.Location = new System.Drawing.Point(12, 9);
+            this.labelAideCreationNouveauDevis.Location = new System.Drawing.Point(8, 6);
+            this.labelAideCreationNouveauDevis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAideCreationNouveauDevis.Name = "labelAideCreationNouveauDevis";
-            this.labelAideCreationNouveauDevis.Size = new System.Drawing.Size(596, 37);
+            this.labelAideCreationNouveauDevis.Size = new System.Drawing.Size(406, 26);
             this.labelAideCreationNouveauDevis.TabIndex = 0;
             this.labelAideCreationNouveauDevis.Text = "Entrer les informations du nouveau devis";
             // 
@@ -51,9 +52,10 @@
             // 
             this.labelNomOperation.AutoSize = true;
             this.labelNomOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomOperation.Location = new System.Drawing.Point(12, 72);
+            this.labelNomOperation.Location = new System.Drawing.Point(8, 47);
+            this.labelNomOperation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNomOperation.Name = "labelNomOperation";
-            this.labelNomOperation.Size = new System.Drawing.Size(223, 29);
+            this.labelNomOperation.Size = new System.Drawing.Size(145, 20);
             this.labelNomOperation.TabIndex = 1;
             this.labelNomOperation.Text = "Nom de l\'opération:";
             // 
@@ -61,31 +63,35 @@
             // 
             this.labelDateDevis.AutoSize = true;
             this.labelDateDevis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDateDevis.Location = new System.Drawing.Point(14, 104);
+            this.labelDateDevis.Location = new System.Drawing.Point(9, 68);
+            this.labelDateDevis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDateDevis.Name = "labelDateDevis";
-            this.labelDateDevis.Size = new System.Drawing.Size(69, 29);
+            this.labelDateDevis.Size = new System.Drawing.Size(48, 20);
             this.labelDateDevis.TabIndex = 2;
             this.labelDateDevis.Text = "Date:";
             // 
             // textBoxDateOperation
             // 
-            this.textBoxDateOperation.Location = new System.Drawing.Point(241, 107);
+            this.textBoxDateOperation.Location = new System.Drawing.Point(161, 70);
+            this.textBoxDateOperation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDateOperation.Name = "textBoxDateOperation";
-            this.textBoxDateOperation.Size = new System.Drawing.Size(367, 26);
+            this.textBoxDateOperation.Size = new System.Drawing.Size(246, 20);
             this.textBoxDateOperation.TabIndex = 3;
             // 
             // textBoxNomOperation
             // 
-            this.textBoxNomOperation.Location = new System.Drawing.Point(241, 75);
+            this.textBoxNomOperation.Location = new System.Drawing.Point(161, 49);
+            this.textBoxNomOperation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxNomOperation.Name = "textBoxNomOperation";
-            this.textBoxNomOperation.Size = new System.Drawing.Size(367, 26);
+            this.textBoxNomOperation.Size = new System.Drawing.Size(246, 20);
             this.textBoxNomOperation.TabIndex = 4;
             // 
             // buttonConfimerInfosDevis
             // 
-            this.buttonConfimerInfosDevis.Location = new System.Drawing.Point(316, 155);
+            this.buttonConfimerInfosDevis.Location = new System.Drawing.Point(211, 101);
+            this.buttonConfimerInfosDevis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonConfimerInfosDevis.Name = "buttonConfimerInfosDevis";
-            this.buttonConfimerInfosDevis.Size = new System.Drawing.Size(292, 29);
+            this.buttonConfimerInfosDevis.Size = new System.Drawing.Size(195, 19);
             this.buttonConfimerInfosDevis.TabIndex = 5;
             this.buttonConfimerInfosDevis.Text = "Confirmer";
             this.buttonConfimerInfosDevis.UseVisualStyleBackColor = true;
@@ -93,9 +99,10 @@
             // 
             // buttonAnnulerInfosDevis
             // 
-            this.buttonAnnulerInfosDevis.Location = new System.Drawing.Point(316, 190);
+            this.buttonAnnulerInfosDevis.Location = new System.Drawing.Point(211, 123);
+            this.buttonAnnulerInfosDevis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAnnulerInfosDevis.Name = "buttonAnnulerInfosDevis";
-            this.buttonAnnulerInfosDevis.Size = new System.Drawing.Size(292, 29);
+            this.buttonAnnulerInfosDevis.Size = new System.Drawing.Size(195, 19);
             this.buttonAnnulerInfosDevis.TabIndex = 6;
             this.buttonAnnulerInfosDevis.Text = "Annuler";
             this.buttonAnnulerInfosDevis.UseVisualStyleBackColor = true;
@@ -103,9 +110,9 @@
             // 
             // fenNouveauDevis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 235);
+            this.ClientSize = new System.Drawing.Size(427, 153);
             this.Controls.Add(this.buttonAnnulerInfosDevis);
             this.Controls.Add(this.buttonConfimerInfosDevis);
             this.Controls.Add(this.textBoxNomOperation);
@@ -114,6 +121,7 @@
             this.Controls.Add(this.labelNomOperation);
             this.Controls.Add(this.labelAideCreationNouveauDevis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fenNouveauDevis";
@@ -132,9 +140,9 @@
         private System.Windows.Forms.Label labelAideCreationNouveauDevis;
         private System.Windows.Forms.Label labelNomOperation;
         private System.Windows.Forms.Label labelDateDevis;
-        private System.Windows.Forms.TextBox textBoxDateOperation;
-        private System.Windows.Forms.TextBox textBoxNomOperation;
         private System.Windows.Forms.Button buttonConfimerInfosDevis;
         private System.Windows.Forms.Button buttonAnnulerInfosDevis;
+        public System.Windows.Forms.TextBox textBoxDateOperation;
+        public System.Windows.Forms.TextBox textBoxNomOperation;
     }
 }

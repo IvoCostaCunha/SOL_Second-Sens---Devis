@@ -12,8 +12,8 @@ namespace Second_Sens___Devis
 {
     public partial class fenAjoutModelPersoPersonnalisation : Form
     {
-        fenNouvelElementStreetMarketing leNouvelElementStreetMarketing;
-        public fenAjoutModelPersoPersonnalisation(fenNouvelElementStreetMarketing unNouvelElementStreetMarketing)
+        fenNouvelElementPersonnalisable leNouvelElementStreetMarketing;
+        public fenAjoutModelPersoPersonnalisation(fenNouvelElementPersonnalisable unNouvelElementStreetMarketing)
         {
             leNouvelElementStreetMarketing = unNouvelElementStreetMarketing;
             InitializeComponent();

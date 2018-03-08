@@ -33,8 +33,17 @@ namespace Second_Sens___Devis
 
         private void buttonConfimerInfosDevis_Click(object sender, EventArgs e)
         {
-            leMenuPrincipal.panelNouveauDevis.Show();
-            this.Hide();
+            if (textBoxNomOperation.Text == "")
+            {
+                MessageBox.Show("Veuillez renseigner un nom.");
+            }
+            else
+            {
+                leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
+                leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
+                leMenuPrincipal.panelNouveauDevis.Show();
+                this.Hide();
+            }
         }
     }
 }

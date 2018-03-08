@@ -12,9 +12,9 @@ namespace Second_Sens___Devis
 {
     public partial class fenAjoutPersoElementStreetMarketingPredifini : Form
     {
-        fenNouvelElementStreetMarketing leNouveauElementStreetMarketing;
+        fenNouvelElementPersonnalisable leNouveauElementStreetMarketing;
 
-        public fenAjoutPersoElementStreetMarketingPredifini(fenNouvelElementStreetMarketing unNouveauElementStreetMarketing)
+        public fenAjoutPersoElementStreetMarketingPredifini(fenNouvelElementPersonnalisable unNouveauElementStreetMarketing)
         {
             leNouveauElementStreetMarketing = unNouveauElementStreetMarketing;
             InitializeComponent();

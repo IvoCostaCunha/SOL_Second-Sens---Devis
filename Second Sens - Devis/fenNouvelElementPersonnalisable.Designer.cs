@@ -1,6 +1,6 @@
 ﻿namespace Second_Sens___Devis
 {
-    partial class fenNouvelElementStreetMarketing
+    partial class fenNouvelElementPersonnalisable
     {
         /// <summary>
         /// Required designer variable.
@@ -116,7 +116,7 @@
             // textBoxTarifLocationJour
             // 
             this.textBoxTarifLocationJour.Location = new System.Drawing.Point(159, 149);
-            this.textBoxTarifLocationJour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTarifLocationJour.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTarifLocationJour.Name = "textBoxTarifLocationJour";
             this.textBoxTarifLocationJour.Size = new System.Drawing.Size(219, 20);
             this.textBoxTarifLocationJour.TabIndex = 9;
@@ -126,11 +126,11 @@
             this.checkBoxAjoutPersonnalisation.AutoSize = true;
             this.checkBoxAjoutPersonnalisation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxAjoutPersonnalisation.Location = new System.Drawing.Point(394, 51);
-            this.checkBoxAjoutPersonnalisation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.checkBoxAjoutPersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.checkBoxAjoutPersonnalisation.Name = "checkBoxAjoutPersonnalisation";
-            this.checkBoxAjoutPersonnalisation.Size = new System.Drawing.Size(301, 24);
+            this.checkBoxAjoutPersonnalisation.Size = new System.Drawing.Size(182, 24);
             this.checkBoxAjoutPersonnalisation.TabIndex = 10;
-            this.checkBoxAjoutPersonnalisation.Text = "Personaliser l\'élément street marketing";
+            this.checkBoxAjoutPersonnalisation.Text = "Personaliser l\'élément";
             this.checkBoxAjoutPersonnalisation.UseVisualStyleBackColor = true;
             this.checkBoxAjoutPersonnalisation.CheckedChanged += new System.EventHandler(this.checkBoxAjoutPersonnalisation_CheckedChanged);
             // 
@@ -145,7 +145,7 @@
             this.panelPersonalisation.Controls.Add(this.labelTypePersonnalisation);
             this.panelPersonalisation.Controls.Add(this.labelAidePersonnalisation);
             this.panelPersonalisation.Location = new System.Drawing.Point(394, 76);
-            this.panelPersonalisation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelPersonalisation.Margin = new System.Windows.Forms.Padding(2);
             this.panelPersonalisation.Name = "panelPersonalisation";
             this.panelPersonalisation.Size = new System.Drawing.Size(311, 408);
             this.panelPersonalisation.TabIndex = 11;
@@ -154,7 +154,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(7, 60);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 24);
             this.button1.TabIndex = 21;
@@ -164,7 +164,7 @@
             // buttonSupprimerPersonnalisation
             // 
             this.buttonSupprimerPersonnalisation.Location = new System.Drawing.Point(110, 384);
-            this.buttonSupprimerPersonnalisation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSupprimerPersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimerPersonnalisation.Name = "buttonSupprimerPersonnalisation";
             this.buttonSupprimerPersonnalisation.Size = new System.Drawing.Size(194, 22);
             this.buttonSupprimerPersonnalisation.TabIndex = 20;
@@ -186,7 +186,7 @@
             // 
             this.listBoxPersonnalisationStreetMarketing.FormattingEnabled = true;
             this.listBoxPersonnalisationStreetMarketing.Location = new System.Drawing.Point(7, 121);
-            this.listBoxPersonnalisationStreetMarketing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxPersonnalisationStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxPersonnalisationStreetMarketing.Name = "listBoxPersonnalisationStreetMarketing";
             this.listBoxPersonnalisationStreetMarketing.Size = new System.Drawing.Size(298, 251);
             this.listBoxPersonnalisationStreetMarketing.TabIndex = 18;
@@ -194,7 +194,7 @@
             // buttonAjouterPersonnalisation
             // 
             this.buttonAjouterPersonnalisation.Location = new System.Drawing.Point(173, 60);
-            this.buttonAjouterPersonnalisation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAjouterPersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterPersonnalisation.Name = "buttonAjouterPersonnalisation";
             this.buttonAjouterPersonnalisation.Size = new System.Drawing.Size(131, 24);
             this.buttonAjouterPersonnalisation.TabIndex = 17;
@@ -206,7 +206,7 @@
             // 
             this.comboBoxTypePersonnalisation.FormattingEnabled = true;
             this.comboBoxTypePersonnalisation.Location = new System.Drawing.Point(173, 38);
-            this.comboBoxTypePersonnalisation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxTypePersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypePersonnalisation.Name = "comboBoxTypePersonnalisation";
             this.comboBoxTypePersonnalisation.Size = new System.Drawing.Size(132, 21);
             this.comboBoxTypePersonnalisation.TabIndex = 17;
@@ -236,7 +236,7 @@
             // textBoxNomElementStreetMarketing
             // 
             this.textBoxNomElementStreetMarketing.Location = new System.Drawing.Point(159, 71);
-            this.textBoxNomElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNomElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNomElementStreetMarketing.Name = "textBoxNomElementStreetMarketing";
             this.textBoxNomElementStreetMarketing.Size = new System.Drawing.Size(219, 20);
             this.textBoxNomElementStreetMarketing.TabIndex = 13;
@@ -245,7 +245,7 @@
             // 
             this.comboBoxTypeElementStreetMarketing.FormattingEnabled = true;
             this.comboBoxTypeElementStreetMarketing.Location = new System.Drawing.Point(159, 49);
-            this.comboBoxTypeElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxTypeElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypeElementStreetMarketing.Name = "comboBoxTypeElementStreetMarketing";
             this.comboBoxTypeElementStreetMarketing.Size = new System.Drawing.Size(219, 21);
             this.comboBoxTypeElementStreetMarketing.TabIndex = 14;
@@ -334,7 +334,7 @@
             this.buttonAnnulerElementStreetMarketing.Text = "Annuler";
             this.buttonAnnulerElementStreetMarketing.UseVisualStyleBackColor = true;
             // 
-            // fenNouvelElementStreetMarketing
+            // fenNouvelElementPersonnalisable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -357,9 +357,9 @@
             this.Controls.Add(this.labelAideTarifsElementStreetMarketing);
             this.Controls.Add(this.labelNomElementStreetMarketing);
             this.Controls.Add(this.labelAideInfosElementStreetMarketing);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "fenNouvelElementStreetMarketing";
-            this.Text = "Nouvel élément street marketing";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "fenNouvelElementPersonnalisable";
+            this.Text = "Nouvel élément personnalisable";
             this.Load += new System.EventHandler(this.fenNouvelElementStreetMarketing_Load);
             this.panelPersonalisation.ResumeLayout(false);
             this.panelPersonalisation.PerformLayout();

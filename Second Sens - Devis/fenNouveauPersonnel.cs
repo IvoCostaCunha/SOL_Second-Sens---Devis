@@ -13,7 +13,7 @@ namespace Second_Sens___Devis
     public partial class fenAjoutPersonnel : Form
     {
         fenNouvelleEquipe laNouvelleEquipe;
-        fenNouvelElementStreetMarketing leNouvelElementSM;
+        fenNouvelElementPersonnalisable leNouvelElementSM;
 
         //constructeur en cas de "parent" fenLaNouvelleEquipe
         public fenAjoutPersonnel(fenNouvelleEquipe uneNouvelleEquipe)
@@ -24,7 +24,7 @@ namespace Second_Sens___Devis
 
 
         //constructeur en cas de "parent" fenNouveauPersonnel
-        public fenAjoutPersonnel(fenNouvelElementStreetMarketing unNouvelElementST)
+        public fenAjoutPersonnel(fenNouvelElementPersonnalisable unNouvelElementST)
         {
             leNouvelElementSM = unNouvelElementST;
             InitializeComponent();

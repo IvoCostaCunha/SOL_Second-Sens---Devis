@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Second_Sens___Devis
 {
-    public partial class fenNouvelElementStreetMarketing : Form
+    public partial class fenNouvelElementPersonnalisable : Form
     {
         fenNouvelleEquipe laNouvelleEquipe;
 
@@ -25,7 +25,7 @@ namespace Second_Sens___Devis
             return laRequete.queryString(requete);
         }
 
-        public fenNouvelElementStreetMarketing(fenNouvelleEquipe uneNouvelleEquipe)
+        public fenNouvelElementPersonnalisable(fenNouvelleEquipe uneNouvelleEquipe)
         {
             laNouvelleEquipe = uneNouvelleEquipe;
             InitializeComponent();
@@ -42,7 +42,7 @@ namespace Second_Sens___Devis
         private void buttonAjouterPersonnalisation_Click(object sender, EventArgs e)
         {
             fenAjoutPersoElementStreetMarketingPredifini unElementPersoPredefini = new fenAjoutPersoElementStreetMarketingPredifini(this);
-            unElementPersoPredefini.Show();
+            unElementPersoPredefini.ShowDialog();
         }
 
         private void checkBoxAjoutPersonnalisation_CheckedChanged(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace Second_Sens___Devis
         private void buttonAjouterAjoutElementStreetMarketing_Click(object sender, EventArgs e)
         {
             fenAjoutPersonnel unNouveauPersonnel = new fenAjoutPersonnel(this);
-            unNouveauPersonnel.Show();
+            unNouveauPersonnel.ShowDialog();
         }
     }
 }

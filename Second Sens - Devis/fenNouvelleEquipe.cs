@@ -34,13 +34,13 @@ namespace Second_Sens___Devis
         {
             fenNouvelElement leNouvelElement = new fenNouvelElement(this);
             /* charger les infos présentes sur la base en fonction de ce qui la selection de la comboBox */
-            leNouvelElement.Show();
+            leNouvelElement.ShowDialog();
         }
 
         private void buttonAjouterElementStreetMarketing_Click(object sender, EventArgs e)
         {
-            fenNouvelElementStreetMarketing leNouvelElementStreetMarketing = new fenNouvelElementStreetMarketing(this);
-            leNouvelElementStreetMarketing.Show();
+            fenNouvelElementPersonnalisable leNouvelElementStreetMarketing = new fenNouvelElementPersonnalisable(this);
+            leNouvelElementStreetMarketing.ShowDialog();
         }
 
         private void buttonAjouterHonorairePredifini_Click(object sender, EventArgs e)
@@ -51,13 +51,13 @@ namespace Second_Sens___Devis
         private void buttonAjouterPersonnel_Click(object sender, EventArgs e)
         {
             fenAjoutPersonnel leNouveauPersonnel = new fenAjoutPersonnel(this);
-            leNouveauPersonnel.Show();
+            leNouveauPersonnel.ShowDialog();
         }
 
         private void buttonAjouterVehicule_Click(object sender, EventArgs e)
         {
             fenNouveauElementVehicule leNouveauVehicule = new fenNouveauElementVehicule(this);
-            leNouveauVehicule.Show();
+            leNouveauVehicule.ShowDialog();
         }
     }
 }

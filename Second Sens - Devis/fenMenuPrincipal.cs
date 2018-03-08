@@ -57,14 +57,14 @@ namespace Second_Sens___Devis
         {
             fenNouvelleEquipe laNouvelleEquipe = new fenNouvelleEquipe(this);
             /* modif contrôles si predifini */
-            laNouvelleEquipe.Show();
+            laNouvelleEquipe.ShowDialog();
         }
 
         private void buttonAjoutEquipePersonnalisee_Click(object sender, EventArgs e)
         {
             fenNouvelleEquipe laNouvelleEquipe = new fenNouvelleEquipe(this);
             /* modif contrôles si predifini */
-            laNouvelleEquipe.Show();
+            laNouvelleEquipe.ShowDialog();
         }
 
         private void aideToolStripMenuItem_Click(object sender, EventArgs e)
@@ -89,6 +89,11 @@ namespace Second_Sens___Devis
         protected override void OnClosing(CancelEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

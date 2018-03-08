@@ -124,11 +124,11 @@
     <Compile Include="fenNouveauPeage.Designer.cs">
       <DependentUpon>fenNouveauPeage.cs</DependentUpon>
     </Compile>
-    <Compile Include="fenNouvelElementStreetMarketing.cs">
+    <Compile Include="fenNouvelElementPersonnalisable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fenNouvelElementStreetMarketing.Designer.cs">
-      <DependentUpon>fenNouvelElementStreetMarketing.cs</DependentUpon>
+    <Compile Include="fenNouvelElementPersonnalisable.Designer.cs">
+      <DependentUpon>fenNouvelElementPersonnalisable.cs</DependentUpon>
     </Compile>
     <Compile Include="fenNouvelElementVehicule.cs">
       <SubType>Form</SubType>
@@ -188,8 +188,8 @@
     <EmbeddedResource Include="fenNouveauPeage.resx">
       <DependentUpon>fenNouveauPeage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fenNouvelElementStreetMarketing.resx">
-      <DependentUpon>fenNouvelElementStreetMarketing.cs</DependentUpon>
+    <EmbeddedResource Include="fenNouvelElementPersonnalisable.resx">
+      <DependentUpon>fenNouvelElementPersonnalisable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fenNouvelElementVehicule.resx">
       <DependentUpon>fenNouvelElementVehicule.cs</DependentUpon>

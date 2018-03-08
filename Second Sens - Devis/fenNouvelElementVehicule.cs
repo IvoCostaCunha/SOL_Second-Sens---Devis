@@ -67,7 +67,7 @@ namespace Second_Sens___Devis
             fenNouveauPeage leNouveauPeage = new fenNouveauPeage(this);
             leNouveauPeage.textBoxVilleDepartPeage.Text = this.textBoxVilleDepart.Text;
             leNouveauPeage.textBoxVilleArriveePeage.Text = this.textBoxVilleArrivee.Text;
-            leNouveauPeage.Show();
+            leNouveauPeage.ShowDialog();
 
         }
 
