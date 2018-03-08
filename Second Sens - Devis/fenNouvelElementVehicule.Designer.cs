@@ -52,20 +52,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dataGridViewPeages = new System.Windows.Forms.DataGridView();
-            this.colNomPeage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifPeage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonAjoutPeage = new System.Windows.Forms.Button();
             this.buttonValiderAjoutVehicule = new System.Windows.Forms.Button();
             this.buttonAnnulerAjoutVehicule = new System.Windows.Forms.Button();
-            this.buttonSupprimerPeage = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxNbJoursLocation = new System.Windows.Forms.TextBox();
+            this.textBoxPeage = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.panelTypeVehiculeLocation.SuspendLayout();
             this.panelTypeVehiculeEntreprise.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPeages)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,7 +116,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 224);
+            this.label4.Location = new System.Drawing.Point(369, 71);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
@@ -131,7 +126,7 @@
             // comboBoxTypeVehicule
             // 
             this.comboBoxTypeVehicule.FormattingEnabled = true;
-            this.comboBoxTypeVehicule.Location = new System.Drawing.Point(122, 225);
+            this.comboBoxTypeVehicule.Location = new System.Drawing.Point(482, 72);
             this.comboBoxTypeVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypeVehicule.Name = "comboBoxTypeVehicule";
             this.comboBoxTypeVehicule.Size = new System.Drawing.Size(162, 21);
@@ -144,7 +139,7 @@
             this.panelTypeVehiculeLocation.Controls.Add(this.textBoxPrixLocationVehicule);
             this.panelTypeVehiculeLocation.Controls.Add(this.labelPrixLocation);
             this.panelTypeVehiculeLocation.Controls.Add(this.label7);
-            this.panelTypeVehiculeLocation.Location = new System.Drawing.Point(17, 256);
+            this.panelTypeVehiculeLocation.Location = new System.Drawing.Point(377, 105);
             this.panelTypeVehiculeLocation.Margin = new System.Windows.Forms.Padding(2);
             this.panelTypeVehiculeLocation.Name = "panelTypeVehiculeLocation";
             this.panelTypeVehiculeLocation.Size = new System.Drawing.Size(272, 150);
@@ -193,7 +188,7 @@
             // 
             this.labelVilleDepartVehicule.AutoSize = true;
             this.labelVilleDepartVehicule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVilleDepartVehicule.Location = new System.Drawing.Point(9, 124);
+            this.labelVilleDepartVehicule.Location = new System.Drawing.Point(9, 122);
             this.labelVilleDepartVehicule.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVilleDepartVehicule.Name = "labelVilleDepartVehicule";
             this.labelVilleDepartVehicule.Size = new System.Drawing.Size(88, 20);
@@ -204,7 +199,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 158);
+            this.label6.Location = new System.Drawing.Point(9, 156);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
@@ -213,7 +208,7 @@
             // 
             // textBoxVilleDepart
             // 
-            this.textBoxVilleDepart.Location = new System.Drawing.Point(122, 126);
+            this.textBoxVilleDepart.Location = new System.Drawing.Point(122, 124);
             this.textBoxVilleDepart.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVilleDepart.Name = "textBoxVilleDepart";
             this.textBoxVilleDepart.Size = new System.Drawing.Size(162, 20);
@@ -221,7 +216,7 @@
             // 
             // textBoxVilleArrivee
             // 
-            this.textBoxVilleArrivee.Location = new System.Drawing.Point(122, 160);
+            this.textBoxVilleArrivee.Location = new System.Drawing.Point(122, 158);
             this.textBoxVilleArrivee.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVilleArrivee.Name = "textBoxVilleArrivee";
             this.textBoxVilleArrivee.Size = new System.Drawing.Size(162, 20);
@@ -255,7 +250,7 @@
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label9);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.textBoxKmTrajet);
-            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(19, 256);
+            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(377, 107);
             this.panelTypeVehiculeEntreprise.Margin = new System.Windows.Forms.Padding(2);
             this.panelTypeVehiculeEntreprise.Name = "panelTypeVehiculeEntreprise";
             this.panelTypeVehiculeEntreprise.Size = new System.Drawing.Size(270, 148);
@@ -311,58 +306,12 @@
             this.label.TabIndex = 7;
             this.label.Text = "Indemnité kilometrique";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(407, 43);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 20);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Péages";
-            // 
-            // dataGridViewPeages
-            // 
-            this.dataGridViewPeages.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPeages.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNomPeage,
-            this.colTarifPeage});
-            this.dataGridViewPeages.Location = new System.Drawing.Point(411, 103);
-            this.dataGridViewPeages.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridViewPeages.Name = "dataGridViewPeages";
-            this.dataGridViewPeages.RowTemplate.Height = 28;
-            this.dataGridViewPeages.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewPeages.Size = new System.Drawing.Size(517, 245);
-            this.dataGridViewPeages.TabIndex = 16;
-            // 
-            // colNomPeage
-            // 
-            this.colNomPeage.HeaderText = "Nom péage";
-            this.colNomPeage.Name = "colNomPeage";
-            // 
-            // colTarifPeage
-            // 
-            this.colTarifPeage.HeaderText = "Tarif";
-            this.colTarifPeage.Name = "colTarifPeage";
-            // 
-            // buttonAjoutPeage
-            // 
-            this.buttonAjoutPeage.Location = new System.Drawing.Point(411, 73);
-            this.buttonAjoutPeage.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonAjoutPeage.Name = "buttonAjoutPeage";
-            this.buttonAjoutPeage.Size = new System.Drawing.Size(206, 26);
-            this.buttonAjoutPeage.TabIndex = 17;
-            this.buttonAjoutPeage.Text = "Ajouter péage";
-            this.buttonAjoutPeage.UseVisualStyleBackColor = true;
-            this.buttonAjoutPeage.Click += new System.EventHandler(this.buttonAjoutPeage_Click);
-            // 
             // buttonValiderAjoutVehicule
             // 
-            this.buttonValiderAjoutVehicule.Location = new System.Drawing.Point(683, 379);
+            this.buttonValiderAjoutVehicule.Location = new System.Drawing.Point(169, 291);
             this.buttonValiderAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.buttonValiderAjoutVehicule.Name = "buttonValiderAjoutVehicule";
-            this.buttonValiderAjoutVehicule.Size = new System.Drawing.Size(245, 27);
+            this.buttonValiderAjoutVehicule.Size = new System.Drawing.Size(265, 40);
             this.buttonValiderAjoutVehicule.TabIndex = 18;
             this.buttonValiderAjoutVehicule.Text = "Valider vehicule";
             this.buttonValiderAjoutVehicule.UseVisualStyleBackColor = true;
@@ -370,24 +319,13 @@
             // 
             // buttonAnnulerAjoutVehicule
             // 
-            this.buttonAnnulerAjoutVehicule.Location = new System.Drawing.Point(512, 379);
+            this.buttonAnnulerAjoutVehicule.Location = new System.Drawing.Point(11, 291);
             this.buttonAnnulerAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerAjoutVehicule.Name = "buttonAnnulerAjoutVehicule";
-            this.buttonAnnulerAjoutVehicule.Size = new System.Drawing.Size(167, 27);
+            this.buttonAnnulerAjoutVehicule.Size = new System.Drawing.Size(154, 40);
             this.buttonAnnulerAjoutVehicule.TabIndex = 19;
             this.buttonAnnulerAjoutVehicule.Text = "Annuler";
             this.buttonAnnulerAjoutVehicule.UseVisualStyleBackColor = true;
-            // 
-            // buttonSupprimerPeage
-            // 
-            this.buttonSupprimerPeage.Location = new System.Drawing.Point(621, 74);
-            this.buttonSupprimerPeage.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonSupprimerPeage.Name = "buttonSupprimerPeage";
-            this.buttonSupprimerPeage.Size = new System.Drawing.Size(207, 25);
-            this.buttonSupprimerPeage.TabIndex = 20;
-            this.buttonSupprimerPeage.Text = "Supprimer péage";
-            this.buttonSupprimerPeage.UseVisualStyleBackColor = true;
-            this.buttonSupprimerPeage.Click += new System.EventHandler(this.buttonSupprimerPeage_Click);
             // 
             // label11
             // 
@@ -403,7 +341,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(9, 190);
+            this.label12.Location = new System.Drawing.Point(369, 39);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 20);
@@ -412,28 +350,45 @@
             // 
             // textBoxNbJoursLocation
             // 
-            this.textBoxNbJoursLocation.Location = new System.Drawing.Point(122, 192);
+            this.textBoxNbJoursLocation.Location = new System.Drawing.Point(482, 41);
             this.textBoxNbJoursLocation.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNbJoursLocation.Name = "textBoxNbJoursLocation";
             this.textBoxNbJoursLocation.Size = new System.Drawing.Size(162, 20);
             this.textBoxNbJoursLocation.TabIndex = 24;
+            // 
+            // textBoxPeage
+            // 
+            this.textBoxPeage.Location = new System.Drawing.Point(122, 194);
+            this.textBoxPeage.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPeage.Name = "textBoxPeage";
+            this.textBoxPeage.Size = new System.Drawing.Size(162, 20);
+            this.textBoxPeage.TabIndex = 26;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(9, 192);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(108, 20);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "Péages (en €)";
             // 
             // fenNouveauElementVehicule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(939, 488);
+            this.ClientSize = new System.Drawing.Size(682, 348);
+            this.Controls.Add(this.textBoxPeage);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxNbJoursLocation);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.buttonSupprimerPeage);
             this.Controls.Add(this.panelTypeVehiculeEntreprise);
             this.Controls.Add(this.buttonAnnulerAjoutVehicule);
             this.Controls.Add(this.buttonValiderAjoutVehicule);
-            this.Controls.Add(this.buttonAjoutPeage);
-            this.Controls.Add(this.dataGridViewPeages);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxVilleArrivee);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBoxVilleDepart);
@@ -454,7 +409,6 @@
             this.panelTypeVehiculeLocation.PerformLayout();
             this.panelTypeVehiculeEntreprise.ResumeLayout(false);
             this.panelTypeVehiculeEntreprise.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPeages)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,23 +433,19 @@
         private System.Windows.Forms.TextBox textBoxKmTrajet;
         private System.Windows.Forms.Panel panelTypeVehiculeEntreprise;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button buttonAjoutPeage;
         private System.Windows.Forms.Button buttonValiderAjoutVehicule;
         private System.Windows.Forms.Button buttonAnnulerAjoutVehicule;
-        private System.Windows.Forms.Button buttonSupprimerPeage;
         private System.Windows.Forms.TextBox textBoxKmParAn;
         private System.Windows.Forms.TextBox textBoxNbCV;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.DataGridView dataGridViewPeages;
         private System.Windows.Forms.TextBox textBoxPrixLocationVehicule;
         private System.Windows.Forms.Label labelPrixLocation;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNomPeage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifPeage;
         private System.Windows.Forms.TextBox textBoxTarifCarburant;
         private System.Windows.Forms.TextBox textBoxNbJoursLocation;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBoxPeage;
+        private System.Windows.Forms.Label label13;
     }
 }

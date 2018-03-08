@@ -58,9 +58,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridViewHonoraires = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -78,6 +75,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
@@ -165,7 +165,7 @@
             // 
             this.labelAideAjoutDevis.AutoSize = true;
             this.labelAideAjoutDevis.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAideAjoutDevis.Location = new System.Drawing.Point(11, 272);
+            this.labelAideAjoutDevis.Location = new System.Drawing.Point(11, 221);
             this.labelAideAjoutDevis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelAideAjoutDevis.Name = "labelAideAjoutDevis";
             this.labelAideAjoutDevis.Size = new System.Drawing.Size(295, 26);
@@ -186,7 +186,7 @@
             // comboBoxEquipesPrédefinies
             // 
             this.comboBoxEquipesPrédefinies.FormattingEnabled = true;
-            this.comboBoxEquipesPrédefinies.Location = new System.Drawing.Point(11, 332);
+            this.comboBoxEquipesPrédefinies.Location = new System.Drawing.Point(11, 281);
             this.comboBoxEquipesPrédefinies.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEquipesPrédefinies.Name = "comboBoxEquipesPrédefinies";
             this.comboBoxEquipesPrédefinies.Size = new System.Drawing.Size(257, 24);
@@ -197,7 +197,7 @@
             // 
             this.listBoxEquipes.FormattingEnabled = true;
             this.listBoxEquipes.ItemHeight = 16;
-            this.listBoxEquipes.Location = new System.Drawing.Point(576, 65);
+            this.listBoxEquipes.Location = new System.Drawing.Point(576, 61);
             this.listBoxEquipes.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxEquipes.Name = "listBoxEquipes";
             this.listBoxEquipes.Size = new System.Drawing.Size(488, 260);
@@ -205,7 +205,7 @@
             // 
             // buttonAjouterEquipePredefinie
             // 
-            this.buttonAjouterEquipePredefinie.Location = new System.Drawing.Point(272, 330);
+            this.buttonAjouterEquipePredefinie.Location = new System.Drawing.Point(272, 279);
             this.buttonAjouterEquipePredefinie.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterEquipePredefinie.Name = "buttonAjouterEquipePredefinie";
             this.buttonAjouterEquipePredefinie.Size = new System.Drawing.Size(272, 26);
@@ -216,10 +216,10 @@
             // 
             // buttonAnnuler
             // 
-            this.buttonAnnuler.Location = new System.Drawing.Point(11, 823);
+            this.buttonAnnuler.Location = new System.Drawing.Point(11, 814);
             this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnuler.Name = "buttonAnnuler";
-            this.buttonAnnuler.Size = new System.Drawing.Size(206, 27);
+            this.buttonAnnuler.Size = new System.Drawing.Size(190, 57);
             this.buttonAnnuler.TabIndex = 15;
             this.buttonAnnuler.Text = "Annuler";
             this.buttonAnnuler.UseVisualStyleBackColor = true;
@@ -227,20 +227,20 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(576, 329);
+            this.button2.Location = new System.Drawing.Point(576, 332);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 27);
+            this.button2.Size = new System.Drawing.Size(219, 39);
             this.button2.TabIndex = 16;
             this.button2.Text = "Supprimer equipe";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // buttonResumeDevis
             // 
-            this.buttonResumeDevis.Location = new System.Drawing.Point(226, 823);
+            this.buttonResumeDevis.Location = new System.Drawing.Point(206, 814);
             this.buttonResumeDevis.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResumeDevis.Name = "buttonResumeDevis";
-            this.buttonResumeDevis.Size = new System.Drawing.Size(318, 25);
+            this.buttonResumeDevis.Size = new System.Drawing.Size(338, 57);
             this.buttonResumeDevis.TabIndex = 17;
             this.buttonResumeDevis.Text = "Valider devis";
             this.buttonResumeDevis.UseVisualStyleBackColor = true;
@@ -248,10 +248,10 @@
             // 
             // buttonModifierEquipe
             // 
-            this.buttonModifierEquipe.Location = new System.Drawing.Point(799, 329);
+            this.buttonModifierEquipe.Location = new System.Drawing.Point(799, 332);
             this.buttonModifierEquipe.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModifierEquipe.Name = "buttonModifierEquipe";
-            this.buttonModifierEquipe.Size = new System.Drawing.Size(265, 27);
+            this.buttonModifierEquipe.Size = new System.Drawing.Size(265, 39);
             this.buttonModifierEquipe.TabIndex = 18;
             this.buttonModifierEquipe.Text = "Modifier équipe";
             this.buttonModifierEquipe.UseVisualStyleBackColor = true;
@@ -299,13 +299,13 @@
             this.panelNouveauDevis.Location = new System.Drawing.Point(0, 23);
             this.panelNouveauDevis.Margin = new System.Windows.Forms.Padding(2);
             this.panelNouveauDevis.Name = "panelNouveauDevis";
-            this.panelNouveauDevis.Size = new System.Drawing.Size(1651, 860);
+            this.panelNouveauDevis.Size = new System.Drawing.Size(1651, 888);
             this.panelNouveauDevis.TabIndex = 1;
             this.panelNouveauDevis.Visible = false;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(130, 570);
+            this.textBox4.Location = new System.Drawing.Point(129, 553);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(252, 23);
@@ -315,7 +315,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 573);
+            this.label14.Location = new System.Drawing.Point(12, 556);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(53, 20);
@@ -343,7 +343,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(1466, 118);
+            this.button7.Location = new System.Drawing.Point(1465, 133);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(158, 27);
@@ -354,7 +354,7 @@
             // dataGridViewAjoutDivers
             // 
             this.dataGridViewAjoutDivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAjoutDivers.Location = new System.Drawing.Point(1097, 119);
+            this.dataGridViewAjoutDivers.Location = new System.Drawing.Point(1097, 133);
             this.dataGridViewAjoutDivers.Name = "dataGridViewAjoutDivers";
             this.dataGridViewAjoutDivers.Size = new System.Drawing.Size(364, 151);
             this.dataGridViewAjoutDivers.TabIndex = 46;
@@ -364,7 +364,7 @@
             this.button6.Location = new System.Drawing.Point(1465, 51);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(159, 27);
+            this.button6.Size = new System.Drawing.Size(159, 56);
             this.button6.TabIndex = 45;
             this.button6.Text = "Ajouter";
             this.button6.UseVisualStyleBackColor = true;
@@ -408,23 +408,9 @@
             this.colMarge2S});
             this.dataGridViewHonoraires.Location = new System.Drawing.Point(11, 102);
             this.dataGridViewHonoraires.Name = "dataGridViewHonoraires";
-            this.dataGridViewHonoraires.Size = new System.Drawing.Size(532, 139);
+            this.dataGridViewHonoraires.ReadOnly = true;
+            this.dataGridViewHonoraires.Size = new System.Drawing.Size(532, 80);
             this.dataGridViewHonoraires.TabIndex = 41;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Total";
-            this.Column1.Name = "Column1";
-            // 
-            // colRevient
-            // 
-            this.colRevient.HeaderText = "Coût de revient SecondSens";
-            this.colRevient.Name = "colRevient";
-            // 
-            // colMarge2S
-            // 
-            this.colMarge2S.HeaderText = "Marge SecondSens";
-            this.colMarge2S.Name = "colMarge2S";
             // 
             // label2
             // 
@@ -439,7 +425,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(386, 647);
+            this.button5.Location = new System.Drawing.Point(385, 637);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(158, 27);
@@ -451,7 +437,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(14, 617);
+            this.label12.Location = new System.Drawing.Point(14, 606);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(144, 16);
@@ -461,17 +447,17 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 647);
+            this.dataGridView2.Location = new System.Drawing.Point(11, 637);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(364, 136);
             this.dataGridView2.TabIndex = 37;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(385, 543);
+            this.button4.Location = new System.Drawing.Point(385, 511);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 27);
+            this.button4.Size = new System.Drawing.Size(159, 65);
             this.button4.TabIndex = 34;
             this.button4.Text = "Ajouter";
             this.button4.UseVisualStyleBackColor = true;
@@ -480,7 +466,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(12, 548);
+            this.label10.Location = new System.Drawing.Point(12, 516);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 20);
@@ -489,7 +475,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 545);
+            this.textBox1.Location = new System.Drawing.Point(129, 513);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(252, 23);
@@ -498,7 +484,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(206, 598);
+            this.radioButton2.Location = new System.Drawing.Point(206, 581);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(78, 21);
             this.radioButton2.TabIndex = 30;
@@ -509,7 +495,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(291, 598);
+            this.radioButton1.Location = new System.Drawing.Point(291, 581);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(91, 21);
             this.radioButton1.TabIndex = 29;
@@ -521,7 +507,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 493);
+            this.label9.Location = new System.Drawing.Point(11, 461);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(234, 26);
@@ -531,7 +517,7 @@
             // dataGridViewDetailEquipe
             // 
             this.dataGridViewDetailEquipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDetailEquipe.Location = new System.Drawing.Point(576, 412);
+            this.dataGridViewDetailEquipe.Location = new System.Drawing.Point(576, 432);
             this.dataGridViewDetailEquipe.Name = "dataGridViewDetailEquipe";
             this.dataGridViewDetailEquipe.Size = new System.Drawing.Size(488, 438);
             this.dataGridViewDetailEquipe.TabIndex = 25;
@@ -540,7 +526,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(571, 383);
+            this.label8.Location = new System.Drawing.Point(571, 403);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 26);
@@ -560,10 +546,10 @@
             // 
             // btnNouvelleEquipePerso
             // 
-            this.btnNouvelleEquipePerso.Location = new System.Drawing.Point(93, 431);
+            this.btnNouvelleEquipePerso.Location = new System.Drawing.Point(16, 381);
             this.btnNouvelleEquipePerso.Margin = new System.Windows.Forms.Padding(2);
             this.btnNouvelleEquipePerso.Name = "btnNouvelleEquipePerso";
-            this.btnNouvelleEquipePerso.Size = new System.Drawing.Size(312, 26);
+            this.btnNouvelleEquipePerso.Size = new System.Drawing.Size(527, 48);
             this.btnNouvelleEquipePerso.TabIndex = 22;
             this.btnNouvelleEquipePerso.Text = "Nouvelle équipe personnalisée";
             this.btnNouvelleEquipePerso.UseVisualStyleBackColor = true;
@@ -573,7 +559,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(13, 398);
+            this.label6.Location = new System.Drawing.Point(13, 347);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(188, 16);
@@ -584,7 +570,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(261, 372);
+            this.label5.Location = new System.Drawing.Point(261, 321);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(23, 16);
@@ -595,18 +581,39 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 305);
+            this.label4.Location = new System.Drawing.Point(13, 254);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(163, 16);
             this.label4.TabIndex = 19;
             this.label4.Text = "Nouvelle équipe existante";
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "Total Client";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // colRevient
+            // 
+            this.colRevient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colRevient.HeaderText = "Coût de revient SecondSens";
+            this.colRevient.Name = "colRevient";
+            this.colRevient.ReadOnly = true;
+            // 
+            // colMarge2S
+            // 
+            this.colMarge2S.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colMarge2S.HeaderText = "Marge SecondSens";
+            this.colMarge2S.Name = "colMarge2S";
+            this.colMarge2S.ReadOnly = true;
+            // 
             // fenMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1656, 884);
+            this.ClientSize = new System.Drawing.Size(1656, 916);
             this.Controls.Add(this.panelNouveauDevis);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -653,9 +660,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridViewHonoraires;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colRevient;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colMarge2S;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -680,5 +684,8 @@
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colRevient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMarge2S;
     }
 }
