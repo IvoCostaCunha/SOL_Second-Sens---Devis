@@ -96,5 +96,10 @@ namespace Second_Sens___Devis
             fenNouvelleEquipe uneNouvelleEquipePerso = new fenNouvelleEquipe(this);
             uneNouvelleEquipePerso.ShowDialog();
         }
+
+        private void buttonAjouterHonoraire_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

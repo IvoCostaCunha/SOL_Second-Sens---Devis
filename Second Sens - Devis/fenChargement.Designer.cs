@@ -49,7 +49,7 @@
             this.labelChargement.ForeColor = System.Drawing.Color.White;
             this.labelChargement.Location = new System.Drawing.Point(12, 133);
             this.labelChargement.Name = "labelChargement";
-            this.labelChargement.Size = new System.Drawing.Size(95, 20);
+            this.labelChargement.Size = new System.Drawing.Size(70, 15);
             this.labelChargement.TabIndex = 2;
             this.labelChargement.Text = "Chargement ...";
             // 
@@ -57,6 +57,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(500, 188);

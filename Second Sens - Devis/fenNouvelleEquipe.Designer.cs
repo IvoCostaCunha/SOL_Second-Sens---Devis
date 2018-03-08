@@ -40,10 +40,10 @@
             this.bntAjoutVehicule = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxAjoutsEffectues = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridViewDetailAjouts = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailAjouts)).BeginInit();
             this.SuspendLayout();
             // 
             // labelElementsAjoutes
@@ -175,14 +175,14 @@
             this.label4.TabIndex = 34;
             this.label4.Text = "Comprend le personnel également";
             // 
-            // listBox1
+            // listBoxAjoutsEffectues
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(413, 29);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(448, 199);
-            this.listBox1.TabIndex = 35;
+            this.listBoxAjoutsEffectues.FormattingEnabled = true;
+            this.listBoxAjoutsEffectues.Location = new System.Drawing.Point(413, 29);
+            this.listBoxAjoutsEffectues.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxAjoutsEffectues.Name = "listBoxAjoutsEffectues";
+            this.listBoxAjoutsEffectues.Size = new System.Drawing.Size(448, 199);
+            this.listBoxAjoutsEffectues.TabIndex = 35;
             // 
             // label5
             // 
@@ -195,24 +195,27 @@
             this.label5.TabIndex = 36;
             this.label5.Text = "Détails ajouts";
             // 
-            // dataGridView1
+            // dataGridViewDetailAjouts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(413, 271);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(448, 235);
-            this.dataGridView1.TabIndex = 37;
+            this.dataGridViewDetailAjouts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetailAjouts.Location = new System.Drawing.Point(413, 271);
+            this.dataGridViewDetailAjouts.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewDetailAjouts.Name = "dataGridViewDetailAjouts";
+            this.dataGridViewDetailAjouts.RowTemplate.Height = 28;
+            this.dataGridViewDetailAjouts.Size = new System.Drawing.Size(448, 235);
+            this.dataGridViewDetailAjouts.TabIndex = 37;
             // 
             // fenNouvelleEquipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(887, 517);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewDetailAjouts);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxAjoutsEffectues);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bntAjoutVehicule);
@@ -229,7 +232,7 @@
             this.Name = "fenNouvelleEquipe";
             this.Text = "Nouvelle équipe";
             this.Load += new System.EventHandler(this.fenNouvelleEquipe_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailAjouts)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,8 +251,8 @@
         private System.Windows.Forms.Button bntAjoutVehicule;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxAjoutsEffectues;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewDetailAjouts;
     }
 }

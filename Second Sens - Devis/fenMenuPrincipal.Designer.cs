@@ -47,29 +47,29 @@
             this.buttonResumeDevis = new System.Windows.Forms.Button();
             this.buttonModifierEquipe = new System.Windows.Forms.Button();
             this.panelNouveauDevis = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxDuree = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxTarifDivers = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.dataGridViewAjoutDivers = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxNomDivers = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridViewHonoraires = new System.Windows.Forms.DataGridView();
+            this.dataGridViewResume2S = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonSupprimerHonoraire = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
+            this.dataGridViewHonoraire = new System.Windows.Forms.DataGridView();
+            this.buttonAjouterHonoraire = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBoxNomHonoraire = new System.Windows.Forms.TextBox();
+            this.radioButtonEnJours = new System.Windows.Forms.RadioButton();
+            this.radioButtonEnHeures = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridViewDetailEquipe = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
@@ -81,8 +81,8 @@
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonoraires)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResume2S)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonoraire)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailEquipe)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,26 +260,26 @@
             // 
             this.panelNouveauDevis.AutoScroll = true;
             this.panelNouveauDevis.AutoSize = true;
-            this.panelNouveauDevis.Controls.Add(this.textBox4);
+            this.panelNouveauDevis.Controls.Add(this.textBoxDuree);
             this.panelNouveauDevis.Controls.Add(this.label14);
             this.panelNouveauDevis.Controls.Add(this.label13);
-            this.panelNouveauDevis.Controls.Add(this.textBox3);
+            this.panelNouveauDevis.Controls.Add(this.textBoxTarifDivers);
             this.panelNouveauDevis.Controls.Add(this.button7);
             this.panelNouveauDevis.Controls.Add(this.dataGridViewAjoutDivers);
             this.panelNouveauDevis.Controls.Add(this.button6);
             this.panelNouveauDevis.Controls.Add(this.label11);
-            this.panelNouveauDevis.Controls.Add(this.textBox2);
+            this.panelNouveauDevis.Controls.Add(this.textBoxNomDivers);
             this.panelNouveauDevis.Controls.Add(this.label3);
-            this.panelNouveauDevis.Controls.Add(this.dataGridViewHonoraires);
+            this.panelNouveauDevis.Controls.Add(this.dataGridViewResume2S);
             this.panelNouveauDevis.Controls.Add(this.label2);
-            this.panelNouveauDevis.Controls.Add(this.button5);
+            this.panelNouveauDevis.Controls.Add(this.buttonSupprimerHonoraire);
             this.panelNouveauDevis.Controls.Add(this.label12);
-            this.panelNouveauDevis.Controls.Add(this.dataGridView2);
-            this.panelNouveauDevis.Controls.Add(this.button4);
+            this.panelNouveauDevis.Controls.Add(this.dataGridViewHonoraire);
+            this.panelNouveauDevis.Controls.Add(this.buttonAjouterHonoraire);
             this.panelNouveauDevis.Controls.Add(this.label10);
-            this.panelNouveauDevis.Controls.Add(this.textBox1);
-            this.panelNouveauDevis.Controls.Add(this.radioButton2);
-            this.panelNouveauDevis.Controls.Add(this.radioButton1);
+            this.panelNouveauDevis.Controls.Add(this.textBoxNomHonoraire);
+            this.panelNouveauDevis.Controls.Add(this.radioButtonEnJours);
+            this.panelNouveauDevis.Controls.Add(this.radioButtonEnHeures);
             this.panelNouveauDevis.Controls.Add(this.label9);
             this.panelNouveauDevis.Controls.Add(this.dataGridViewDetailEquipe);
             this.panelNouveauDevis.Controls.Add(this.label8);
@@ -306,13 +306,13 @@
             this.panelNouveauDevis.TabIndex = 1;
             this.panelNouveauDevis.Visible = false;
             // 
-            // textBox4
+            // textBoxDuree
             // 
-            this.textBox4.Location = new System.Drawing.Point(129, 553);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(252, 23);
-            this.textBox4.TabIndex = 51;
+            this.textBoxDuree.Location = new System.Drawing.Point(129, 553);
+            this.textBoxDuree.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxDuree.Name = "textBoxDuree";
+            this.textBoxDuree.Size = new System.Drawing.Size(252, 23);
+            this.textBoxDuree.TabIndex = 51;
             // 
             // label14
             // 
@@ -336,13 +336,13 @@
             this.label13.TabIndex = 49;
             this.label13.Text = "Tarif";
             // 
-            // textBox3
+            // textBoxTarifDivers
             // 
-            this.textBox3.Location = new System.Drawing.Point(1209, 84);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 23);
-            this.textBox3.TabIndex = 48;
+            this.textBoxTarifDivers.Location = new System.Drawing.Point(1209, 84);
+            this.textBoxTarifDivers.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTarifDivers.Name = "textBoxTarifDivers";
+            this.textBoxTarifDivers.Size = new System.Drawing.Size(252, 23);
+            this.textBoxTarifDivers.TabIndex = 48;
             // 
             // button7
             // 
@@ -383,13 +383,13 @@
             this.label11.TabIndex = 44;
             this.label11.Text = "Nom divers";
             // 
-            // textBox2
+            // textBoxNomDivers
             // 
-            this.textBox2.Location = new System.Drawing.Point(1209, 53);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(252, 23);
-            this.textBox2.TabIndex = 43;
+            this.textBoxNomDivers.Location = new System.Drawing.Point(1209, 53);
+            this.textBoxNomDivers.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNomDivers.Name = "textBoxNomDivers";
+            this.textBoxNomDivers.Size = new System.Drawing.Size(252, 23);
+            this.textBoxNomDivers.TabIndex = 43;
             // 
             // label3
             // 
@@ -402,18 +402,18 @@
             this.label3.TabIndex = 42;
             this.label3.Text = "Ajouts divers";
             // 
-            // dataGridViewHonoraires
+            // dataGridViewResume2S
             // 
-            this.dataGridViewHonoraires.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewHonoraires.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewResume2S.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResume2S.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.colRevient,
             this.colMarge2S});
-            this.dataGridViewHonoraires.Location = new System.Drawing.Point(11, 102);
-            this.dataGridViewHonoraires.Name = "dataGridViewHonoraires";
-            this.dataGridViewHonoraires.ReadOnly = true;
-            this.dataGridViewHonoraires.Size = new System.Drawing.Size(532, 80);
-            this.dataGridViewHonoraires.TabIndex = 41;
+            this.dataGridViewResume2S.Location = new System.Drawing.Point(11, 102);
+            this.dataGridViewResume2S.Name = "dataGridViewResume2S";
+            this.dataGridViewResume2S.ReadOnly = true;
+            this.dataGridViewResume2S.Size = new System.Drawing.Size(532, 80);
+            this.dataGridViewResume2S.TabIndex = 41;
             // 
             // Column1
             // 
@@ -447,15 +447,15 @@
             this.label2.TabIndex = 40;
             this.label2.Text = "Date devis";
             // 
-            // button5
+            // buttonSupprimerHonoraire
             // 
-            this.button5.Location = new System.Drawing.Point(385, 637);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(158, 27);
-            this.button5.TabIndex = 39;
-            this.button5.Text = "Supprimer honoraire";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonSupprimerHonoraire.Location = new System.Drawing.Point(385, 637);
+            this.buttonSupprimerHonoraire.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSupprimerHonoraire.Name = "buttonSupprimerHonoraire";
+            this.buttonSupprimerHonoraire.Size = new System.Drawing.Size(158, 27);
+            this.buttonSupprimerHonoraire.TabIndex = 39;
+            this.buttonSupprimerHonoraire.Text = "Supprimer honoraire";
+            this.buttonSupprimerHonoraire.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -468,23 +468,24 @@
             this.label12.TabIndex = 38;
             this.label12.Text = "Les honoraires ajoutés";
             // 
-            // dataGridView2
+            // dataGridViewHonoraire
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(11, 637);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(364, 136);
-            this.dataGridView2.TabIndex = 37;
+            this.dataGridViewHonoraire.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHonoraire.Location = new System.Drawing.Point(11, 637);
+            this.dataGridViewHonoraire.Name = "dataGridViewHonoraire";
+            this.dataGridViewHonoraire.Size = new System.Drawing.Size(364, 136);
+            this.dataGridViewHonoraire.TabIndex = 37;
             // 
-            // button4
+            // buttonAjouterHonoraire
             // 
-            this.button4.Location = new System.Drawing.Point(385, 511);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(159, 65);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Ajouter";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonAjouterHonoraire.Location = new System.Drawing.Point(385, 511);
+            this.buttonAjouterHonoraire.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAjouterHonoraire.Name = "buttonAjouterHonoraire";
+            this.buttonAjouterHonoraire.Size = new System.Drawing.Size(159, 65);
+            this.buttonAjouterHonoraire.TabIndex = 34;
+            this.buttonAjouterHonoraire.Text = "Ajouter";
+            this.buttonAjouterHonoraire.UseVisualStyleBackColor = true;
+            this.buttonAjouterHonoraire.Click += new System.EventHandler(this.buttonAjouterHonoraire_Click);
             // 
             // label10
             // 
@@ -497,35 +498,35 @@
             this.label10.TabIndex = 33;
             this.label10.Text = "Nom honoraire";
             // 
-            // textBox1
+            // textBoxNomHonoraire
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 513);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 23);
-            this.textBox1.TabIndex = 31;
+            this.textBoxNomHonoraire.Location = new System.Drawing.Point(129, 513);
+            this.textBoxNomHonoraire.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxNomHonoraire.Name = "textBoxNomHonoraire";
+            this.textBoxNomHonoraire.Size = new System.Drawing.Size(252, 23);
+            this.textBoxNomHonoraire.TabIndex = 31;
             // 
-            // radioButton2
+            // radioButtonEnJours
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(206, 581);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(78, 21);
-            this.radioButton2.TabIndex = 30;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "En jours";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonEnJours.AutoSize = true;
+            this.radioButtonEnJours.Location = new System.Drawing.Point(206, 581);
+            this.radioButtonEnJours.Name = "radioButtonEnJours";
+            this.radioButtonEnJours.Size = new System.Drawing.Size(78, 21);
+            this.radioButtonEnJours.TabIndex = 30;
+            this.radioButtonEnJours.TabStop = true;
+            this.radioButtonEnJours.Text = "En jours";
+            this.radioButtonEnJours.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButtonEnHeures
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(291, 581);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(91, 21);
-            this.radioButton1.TabIndex = 29;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "En heures";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonEnHeures.AutoSize = true;
+            this.radioButtonEnHeures.Location = new System.Drawing.Point(291, 581);
+            this.radioButtonEnHeures.Name = "radioButtonEnHeures";
+            this.radioButtonEnHeures.Size = new System.Drawing.Size(91, 21);
+            this.radioButtonEnHeures.TabIndex = 29;
+            this.radioButtonEnHeures.TabStop = true;
+            this.radioButtonEnHeures.Text = "En heures";
+            this.radioButtonEnHeures.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -631,8 +632,8 @@
             this.panelNouveauDevis.ResumeLayout(false);
             this.panelNouveauDevis.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonoraires)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResume2S)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHonoraire)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailEquipe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -663,28 +664,28 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridViewHonoraires;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridViewResume2S;
+        private System.Windows.Forms.Button buttonSupprimerHonoraire;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView dataGridViewHonoraire;
+        private System.Windows.Forms.Button buttonAjouterHonoraire;
         private System.Windows.Forms.Label label10;
-        public System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        public System.Windows.Forms.TextBox textBoxNomHonoraire;
+        private System.Windows.Forms.RadioButton radioButtonEnJours;
+        private System.Windows.Forms.RadioButton radioButtonEnHeures;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridViewDetailEquipe;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox textBox3;
+        public System.Windows.Forms.TextBox textBoxTarifDivers;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataGridView dataGridViewAjoutDivers;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox textBoxNomDivers;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox textBoxDuree;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label2;
