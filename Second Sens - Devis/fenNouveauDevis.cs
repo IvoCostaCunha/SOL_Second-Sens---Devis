@@ -44,8 +44,10 @@ namespace Second_Sens___Devis
                     leMenuPrincipal.panelNouveauDevis.Show();
                     this.Hide();
                 }
-                
-                
+                else
+                {
+                    MessageBox.Show("Veuillez renseigner une durée d'opération");
+                }
             }
             else
             {
