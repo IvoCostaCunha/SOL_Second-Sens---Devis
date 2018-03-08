@@ -624,6 +624,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenMenuPrincipal";
             this.Text = "Menu Principal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.fenMenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
