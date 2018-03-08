@@ -354,7 +354,7 @@
             // dataGridViewAjoutDivers
             // 
             this.dataGridViewAjoutDivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAjoutDivers.Location = new System.Drawing.Point(1097, 118);
+            this.dataGridViewAjoutDivers.Location = new System.Drawing.Point(1097, 119);
             this.dataGridViewAjoutDivers.Name = "dataGridViewAjoutDivers";
             this.dataGridViewAjoutDivers.Size = new System.Drawing.Size(364, 151);
             this.dataGridViewAjoutDivers.TabIndex = 46;

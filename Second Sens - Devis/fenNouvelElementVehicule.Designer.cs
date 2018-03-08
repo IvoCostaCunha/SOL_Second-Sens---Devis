@@ -94,7 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(9, 62);
+            this.label2.Location = new System.Drawing.Point(9, 73);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
@@ -104,24 +104,24 @@
             // textBoxNomVehicule
             // 
             this.textBoxNomVehicule.Location = new System.Drawing.Point(122, 43);
-            this.textBoxNomVehicule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNomVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNomVehicule.Name = "textBoxNomVehicule";
-            this.textBoxNomVehicule.Size = new System.Drawing.Size(162, 20);
+            this.textBoxNomVehicule.Size = new System.Drawing.Size(180, 20);
             this.textBoxNomVehicule.TabIndex = 4;
             // 
             // textBoxQteVehicule
             // 
-            this.textBoxQteVehicule.Location = new System.Drawing.Point(122, 62);
-            this.textBoxQteVehicule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxQteVehicule.Location = new System.Drawing.Point(122, 73);
+            this.textBoxQteVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxQteVehicule.Name = "textBoxQteVehicule";
-            this.textBoxQteVehicule.Size = new System.Drawing.Size(162, 20);
+            this.textBoxQteVehicule.Size = new System.Drawing.Size(180, 20);
             this.textBoxQteVehicule.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 169);
+            this.label4.Location = new System.Drawing.Point(9, 224);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
@@ -131,8 +131,8 @@
             // comboBoxTypeVehicule
             // 
             this.comboBoxTypeVehicule.FormattingEnabled = true;
-            this.comboBoxTypeVehicule.Location = new System.Drawing.Point(122, 170);
-            this.comboBoxTypeVehicule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxTypeVehicule.Location = new System.Drawing.Point(122, 225);
+            this.comboBoxTypeVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypeVehicule.Name = "comboBoxTypeVehicule";
             this.comboBoxTypeVehicule.Size = new System.Drawing.Size(162, 21);
             this.comboBoxTypeVehicule.TabIndex = 7;
@@ -144,8 +144,8 @@
             this.panelTypeVehiculeLocation.Controls.Add(this.textBoxPrixLocationVehicule);
             this.panelTypeVehiculeLocation.Controls.Add(this.labelPrixLocation);
             this.panelTypeVehiculeLocation.Controls.Add(this.label7);
-            this.panelTypeVehiculeLocation.Location = new System.Drawing.Point(13, 231);
-            this.panelTypeVehiculeLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTypeVehiculeLocation.Location = new System.Drawing.Point(17, 256);
+            this.panelTypeVehiculeLocation.Margin = new System.Windows.Forms.Padding(2);
             this.panelTypeVehiculeLocation.Name = "panelTypeVehiculeLocation";
             this.panelTypeVehiculeLocation.Size = new System.Drawing.Size(272, 150);
             this.panelTypeVehiculeLocation.TabIndex = 8;
@@ -154,15 +154,15 @@
             // textBoxTarifCarburant
             // 
             this.textBoxTarifCarburant.Location = new System.Drawing.Point(120, 7);
-            this.textBoxTarifCarburant.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTarifCarburant.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTarifCarburant.Name = "textBoxTarifCarburant";
             this.textBoxTarifCarburant.Size = new System.Drawing.Size(141, 20);
             this.textBoxTarifCarburant.TabIndex = 17;
             // 
             // textBoxPrixLocationVehicule
             // 
-            this.textBoxPrixLocationVehicule.Location = new System.Drawing.Point(120, 26);
-            this.textBoxPrixLocationVehicule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPrixLocationVehicule.Location = new System.Drawing.Point(120, 36);
+            this.textBoxPrixLocationVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPrixLocationVehicule.Name = "textBoxPrixLocationVehicule";
             this.textBoxPrixLocationVehicule.Size = new System.Drawing.Size(141, 20);
             this.textBoxPrixLocationVehicule.TabIndex = 16;
@@ -171,7 +171,7 @@
             // 
             this.labelPrixLocation.AutoSize = true;
             this.labelPrixLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPrixLocation.Location = new System.Drawing.Point(4, 24);
+            this.labelPrixLocation.Location = new System.Drawing.Point(4, 34);
             this.labelPrixLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPrixLocation.Name = "labelPrixLocation";
             this.labelPrixLocation.Size = new System.Drawing.Size(93, 20);
@@ -193,7 +193,7 @@
             // 
             this.labelVilleDepartVehicule.AutoSize = true;
             this.labelVilleDepartVehicule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVilleDepartVehicule.Location = new System.Drawing.Point(9, 103);
+            this.labelVilleDepartVehicule.Location = new System.Drawing.Point(9, 124);
             this.labelVilleDepartVehicule.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelVilleDepartVehicule.Name = "labelVilleDepartVehicule";
             this.labelVilleDepartVehicule.Size = new System.Drawing.Size(88, 20);
@@ -204,7 +204,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 124);
+            this.label6.Location = new System.Drawing.Point(9, 158);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
@@ -213,16 +213,16 @@
             // 
             // textBoxVilleDepart
             // 
-            this.textBoxVilleDepart.Location = new System.Drawing.Point(122, 105);
-            this.textBoxVilleDepart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxVilleDepart.Location = new System.Drawing.Point(122, 126);
+            this.textBoxVilleDepart.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVilleDepart.Name = "textBoxVilleDepart";
             this.textBoxVilleDepart.Size = new System.Drawing.Size(162, 20);
             this.textBoxVilleDepart.TabIndex = 9;
             // 
             // textBoxVilleArrivee
             // 
-            this.textBoxVilleArrivee.Location = new System.Drawing.Point(122, 126);
-            this.textBoxVilleArrivee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxVilleArrivee.Location = new System.Drawing.Point(122, 160);
+            this.textBoxVilleArrivee.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxVilleArrivee.Name = "textBoxVilleArrivee";
             this.textBoxVilleArrivee.Size = new System.Drawing.Size(162, 20);
             this.textBoxVilleArrivee.TabIndex = 10;
@@ -231,7 +231,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(4, 73);
+            this.label5.Location = new System.Drawing.Point(4, 90);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 20);
@@ -240,8 +240,8 @@
             // 
             // textBoxKmTrajet
             // 
-            this.textBoxKmTrajet.Location = new System.Drawing.Point(109, 75);
-            this.textBoxKmTrajet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxKmTrajet.Location = new System.Drawing.Point(109, 92);
+            this.textBoxKmTrajet.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKmTrajet.Name = "textBoxKmTrajet";
             this.textBoxKmTrajet.Size = new System.Drawing.Size(151, 20);
             this.textBoxKmTrajet.TabIndex = 12;
@@ -255,8 +255,8 @@
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label9);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.textBoxKmTrajet);
-            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(15, 233);
-            this.panelTypeVehiculeEntreprise.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(19, 256);
+            this.panelTypeVehiculeEntreprise.Margin = new System.Windows.Forms.Padding(2);
             this.panelTypeVehiculeEntreprise.Name = "panelTypeVehiculeEntreprise";
             this.panelTypeVehiculeEntreprise.Size = new System.Drawing.Size(270, 148);
             this.panelTypeVehiculeEntreprise.TabIndex = 13;
@@ -264,8 +264,8 @@
             // 
             // textBoxKmParAn
             // 
-            this.textBoxKmParAn.Location = new System.Drawing.Point(109, 55);
-            this.textBoxKmParAn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxKmParAn.Location = new System.Drawing.Point(109, 63);
+            this.textBoxKmParAn.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKmParAn.Name = "textBoxKmParAn";
             this.textBoxKmParAn.Size = new System.Drawing.Size(151, 20);
             this.textBoxKmParAn.TabIndex = 23;
@@ -273,7 +273,7 @@
             // textBoxNbCV
             // 
             this.textBoxNbCV.Location = new System.Drawing.Point(109, 34);
-            this.textBoxNbCV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNbCV.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNbCV.Name = "textBoxNbCV";
             this.textBoxNbCV.Size = new System.Drawing.Size(151, 20);
             this.textBoxNbCV.TabIndex = 22;
@@ -282,7 +282,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(4, 51);
+            this.label10.Location = new System.Drawing.Point(2, 63);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(64, 20);
@@ -315,7 +315,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(351, 43);
+            this.label8.Location = new System.Drawing.Point(407, 43);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 20);
@@ -328,8 +328,8 @@
             this.dataGridViewPeages.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNomPeage,
             this.colTarifPeage});
-            this.dataGridViewPeages.Location = new System.Drawing.Point(355, 103);
-            this.dataGridViewPeages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewPeages.Location = new System.Drawing.Point(411, 103);
+            this.dataGridViewPeages.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewPeages.Name = "dataGridViewPeages";
             this.dataGridViewPeages.RowTemplate.Height = 28;
             this.dataGridViewPeages.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -348,8 +348,8 @@
             // 
             // buttonAjoutPeage
             // 
-            this.buttonAjoutPeage.Location = new System.Drawing.Point(355, 73);
-            this.buttonAjoutPeage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAjoutPeage.Location = new System.Drawing.Point(411, 73);
+            this.buttonAjoutPeage.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjoutPeage.Name = "buttonAjoutPeage";
             this.buttonAjoutPeage.Size = new System.Drawing.Size(206, 26);
             this.buttonAjoutPeage.TabIndex = 17;
@@ -359,8 +359,8 @@
             // 
             // buttonValiderAjoutVehicule
             // 
-            this.buttonValiderAjoutVehicule.Location = new System.Drawing.Point(627, 379);
-            this.buttonValiderAjoutVehicule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonValiderAjoutVehicule.Location = new System.Drawing.Point(683, 379);
+            this.buttonValiderAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.buttonValiderAjoutVehicule.Name = "buttonValiderAjoutVehicule";
             this.buttonValiderAjoutVehicule.Size = new System.Drawing.Size(245, 27);
             this.buttonValiderAjoutVehicule.TabIndex = 18;
@@ -370,8 +370,8 @@
             // 
             // buttonAnnulerAjoutVehicule
             // 
-            this.buttonAnnulerAjoutVehicule.Location = new System.Drawing.Point(456, 379);
-            this.buttonAnnulerAjoutVehicule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAnnulerAjoutVehicule.Location = new System.Drawing.Point(512, 379);
+            this.buttonAnnulerAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerAjoutVehicule.Name = "buttonAnnulerAjoutVehicule";
             this.buttonAnnulerAjoutVehicule.Size = new System.Drawing.Size(167, 27);
             this.buttonAnnulerAjoutVehicule.TabIndex = 19;
@@ -380,8 +380,8 @@
             // 
             // buttonSupprimerPeage
             // 
-            this.buttonSupprimerPeage.Location = new System.Drawing.Point(565, 74);
-            this.buttonSupprimerPeage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSupprimerPeage.Location = new System.Drawing.Point(621, 74);
+            this.buttonSupprimerPeage.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimerPeage.Name = "buttonSupprimerPeage";
             this.buttonSupprimerPeage.Size = new System.Drawing.Size(207, 25);
             this.buttonSupprimerPeage.TabIndex = 20;
@@ -393,7 +393,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(9, 155);
+            this.label11.Location = new System.Drawing.Point(9, 131);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 20);
@@ -403,7 +403,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(9, 145);
+            this.label12.Location = new System.Drawing.Point(9, 190);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 20);
@@ -412,8 +412,8 @@
             // 
             // textBoxNbJoursLocation
             // 
-            this.textBoxNbJoursLocation.Location = new System.Drawing.Point(122, 147);
-            this.textBoxNbJoursLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNbJoursLocation.Location = new System.Drawing.Point(122, 192);
+            this.textBoxNbJoursLocation.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNbJoursLocation.Name = "textBoxNbJoursLocation";
             this.textBoxNbJoursLocation.Size = new System.Drawing.Size(162, 20);
             this.textBoxNbJoursLocation.TabIndex = 24;
@@ -423,11 +423,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(883, 417);
+            this.ClientSize = new System.Drawing.Size(939, 488);
             this.Controls.Add(this.textBoxNbJoursLocation);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.buttonSupprimerPeage);
+            this.Controls.Add(this.panelTypeVehiculeEntreprise);
             this.Controls.Add(this.buttonAnnulerAjoutVehicule);
             this.Controls.Add(this.buttonValiderAjoutVehicule);
             this.Controls.Add(this.buttonAjoutPeage);
@@ -445,8 +446,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelTypeVehiculeLocation);
-            this.Controls.Add(this.panelTypeVehiculeEntreprise);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenNouveauElementVehicule";
             this.Text = "Nouveau vehicule";
             this.Load += new System.EventHandler(this.fenNouveauElementStreetMarketing_Load);

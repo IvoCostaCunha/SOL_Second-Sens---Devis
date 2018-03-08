@@ -36,7 +36,6 @@
             this.textBoxTarifLocationJour = new System.Windows.Forms.TextBox();
             this.checkBoxAjoutPersonnalisation = new System.Windows.Forms.CheckBox();
             this.panelPersonalisation = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.buttonSupprimerPersonnalisation = new System.Windows.Forms.Button();
             this.labelListePersonnalisation = new System.Windows.Forms.Label();
             this.listBoxPersonnalisationStreetMarketing = new System.Windows.Forms.ListBox();
@@ -136,7 +135,6 @@
             // 
             // panelPersonalisation
             // 
-            this.panelPersonalisation.Controls.Add(this.button1);
             this.panelPersonalisation.Controls.Add(this.buttonSupprimerPersonnalisation);
             this.panelPersonalisation.Controls.Add(this.labelListePersonnalisation);
             this.panelPersonalisation.Controls.Add(this.listBoxPersonnalisationStreetMarketing);
@@ -147,26 +145,16 @@
             this.panelPersonalisation.Location = new System.Drawing.Point(394, 76);
             this.panelPersonalisation.Margin = new System.Windows.Forms.Padding(2);
             this.panelPersonalisation.Name = "panelPersonalisation";
-            this.panelPersonalisation.Size = new System.Drawing.Size(311, 408);
+            this.panelPersonalisation.Size = new System.Drawing.Size(372, 447);
             this.panelPersonalisation.TabIndex = 11;
             this.panelPersonalisation.Visible = false;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(7, 60);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 24);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Ajouter modèle personnalisé";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // buttonSupprimerPersonnalisation
             // 
-            this.buttonSupprimerPersonnalisation.Location = new System.Drawing.Point(110, 384);
+            this.buttonSupprimerPersonnalisation.Location = new System.Drawing.Point(6, 405);
             this.buttonSupprimerPersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimerPersonnalisation.Name = "buttonSupprimerPersonnalisation";
-            this.buttonSupprimerPersonnalisation.Size = new System.Drawing.Size(194, 22);
+            this.buttonSupprimerPersonnalisation.Size = new System.Drawing.Size(354, 32);
             this.buttonSupprimerPersonnalisation.TabIndex = 20;
             this.buttonSupprimerPersonnalisation.Text = "Supprimer personnalisation";
             this.buttonSupprimerPersonnalisation.UseVisualStyleBackColor = true;
@@ -175,7 +163,7 @@
             // 
             this.labelListePersonnalisation.AutoSize = true;
             this.labelListePersonnalisation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelListePersonnalisation.Location = new System.Drawing.Point(2, 89);
+            this.labelListePersonnalisation.Location = new System.Drawing.Point(1, 110);
             this.labelListePersonnalisation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelListePersonnalisation.Name = "labelListePersonnalisation";
             this.labelListePersonnalisation.Size = new System.Drawing.Size(201, 20);
@@ -185,18 +173,18 @@
             // listBoxPersonnalisationStreetMarketing
             // 
             this.listBoxPersonnalisationStreetMarketing.FormattingEnabled = true;
-            this.listBoxPersonnalisationStreetMarketing.Location = new System.Drawing.Point(7, 121);
+            this.listBoxPersonnalisationStreetMarketing.Location = new System.Drawing.Point(6, 142);
             this.listBoxPersonnalisationStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxPersonnalisationStreetMarketing.Name = "listBoxPersonnalisationStreetMarketing";
-            this.listBoxPersonnalisationStreetMarketing.Size = new System.Drawing.Size(298, 251);
+            this.listBoxPersonnalisationStreetMarketing.Size = new System.Drawing.Size(354, 251);
             this.listBoxPersonnalisationStreetMarketing.TabIndex = 18;
             // 
             // buttonAjouterPersonnalisation
             // 
-            this.buttonAjouterPersonnalisation.Location = new System.Drawing.Point(173, 60);
+            this.buttonAjouterPersonnalisation.Location = new System.Drawing.Point(7, 73);
             this.buttonAjouterPersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterPersonnalisation.Name = "buttonAjouterPersonnalisation";
-            this.buttonAjouterPersonnalisation.Size = new System.Drawing.Size(131, 24);
+            this.buttonAjouterPersonnalisation.Size = new System.Drawing.Size(353, 35);
             this.buttonAjouterPersonnalisation.TabIndex = 17;
             this.buttonAjouterPersonnalisation.Text = "Ajouter";
             this.buttonAjouterPersonnalisation.UseVisualStyleBackColor = true;
@@ -208,7 +196,7 @@
             this.comboBoxTypePersonnalisation.Location = new System.Drawing.Point(173, 38);
             this.comboBoxTypePersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypePersonnalisation.Name = "comboBoxTypePersonnalisation";
-            this.comboBoxTypePersonnalisation.Size = new System.Drawing.Size(132, 21);
+            this.comboBoxTypePersonnalisation.Size = new System.Drawing.Size(187, 21);
             this.comboBoxTypePersonnalisation.TabIndex = 17;
             // 
             // labelTypePersonnalisation
@@ -274,10 +262,10 @@
             // 
             // buttonAjouterPersonnel
             // 
-            this.buttonAjouterPersonnel.Location = new System.Drawing.Point(160, 241);
+            this.buttonAjouterPersonnel.Location = new System.Drawing.Point(14, 250);
             this.buttonAjouterPersonnel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterPersonnel.Name = "buttonAjouterPersonnel";
-            this.buttonAjouterPersonnel.Size = new System.Drawing.Size(218, 21);
+            this.buttonAjouterPersonnel.Size = new System.Drawing.Size(364, 32);
             this.buttonAjouterPersonnel.TabIndex = 17;
             this.buttonAjouterPersonnel.Text = "Ajouter";
             this.buttonAjouterPersonnel.UseVisualStyleBackColor = true;
@@ -297,7 +285,7 @@
             // dataGridViewElementsAjoutesStreetMarketing
             // 
             this.dataGridViewElementsAjoutesStreetMarketing.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewElementsAjoutesStreetMarketing.Location = new System.Drawing.Point(14, 266);
+            this.dataGridViewElementsAjoutesStreetMarketing.Location = new System.Drawing.Point(15, 286);
             this.dataGridViewElementsAjoutesStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewElementsAjoutesStreetMarketing.Name = "dataGridViewElementsAjoutesStreetMarketing";
             this.dataGridViewElementsAjoutesStreetMarketing.RowTemplate.Height = 28;
@@ -306,30 +294,30 @@
             // 
             // buttonSupprimerAjoutElementStreetMarketing
             // 
-            this.buttonSupprimerAjoutElementStreetMarketing.Location = new System.Drawing.Point(160, 439);
+            this.buttonSupprimerAjoutElementStreetMarketing.Location = new System.Drawing.Point(14, 459);
             this.buttonSupprimerAjoutElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimerAjoutElementStreetMarketing.Name = "buttonSupprimerAjoutElementStreetMarketing";
-            this.buttonSupprimerAjoutElementStreetMarketing.Size = new System.Drawing.Size(218, 21);
+            this.buttonSupprimerAjoutElementStreetMarketing.Size = new System.Drawing.Size(365, 30);
             this.buttonSupprimerAjoutElementStreetMarketing.TabIndex = 22;
             this.buttonSupprimerAjoutElementStreetMarketing.Text = "Supprimer ajout";
             this.buttonSupprimerAjoutElementStreetMarketing.UseVisualStyleBackColor = true;
             // 
             // buttonValiderElementStreetMarketing
             // 
-            this.buttonValiderElementStreetMarketing.Location = new System.Drawing.Point(160, 463);
+            this.buttonValiderElementStreetMarketing.Location = new System.Drawing.Point(148, 501);
             this.buttonValiderElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.buttonValiderElementStreetMarketing.Name = "buttonValiderElementStreetMarketing";
-            this.buttonValiderElementStreetMarketing.Size = new System.Drawing.Size(218, 21);
+            this.buttonValiderElementStreetMarketing.Size = new System.Drawing.Size(231, 30);
             this.buttonValiderElementStreetMarketing.TabIndex = 23;
             this.buttonValiderElementStreetMarketing.Text = "Valider nouvel élément";
             this.buttonValiderElementStreetMarketing.UseVisualStyleBackColor = true;
             // 
             // buttonAnnulerElementStreetMarketing
             // 
-            this.buttonAnnulerElementStreetMarketing.Location = new System.Drawing.Point(14, 439);
+            this.buttonAnnulerElementStreetMarketing.Location = new System.Drawing.Point(14, 501);
             this.buttonAnnulerElementStreetMarketing.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerElementStreetMarketing.Name = "buttonAnnulerElementStreetMarketing";
-            this.buttonAnnulerElementStreetMarketing.Size = new System.Drawing.Size(142, 21);
+            this.buttonAnnulerElementStreetMarketing.Size = new System.Drawing.Size(130, 30);
             this.buttonAnnulerElementStreetMarketing.TabIndex = 24;
             this.buttonAnnulerElementStreetMarketing.Text = "Annuler";
             this.buttonAnnulerElementStreetMarketing.UseVisualStyleBackColor = true;
@@ -338,7 +326,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(713, 514);
+            this.ClientSize = new System.Drawing.Size(789, 571);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.buttonAnnulerElementStreetMarketing);
@@ -360,7 +348,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenNouvelElementPersonnalisable";
             this.Text = "Nouvel élément personnalisable";
-            this.Load += new System.EventHandler(this.fenNouvelElementStreetMarketing_Load);
+            this.Load += new System.EventHandler(this.fenNouvelElementPersonnalisable_Load);
             this.panelPersonalisation.ResumeLayout(false);
             this.panelPersonalisation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementsAjoutesStreetMarketing)).EndInit();
@@ -388,7 +376,6 @@
         private System.Windows.Forms.TextBox textBoxNomElementStreetMarketing;
         private System.Windows.Forms.ComboBox comboBoxTypeElementStreetMarketing;
         private System.Windows.Forms.Button buttonSupprimerPersonnalisation;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.Button buttonAjouterPersonnel;

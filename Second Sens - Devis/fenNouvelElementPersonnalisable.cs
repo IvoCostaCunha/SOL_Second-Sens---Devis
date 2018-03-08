@@ -31,7 +31,7 @@ namespace Second_Sens___Devis
             InitializeComponent();
         }
 
-        private void fenNouvelElementStreetMarketing_Load(object sender, EventArgs e)
+        private void fenNouvelElementPersonnalisable_Load(object sender, EventArgs e)
         {
             foreach(String unElement in getNomsElementsPersonnalisables())
             {
