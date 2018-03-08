@@ -78,6 +78,7 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMarge2S = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
@@ -258,6 +259,7 @@
             // 
             // panelNouveauDevis
             // 
+            this.panelNouveauDevis.Controls.Add(this.vScrollBar1);
             this.panelNouveauDevis.Controls.Add(this.textBox4);
             this.panelNouveauDevis.Controls.Add(this.label14);
             this.panelNouveauDevis.Controls.Add(this.label13);
@@ -610,6 +612,14 @@
             this.colMarge2S.Name = "colMarge2S";
             this.colMarge2S.ReadOnly = true;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.vScrollBar1.Location = new System.Drawing.Point(1639, 0);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 892);
+            this.vScrollBar1.TabIndex = 52;
+            // 
             // fenMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,5 +698,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRevient;
         private System.Windows.Forms.DataGridViewTextBoxColumn colMarge2S;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
