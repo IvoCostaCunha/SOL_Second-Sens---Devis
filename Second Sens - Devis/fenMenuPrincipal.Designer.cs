@@ -97,7 +97,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1656, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1414, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -258,7 +258,6 @@
             // 
             // panelNouveauDevis
             // 
-            this.panelNouveauDevis.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelNouveauDevis.AutoScroll = true;
             this.panelNouveauDevis.AutoSize = true;
             this.panelNouveauDevis.Controls.Add(this.textBox4);
@@ -298,11 +297,12 @@
             this.panelNouveauDevis.Controls.Add(this.comboBoxEquipesPrédefinies);
             this.panelNouveauDevis.Controls.Add(this.label1);
             this.panelNouveauDevis.Controls.Add(this.labelAideAjoutDevis);
+            this.panelNouveauDevis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNouveauDevis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelNouveauDevis.Location = new System.Drawing.Point(0, 24);
             this.panelNouveauDevis.Margin = new System.Windows.Forms.Padding(2);
             this.panelNouveauDevis.Name = "panelNouveauDevis";
-            this.panelNouveauDevis.Size = new System.Drawing.Size(1656, 892);
+            this.panelNouveauDevis.Size = new System.Drawing.Size(1414, 724);
             this.panelNouveauDevis.TabIndex = 1;
             this.panelNouveauDevis.Visible = false;
             // 
@@ -616,7 +616,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1656, 916);
+            this.ClientSize = new System.Drawing.Size(1414, 748);
             this.Controls.Add(this.panelNouveauDevis);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
