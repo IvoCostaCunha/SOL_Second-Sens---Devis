@@ -35,14 +35,21 @@ namespace Second_Sens___Devis
         {
             if (textBoxNomOperation.Text != "")
             {
-                MessageBox.Show("Veuillez renseigner un nom.");
+                if (textBoxDureeOpe.Text != "")
+                {
+                    classMetier.classDevis leNouveauDevis = new classMetier.classDevis(textBoxNomOperation.Text, Convert.ToDateTime(textBoxDateOperation.Text), Convert.ToInt32(textBoxDureeOpe.Text));
+                    leMenuPrincipal.leNouveauDevis = leNouveauDevis;
+                    leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
+                    leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
+                    leMenuPrincipal.panelNouveauDevis.Show();
+                    this.Hide();
+                }
+                
+                
             }
-            else if (textBoxDureeOpe)
+            else
             {
-                leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
-                leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
-                leMenuPrincipal.panelNouveauDevis.Show();
-                this.Hide();
+                MessageBox.Show("Veuillez renseigner un nom d'opération");
             }
         }
     }

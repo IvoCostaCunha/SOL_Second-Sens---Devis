@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Second_Sens___Devis.classMetier
 {
-    class classDevis
+    public class classDevis
     {
         private String leNomDevis;
         private DateTime laDateCreationDevis;

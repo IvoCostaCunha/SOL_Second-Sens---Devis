@@ -14,11 +14,13 @@ namespace Second_Sens___Devis
     {
         
         fenChargement leChargement;
+        public classMetier.classDevis leNouveauDevis;
         public fenMenuPrincipal(fenChargement unChargement)
         {
-                        leChargement = unChargement;
+            leChargement = unChargement;
             InitializeComponent();
         }
+
 
         private void fenMenuPrincipal_Load(object sender, EventArgs e)
         {
