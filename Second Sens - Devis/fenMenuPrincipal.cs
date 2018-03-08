@@ -12,15 +12,22 @@ namespace Second_Sens___Devis
 {
     public partial class fenMenuPrincipal : Form
     {
+        
         fenChargement leChargement;
         public fenMenuPrincipal(fenChargement unChargement)
         {
-            leChargement = unChargement;
+                        leChargement = unChargement;
             InitializeComponent();
         }
 
         private void fenMenuPrincipal_Load(object sender, EventArgs e)
         {
+            dataGridViewHonoraire.Rows.Add("Brief", "0");
+            dataGridViewHonoraire.Rows.Add("Casting hôtesses", "0.5");
+            dataGridViewHonoraire.Rows.Add("Elaboration contrats", "0.5");
+            dataGridViewHonoraire.Rows.Add("BAT", "0.25");
+
+
             this.buttonAjouterEquipePredefinie.Enabled = false;
             /* champ ajouté exclusivement pour tester */
             this.comboBoxEquipesPrédefinies.Items.Add("test");
@@ -98,6 +105,15 @@ namespace Second_Sens___Devis
         }
 
         private void buttonAjouterHonoraire_Click(object sender, EventArgs e)
+        {
+            if(textBoxNomHonoraire.Text != "" && textBoxDuree.Text != "")
+            {
+                dataGridViewHonoraire.Rows.Add(textBoxNomHonoraire.Text, textBoxDuree.Text);
+            }
+            
+        }
+
+        private void panelNouveauDevis_Paint(object sender, PaintEventArgs e)
         {
 
         }
