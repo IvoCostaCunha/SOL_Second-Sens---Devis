@@ -37,12 +37,21 @@ namespace Second_Sens___Devis
             {
                 if (textBoxDureeOpe.Text != "")
                 {
-                    classMetier.classDevis leNouveauDevis = new classMetier.classDevis(textBoxNomOperation.Text, Convert.ToDateTime(textBoxDateOperation.Text), Convert.ToInt32(textBoxDureeOpe.Text));
-                    leMenuPrincipal.leNouveauDevis = leNouveauDevis;
-                    leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
-                    leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
-                    leMenuPrincipal.panelNouveauDevis.Show();
-                    this.Hide();
+                    try
+                    {
+                        Convert.ToInt32(textBoxDureeOpe.Text);
+                        classMetier.classDevis leNouveauDevis = new classMetier.classDevis(textBoxNomOperation.Text, Convert.ToDateTime(textBoxDateOperation.Text), Convert.ToInt32(textBoxDureeOpe.Text));
+                        leMenuPrincipal.leNouveauDevis = leNouveauDevis;
+                        leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
+                        leMenuPrincipal.label2.Text = textBoxDateOperation.Text;
+                        leMenuPrincipal.panelNouveauDevis.Show();
+                        this.Hide();
+                    }
+                    catch (Exception)
+                    {
+
+                        MessageBox.Show("Veuillez ne rentrer que des nombres entiers.");
+                    }
                 }
                 else
                 {
@@ -54,5 +63,6 @@ namespace Second_Sens___Devis
                 MessageBox.Show("Veuillez renseigner un nom d'opération");
             }
         }
+    }
     }
 }
