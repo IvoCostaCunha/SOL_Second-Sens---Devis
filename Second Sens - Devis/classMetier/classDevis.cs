@@ -42,5 +42,10 @@ namespace Second_Sens___Devis.classMetier
         {
             return this.laDateCreationDevis;
         }
+
+        public int getNbJoursOpe()
+        {
+            return this.leNombreJours;
+        }
     }
 }

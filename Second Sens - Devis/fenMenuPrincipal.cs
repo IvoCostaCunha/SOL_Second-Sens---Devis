@@ -24,12 +24,8 @@ namespace Second_Sens___Devis
 
         private void fenMenuPrincipal_Load(object sender, EventArgs e)
         {
-            dataGridViewHonoraire.Rows.Add("Brief", "0",);
-            dataGridViewHonoraire.Rows.Add("Casting hôtesses", "0.5");
-            dataGridViewHonoraire.Rows.Add("Elaboration contrats", "0.5");
-            dataGridViewHonoraire.Rows.Add("BAT", "0.25");
-
-
+            this.dataGridViewAjoutDivers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewHonoraire.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.buttonAjouterEquipePredefinie.Enabled = false;
             /* champ ajouté exclusivement pour tester */
             this.comboBoxEquipesPrédefinies.Items.Add("test");
@@ -43,7 +39,7 @@ namespace Second_Sens___Devis
         private void nouveauDevisToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fenNouveauDevis leNouveauDevis = new fenNouveauDevis(this);
-            leNouveauDevis.Show();
+            leNouveauDevis.ShowDialog();
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
@@ -123,6 +119,30 @@ namespace Second_Sens___Devis
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void buttonSupprimerHonoraire_Click(object sender, EventArgs e)
+        {
+            foreach(DataGridViewRow unRow in dataGridViewHonoraire.SelectedRows)
+            {
+                dataGridViewHonoraire.Rows.Remove(unRow);
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if(textBoxNomDivers.Text != "" && textBoxTarifDivers.Text != "")
+            {
+                dataGridViewAjoutDivers.Rows.Add(textBoxNomDivers.Text, textBoxTarifDivers.Text);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            foreach(DataGridViewRow unRow in dataGridViewAjoutDivers.SelectedRows)
+            {
+                dataGridViewAjoutDivers.Rows.Remove(unRow);
+            }
         }
     }
 }

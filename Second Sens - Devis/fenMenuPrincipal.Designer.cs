@@ -83,6 +83,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.colNomDivers = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifDivers = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
@@ -363,10 +365,14 @@
             this.button7.TabIndex = 47;
             this.button7.Text = "Supprimer divers";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // dataGridViewAjoutDivers
             // 
             this.dataGridViewAjoutDivers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAjoutDivers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNomDivers,
+            this.colTarifDivers});
             this.dataGridViewAjoutDivers.Location = new System.Drawing.Point(1646, 205);
             this.dataGridViewAjoutDivers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewAjoutDivers.Name = "dataGridViewAjoutDivers";
@@ -381,6 +387,7 @@
             this.button6.TabIndex = 45;
             this.button6.Text = "Ajouter";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label11
             // 
@@ -462,6 +469,7 @@
             this.buttonSupprimerHonoraire.TabIndex = 39;
             this.buttonSupprimerHonoraire.Text = "Supprimer honoraire";
             this.buttonSupprimerHonoraire.UseVisualStyleBackColor = true;
+            this.buttonSupprimerHonoraire.Click += new System.EventHandler(this.buttonSupprimerHonoraire_Click);
             // 
             // label12
             // 
@@ -639,6 +647,18 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Nouvelle équipe existante";
             // 
+            // colNomDivers
+            // 
+            this.colNomDivers.HeaderText = "Nom divers";
+            this.colNomDivers.Name = "colNomDivers";
+            this.colNomDivers.ReadOnly = true;
+            // 
+            // colTarifDivers
+            // 
+            this.colTarifDivers.HeaderText = "Tarif divers";
+            this.colTarifDivers.Name = "colTarifDivers";
+            this.colTarifDivers.ReadOnly = true;
+            // 
             // fenMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -692,7 +712,6 @@
         private System.Windows.Forms.DataGridView dataGridViewResume2S;
         private System.Windows.Forms.Button buttonSupprimerHonoraire;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridViewHonoraire;
         private System.Windows.Forms.Button buttonAjouterHonoraire;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox textBoxNomHonoraire;
@@ -722,5 +741,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomHonoraire;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDureeHonoraire;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
+        public System.Windows.Forms.DataGridView dataGridViewHonoraire;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNomDivers;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifDivers;
     }
 }
