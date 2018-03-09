@@ -98,7 +98,7 @@ namespace Second_Sens___Devis
             String nomElement = textBoxNomVehicule.Text;
             int laQteVehicule = Convert.ToInt32(textBoxQteVehicule.Text);
 
-            classTarif leTarif = new classTarif(0,0,0,Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[0]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[1]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[2]));
+            classTarif leTarif = new classTarif(0,0,0,Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[0].ToString()), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[1].ToString()), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[2].ToString()));
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule loué")
             {
                 leVehicule = new classElement(nomElement, leTarif, laQteVehicule);
@@ -109,6 +109,7 @@ namespace Second_Sens___Devis
                 leVehiculeSociete = new classVehiculeSociete(nomElement, leTarif, laQteVehicule, laIndemKm);
                 laEquipe.laEquipe.ajouterUnVehiculeSociete(leVehiculeSociete);
             }
+            laEquipe.majListeEquipes();
         }
 
         private void buttonCalculerPrixVehicule_Click(object sender, EventArgs e)
@@ -155,6 +156,7 @@ namespace Second_Sens___Devis
             }
 
             dataGridViewTarifsVehicule.Rows.Add(prixVehicule.ToString(), (prixVehicule * 0.5).ToString(), (prixVehicule * 0.5).ToString());
+            this.buttonValiderAjoutVehicule.Enabled = true;
         }
     }
 }

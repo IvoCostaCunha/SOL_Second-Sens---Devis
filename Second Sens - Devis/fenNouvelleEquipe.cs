@@ -74,6 +74,23 @@ namespace Second_Sens___Devis
             fenNouveauElementVehicule leNouveauVehicule = new fenNouveauElementVehicule(this);
             leNouveauVehicule.ShowDialog();
         }
+
+        public void majListeEquipes()
+        {
+            listBoxAjoutsEffectues.Items.Clear();
+            foreach(classElement unElement in laEquipe.getLesElements())
+            {
+                listBoxAjoutsEffectues.Items.Add(unElement);
+            }
+            foreach(classElementPersonnalisable unElementPerso in laEquipe.getLesElementsPersonnalisables())
+            {
+                listBoxAjoutsEffectues.Items.Add(unElementPerso);
+            }
+            foreach(classVehiculeSociete unVehiculeSociete in laEquipe.getLesVehiculesSociete())
+            {
+                listBoxAjoutsEffectues.Items.Add(unVehiculeSociete);
+            }
+        }
     }
 }
  

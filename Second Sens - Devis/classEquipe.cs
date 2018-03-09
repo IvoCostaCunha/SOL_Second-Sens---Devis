@@ -54,6 +54,16 @@ namespace Second_Sens___Devis
             return this.lesElements;
         }
 
+        public List<classElementPersonnalisable> getLesElementsPersonnalisables()
+        {
+            return this.lesElementsPersonnalisables;
+        }
+
+        public List<classVehiculeSociete> getLesVehiculesSociete()
+        {
+            return this.lesVehiculesSociete;
+        }
+
         public void ajouterElement(classElement unElement)
         {
             lesElements.Add(unElement);
