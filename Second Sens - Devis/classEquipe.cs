@@ -12,6 +12,9 @@ namespace Second_Sens___Devis
         private List<classElement> lesElements;
         private List<classElementPersonnalisable> lesElementsPersonnalisables;
         private List<classVehiculeSociete> lesVehiculesSociete;
+        private double tarifTotal;
+        private double tarifRevient;
+        private double tarifMarge;
         
         /// <summary>
         /// Constructeur en cas de nouvelle équipe personnalisé
@@ -87,6 +90,17 @@ namespace Second_Sens___Devis
         public void setNomEquipe(String unNomEquipe)
         {
             this.leNomEquipe = unNomEquipe;
+        }
+
+        public classTarif majTarifEquipe()
+        {
+            tarifTotal = 0;
+            tarifRevient = 0;
+            tarifMarge = 0;
+            foreach(classElement unElement in lesElements)
+            {
+                tarifTotal += unElement.
+            }
         }
     }
 }

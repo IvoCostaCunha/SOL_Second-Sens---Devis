@@ -99,6 +99,7 @@ namespace Second_Sens___Devis
             leMenuPrincipal.majListeEquipes();
             this.Hide();
         }
+
     }
 }
  

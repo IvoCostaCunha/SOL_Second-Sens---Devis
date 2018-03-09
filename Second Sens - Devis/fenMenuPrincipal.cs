@@ -205,5 +205,19 @@ namespace Second_Sens___Devis
             
             majListeEquipes();
         }
+
+        private void afficherDetailsEquipe()
+        {
+            dataGridViewDetailEquipe.Rows.Remove(dataGridViewDetailEquipe.Rows[0]);
+            classEquipe laEquipeSelectionne;
+            foreach(classEquipe uneEquipe in lesEquipes){
+                if(uneEquipe.getNomEquipe() == listBoxEquipes.SelectedItem.ToString())
+                {
+                    laEquipeSelectionne = uneEquipe;
+                }
+            }
+            laEquipeSelectionne.getLeta
+            dataGridViewDetailEquipe.Rows.Add(laEquipeSelectionne.getNomEquipe(), laEquipeSelectionne.get)
+        }
     }
 }

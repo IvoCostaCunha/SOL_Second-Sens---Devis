@@ -90,6 +90,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.col1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
@@ -653,7 +657,14 @@
             // 
             // dataGridViewDetailEquipe
             // 
+            this.dataGridViewDetailEquipe.AllowUserToAddRows = false;
+            this.dataGridViewDetailEquipe.AllowUserToDeleteRows = false;
             this.dataGridViewDetailEquipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetailEquipe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.col1,
+            this.col2,
+            this.Column2,
+            this.Column3});
             this.dataGridViewDetailEquipe.Location = new System.Drawing.Point(864, 665);
             this.dataGridViewDetailEquipe.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridViewDetailEquipe.Name = "dataGridViewDetailEquipe";
@@ -719,6 +730,26 @@
             this.label4.Size = new System.Drawing.Size(235, 25);
             this.label4.TabIndex = 19;
             this.label4.Text = "Nouvelle équipe existante";
+            // 
+            // col1
+            // 
+            this.col1.HeaderText = "Nom Equipe";
+            this.col1.Name = "col1";
+            // 
+            // col2
+            // 
+            this.col2.HeaderText = "Tarif total";
+            this.col2.Name = "col2";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Prix de revient";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Marge";
+            this.Column3.Name = "Column3";
             // 
             // fenMenuPrincipal
             // 
@@ -810,5 +841,9 @@
         private System.Windows.Forms.ToolStripMenuItem elementPersonnalisableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem élémentSimpleToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personnalisationToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
     }
 }
