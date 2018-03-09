@@ -63,5 +63,12 @@ namespace Second_Sens___Devis
                 MessageBox.Show("Veuillez renseigner un nom d'opération");
             }
         }
+        private void fenNouveauDevis_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToInt16(Keys.Enter))
+            {
+                MessageBox.Show("Testing KeyPress");
+            }
+        }
     }
 }

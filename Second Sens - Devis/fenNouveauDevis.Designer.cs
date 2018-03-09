@@ -78,7 +78,7 @@
             this.textBoxDateOperation.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDateOperation.Name = "textBoxDateOperation";
             this.textBoxDateOperation.Size = new System.Drawing.Size(246, 20);
-            this.textBoxDateOperation.TabIndex = 3;
+            this.textBoxDateOperation.TabIndex = 2;
             // 
             // textBoxNomOperation
             // 
@@ -86,7 +86,7 @@
             this.textBoxNomOperation.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNomOperation.Name = "textBoxNomOperation";
             this.textBoxNomOperation.Size = new System.Drawing.Size(246, 20);
-            this.textBoxNomOperation.TabIndex = 4;
+            this.textBoxNomOperation.TabIndex = 1;
             // 
             // buttonConfimerInfosDevis
             // 
@@ -94,7 +94,7 @@
             this.buttonConfimerInfosDevis.Margin = new System.Windows.Forms.Padding(2);
             this.buttonConfimerInfosDevis.Name = "buttonConfimerInfosDevis";
             this.buttonConfimerInfosDevis.Size = new System.Drawing.Size(231, 35);
-            this.buttonConfimerInfosDevis.TabIndex = 5;
+            this.buttonConfimerInfosDevis.TabIndex = 4;
             this.buttonConfimerInfosDevis.Text = "Confirmer";
             this.buttonConfimerInfosDevis.UseVisualStyleBackColor = true;
             this.buttonConfimerInfosDevis.Click += new System.EventHandler(this.buttonConfimerInfosDevis_Click);
@@ -105,7 +105,7 @@
             this.buttonAnnulerInfosDevis.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerInfosDevis.Name = "buttonAnnulerInfosDevis";
             this.buttonAnnulerInfosDevis.Size = new System.Drawing.Size(163, 35);
-            this.buttonAnnulerInfosDevis.TabIndex = 6;
+            this.buttonAnnulerInfosDevis.TabIndex = 5;
             this.buttonAnnulerInfosDevis.Text = "Annuler";
             this.buttonAnnulerInfosDevis.UseVisualStyleBackColor = true;
             this.buttonAnnulerInfosDevis.Click += new System.EventHandler(this.buttonAnnulerInfosDevis_Click);
@@ -116,7 +116,7 @@
             this.textBoxDureeOpe.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDureeOpe.Name = "textBoxDureeOpe";
             this.textBoxDureeOpe.Size = new System.Drawing.Size(246, 20);
-            this.textBoxDureeOpe.TabIndex = 8;
+            this.textBoxDureeOpe.TabIndex = 3;
             // 
             // label1
             // 

@@ -28,106 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabControlTarif = new System.Windows.Forms.TabControl();
+            this.tabPageGeneraux = new System.Windows.Forms.TabPage();
+            this.tabPageElePerso = new System.Windows.Forms.TabPage();
+            this.tabPageEleClassique = new System.Windows.Forms.TabPage();
+            this.tabPagePersonnel = new System.Windows.Forms.TabPage();
             this.buttonValiderModif = new System.Windows.Forms.Button();
             this.buttonAnnulerModif = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.dataGridViewTarifsGeneraux = new System.Windows.Forms.DataGridView();
+            this.coutClient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixRevient = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.marge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTarifElementPerso = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewElementClassique = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewPersonnel = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabControlTarif.SuspendLayout();
+            this.tabPageGeneraux.SuspendLayout();
+            this.tabPageElePerso.SuspendLayout();
+            this.tabPageEleClassique.SuspendLayout();
+            this.tabPagePersonnel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifsGeneraux)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifElementPerso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementClassique)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonnel)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabControlTarif
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(0, 32);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(847, 350);
-            this.tabControl1.TabIndex = 0;
+            this.tabControlTarif.Controls.Add(this.tabPageGeneraux);
+            this.tabControlTarif.Controls.Add(this.tabPageElePerso);
+            this.tabControlTarif.Controls.Add(this.tabPageEleClassique);
+            this.tabControlTarif.Controls.Add(this.tabPagePersonnel);
+            this.tabControlTarif.Location = new System.Drawing.Point(0, 32);
+            this.tabControlTarif.Margin = new System.Windows.Forms.Padding(2);
+            this.tabControlTarif.Name = "tabControlTarif";
+            this.tabControlTarif.SelectedIndex = 0;
+            this.tabControlTarif.Size = new System.Drawing.Size(847, 350);
+            this.tabControlTarif.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPageGeneraux
             // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(839, 324);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageGeneraux.Controls.Add(this.dataGridViewTarifsGeneraux);
+            this.tabPageGeneraux.Location = new System.Drawing.Point(4, 22);
+            this.tabPageGeneraux.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageGeneraux.Name = "tabPageGeneraux";
+            this.tabPageGeneraux.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPageGeneraux.Size = new System.Drawing.Size(839, 324);
+            this.tabPageGeneraux.TabIndex = 0;
+            this.tabPageGeneraux.Text = "Général";
+            this.tabPageGeneraux.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageElePerso
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(910, 324);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageElePerso.Controls.Add(this.dataGridViewTarifElementPerso);
+            this.tabPageElePerso.Location = new System.Drawing.Point(4, 22);
+            this.tabPageElePerso.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageElePerso.Name = "tabPageElePerso";
+            this.tabPageElePerso.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPageElePerso.Size = new System.Drawing.Size(839, 324);
+            this.tabPageElePerso.TabIndex = 1;
+            this.tabPageElePerso.Text = "Éléments personnalisables";
+            this.tabPageElePerso.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tabPageEleClassique
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Size = new System.Drawing.Size(910, 324);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPageEleClassique.Controls.Add(this.dataGridViewElementClassique);
+            this.tabPageEleClassique.Location = new System.Drawing.Point(4, 22);
+            this.tabPageEleClassique.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPageEleClassique.Name = "tabPageEleClassique";
+            this.tabPageEleClassique.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPageEleClassique.Size = new System.Drawing.Size(839, 324);
+            this.tabPageEleClassique.TabIndex = 2;
+            this.tabPageEleClassique.Text = "Éléments classiques";
+            this.tabPageEleClassique.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // tabPagePersonnel
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage4.Size = new System.Drawing.Size(910, 324);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage5.Size = new System.Drawing.Size(910, 324);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "tabPage5";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage6.Size = new System.Drawing.Size(910, 324);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "tabPage6";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabPagePersonnel.Controls.Add(this.dataGridViewPersonnel);
+            this.tabPagePersonnel.Location = new System.Drawing.Point(4, 22);
+            this.tabPagePersonnel.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPagePersonnel.Name = "tabPagePersonnel";
+            this.tabPagePersonnel.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPagePersonnel.Size = new System.Drawing.Size(839, 324);
+            this.tabPagePersonnel.TabIndex = 3;
+            this.tabPagePersonnel.Text = "Personnel";
+            this.tabPagePersonnel.UseVisualStyleBackColor = true;
             // 
             // buttonValiderModif
             // 
-            this.buttonValiderModif.Location = new System.Drawing.Point(676, 386);
-            this.buttonValiderModif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonValiderModif.Location = new System.Drawing.Point(638, 386);
+            this.buttonValiderModif.Margin = new System.Windows.Forms.Padding(2);
             this.buttonValiderModif.Name = "buttonValiderModif";
-            this.buttonValiderModif.Size = new System.Drawing.Size(171, 25);
+            this.buttonValiderModif.Size = new System.Drawing.Size(209, 47);
             this.buttonValiderModif.TabIndex = 1;
             this.buttonValiderModif.Text = "Enregistrer modifications";
             this.buttonValiderModif.UseVisualStyleBackColor = true;
@@ -135,10 +137,10 @@
             // 
             // buttonAnnulerModif
             // 
-            this.buttonAnnulerModif.Location = new System.Drawing.Point(501, 386);
-            this.buttonAnnulerModif.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAnnulerModif.Location = new System.Drawing.Point(481, 386);
+            this.buttonAnnulerModif.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerModif.Name = "buttonAnnulerModif";
-            this.buttonAnnulerModif.Size = new System.Drawing.Size(171, 25);
+            this.buttonAnnulerModif.Size = new System.Drawing.Size(153, 47);
             this.buttonAnnulerModif.TabIndex = 2;
             this.buttonAnnulerModif.Text = "Annuler modifications";
             this.buttonAnnulerModif.UseVisualStyleBackColor = true;
@@ -155,20 +157,164 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Mise à jour des tarifs";
             // 
+            // dataGridViewTarifsGeneraux
+            // 
+            this.dataGridViewTarifsGeneraux.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTarifsGeneraux.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.coutClient,
+            this.prixRevient,
+            this.marge});
+            this.dataGridViewTarifsGeneraux.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewTarifsGeneraux.Location = new System.Drawing.Point(2, 2);
+            this.dataGridViewTarifsGeneraux.Name = "dataGridViewTarifsGeneraux";
+            this.dataGridViewTarifsGeneraux.Size = new System.Drawing.Size(835, 320);
+            this.dataGridViewTarifsGeneraux.TabIndex = 4;
+            // 
+            // coutClient
+            // 
+            this.coutClient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.coutClient.HeaderText = "Coût Client";
+            this.coutClient.Name = "coutClient";
+            this.coutClient.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // prixRevient
+            // 
+            this.prixRevient.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.prixRevient.HeaderText = "Coût de revient 2S";
+            this.prixRevient.Name = "prixRevient";
+            this.prixRevient.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // marge
+            // 
+            this.marge.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.marge.HeaderText = "Marge Second Sens";
+            this.marge.Name = "marge";
+            this.marge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTarifElementPerso
+            // 
+            this.dataGridViewTarifElementPerso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTarifElementPerso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.dataGridViewTarifElementPerso.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewTarifElementPerso.Location = new System.Drawing.Point(2, 2);
+            this.dataGridViewTarifElementPerso.Name = "dataGridViewTarifElementPerso";
+            this.dataGridViewTarifElementPerso.Size = new System.Drawing.Size(835, 320);
+            this.dataGridViewTarifElementPerso.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Coût Client";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Coût de revient 2S";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Marge Second Sens";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewElementClassique
+            // 
+            this.dataGridViewElementClassique.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewElementClassique.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.dataGridViewElementClassique.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewElementClassique.Location = new System.Drawing.Point(2, 2);
+            this.dataGridViewElementClassique.Name = "dataGridViewElementClassique";
+            this.dataGridViewElementClassique.Size = new System.Drawing.Size(835, 320);
+            this.dataGridViewElementClassique.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Coût Client";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Coût de revient 2S";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Marge Second Sens";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewPersonnel
+            // 
+            this.dataGridViewPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPersonnel.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.dataGridViewPersonnel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewPersonnel.Location = new System.Drawing.Point(2, 2);
+            this.dataGridViewPersonnel.Name = "dataGridViewPersonnel";
+            this.dataGridViewPersonnel.Size = new System.Drawing.Size(835, 320);
+            this.dataGridViewPersonnel.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Coût Client";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn8.HeaderText = "Coût de revient 2S";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn9.HeaderText = "Marge Second Sens";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // fenMajTarifs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(849, 415);
+            this.ClientSize = new System.Drawing.Size(849, 444);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonAnnulerModif);
             this.Controls.Add(this.buttonValiderModif);
-            this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.tabControlTarif);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenMajTarifs";
             this.Text = "Mise à jour des tarifs";
             this.Load += new System.EventHandler(this.fenMajTarifs_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlTarif.ResumeLayout(false);
+            this.tabPageGeneraux.ResumeLayout(false);
+            this.tabPageElePerso.ResumeLayout(false);
+            this.tabPageEleClassique.ResumeLayout(false);
+            this.tabPagePersonnel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifsGeneraux)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifElementPerso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElementClassique)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonnel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,15 +322,29 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabControl tabControlTarif;
+        private System.Windows.Forms.TabPage tabPageGeneraux;
+        private System.Windows.Forms.TabPage tabPageElePerso;
+        private System.Windows.Forms.TabPage tabPageEleClassique;
+        private System.Windows.Forms.TabPage tabPagePersonnel;
         private System.Windows.Forms.Button buttonValiderModif;
         private System.Windows.Forms.Button buttonAnnulerModif;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridViewTarifsGeneraux;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coutClient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prixRevient;
+        private System.Windows.Forms.DataGridViewTextBoxColumn marge;
+        private System.Windows.Forms.DataGridView dataGridViewTarifElementPerso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridView dataGridViewElementClassique;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridView dataGridViewPersonnel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
     }
 }
