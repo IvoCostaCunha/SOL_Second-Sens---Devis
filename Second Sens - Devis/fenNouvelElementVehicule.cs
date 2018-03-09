@@ -26,7 +26,26 @@ namespace Second_Sens___Devis
             this.comboBoxTypeVehicule.Items.Add("Vehicule société");
         }
 
-        
+        private double calculIndemKm(int unNbCV, double desKmAn)
+        {
+            String requete = "SELECT coef,coef2 FROM indemnkm where nbCV=" + unNbCV.ToString() + " and nbKmAn="
+                + desKmAn;ToString();
+            requetesMySQL laRequete = new requetesMySQL();
+            List<double> lesResusltats = laRequete.queryDouble(requete);
+            double calcul = 0;
+
+            if(desKmAn >= 5000 && desKmAn >= 20000)
+            {
+                calcul = (lesResusltats[0] * desKmAn) * lesResusltats[1];
+            }
+
+            else
+            {
+                calcul = lesResusltats[0] * desKmAn;
+            }
+
+            return calcul;
+        }
 
         private void comboBoxTypeVehicule_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -74,7 +93,30 @@ namespace Second_Sens___Devis
 
         private void buttonCalculerPrixVehicule_Click(object sender, EventArgs e)
         {
+            double prixVehicule = 0;
 
+            int leNbVehicules = Convert.ToInt32(textBoxQteVehicule.Text);
+            int leNbJours = Convert.ToInt32(textBoxNbJoursLocation.Text);
+            double laDistanceTrajet = Convert.ToDouble(textBoxKmTrajet.Text);
+            double leTarifPeages = Convert.ToDouble(textBoxPeage.Text);
+
+            if(comboBoxTypeVehicule.SelectedIndex == 0)
+            {
+                double leTarifCarburant = Convert.ToDouble(textBoxTarifCarburant.Text);
+                double leTarifLocation = Convert.ToDouble(textBoxPrixLocationVehicule.Text);
+                prixVehicule = leNbVehicules * leNbJours * (leTarifLocation + 2 * (leTarifPeages * 1.15 + leTarifCarburant * 1.2));
+            }
+
+            else if(comboBoxTypeVehicule.SelectedIndex == 1)
+            {
+                int leNbCV = Convert.ToInt32(textBoxNbCV.Text);
+                double lesKmAn = Convert.ToDouble(textBoxKmParAn.Text);
+                double indemKm = calculIndemKm(leNbCV,lesKmAn);
+
+                prixVehicule = leNbVehicules * leNbJours * (laDistanceTrajet * 2 * indemKm * 1.3 + leTarifPeages * 1.15);
+            }
+
+            dataGridViewTarifsVehicule.Rows.Add(prixVehicule.ToString(), (prixVehicule * 0.5).ToString(), (prixVehicule * 0.5).ToString());
         }
     }
 }

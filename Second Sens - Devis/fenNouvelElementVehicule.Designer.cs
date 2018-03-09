@@ -238,7 +238,7 @@
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label9);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.textBoxKmTrajet);
-            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(530, 165);
+            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(530, 402);
             this.panelTypeVehiculeEntreprise.Name = "panelTypeVehiculeEntreprise";
             this.panelTypeVehiculeEntreprise.Size = new System.Drawing.Size(405, 231);
             this.panelTypeVehiculeEntreprise.TabIndex = 13;
