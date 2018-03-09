@@ -59,8 +59,11 @@
             this.textBoxNbJoursLocation = new System.Windows.Forms.TextBox();
             this.textBoxPeage = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.dataGridViewTarifsVehicule = new System.Windows.Forms.DataGridView();
+            this.buttonCalculerPrixVehicule = new System.Windows.Forms.Button();
             this.panelTypeVehiculeLocation.SuspendLayout();
             this.panelTypeVehiculeEntreprise.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifsVehicule)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -116,7 +119,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(369, 71);
+            this.label4.Location = new System.Drawing.Point(345, 73);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 20);
@@ -126,7 +129,7 @@
             // comboBoxTypeVehicule
             // 
             this.comboBoxTypeVehicule.FormattingEnabled = true;
-            this.comboBoxTypeVehicule.Location = new System.Drawing.Point(482, 72);
+            this.comboBoxTypeVehicule.Location = new System.Drawing.Point(458, 74);
             this.comboBoxTypeVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxTypeVehicule.Name = "comboBoxTypeVehicule";
             this.comboBoxTypeVehicule.Size = new System.Drawing.Size(162, 21);
@@ -139,7 +142,7 @@
             this.panelTypeVehiculeLocation.Controls.Add(this.textBoxPrixLocationVehicule);
             this.panelTypeVehiculeLocation.Controls.Add(this.labelPrixLocation);
             this.panelTypeVehiculeLocation.Controls.Add(this.label7);
-            this.panelTypeVehiculeLocation.Location = new System.Drawing.Point(377, 105);
+            this.panelTypeVehiculeLocation.Location = new System.Drawing.Point(353, 107);
             this.panelTypeVehiculeLocation.Margin = new System.Windows.Forms.Padding(2);
             this.panelTypeVehiculeLocation.Name = "panelTypeVehiculeLocation";
             this.panelTypeVehiculeLocation.Size = new System.Drawing.Size(272, 150);
@@ -250,7 +253,7 @@
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label9);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.label);
             this.panelTypeVehiculeEntreprise.Controls.Add(this.textBoxKmTrajet);
-            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(377, 107);
+            this.panelTypeVehiculeEntreprise.Location = new System.Drawing.Point(353, 109);
             this.panelTypeVehiculeEntreprise.Margin = new System.Windows.Forms.Padding(2);
             this.panelTypeVehiculeEntreprise.Name = "panelTypeVehiculeEntreprise";
             this.panelTypeVehiculeEntreprise.Size = new System.Drawing.Size(270, 148);
@@ -308,7 +311,7 @@
             // 
             // buttonValiderAjoutVehicule
             // 
-            this.buttonValiderAjoutVehicule.Location = new System.Drawing.Point(169, 291);
+            this.buttonValiderAjoutVehicule.Location = new System.Drawing.Point(558, 421);
             this.buttonValiderAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.buttonValiderAjoutVehicule.Name = "buttonValiderAjoutVehicule";
             this.buttonValiderAjoutVehicule.Size = new System.Drawing.Size(265, 40);
@@ -319,7 +322,7 @@
             // 
             // buttonAnnulerAjoutVehicule
             // 
-            this.buttonAnnulerAjoutVehicule.Location = new System.Drawing.Point(11, 291);
+            this.buttonAnnulerAjoutVehicule.Location = new System.Drawing.Point(400, 421);
             this.buttonAnnulerAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerAjoutVehicule.Name = "buttonAnnulerAjoutVehicule";
             this.buttonAnnulerAjoutVehicule.Size = new System.Drawing.Size(154, 40);
@@ -341,7 +344,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(369, 39);
+            this.label12.Location = new System.Drawing.Point(345, 41);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 20);
@@ -350,7 +353,7 @@
             // 
             // textBoxNbJoursLocation
             // 
-            this.textBoxNbJoursLocation.Location = new System.Drawing.Point(482, 41);
+            this.textBoxNbJoursLocation.Location = new System.Drawing.Point(458, 43);
             this.textBoxNbJoursLocation.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNbJoursLocation.Name = "textBoxNbJoursLocation";
             this.textBoxNbJoursLocation.Size = new System.Drawing.Size(162, 20);
@@ -375,6 +378,23 @@
             this.label13.TabIndex = 25;
             this.label13.Text = "Péages (en €)";
             // 
+            // dataGridViewTarifsVehicule
+            // 
+            this.dataGridViewTarifsVehicule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTarifsVehicule.Location = new System.Drawing.Point(13, 266);
+            this.dataGridViewTarifsVehicule.Name = "dataGridViewTarifsVehicule";
+            this.dataGridViewTarifsVehicule.Size = new System.Drawing.Size(289, 150);
+            this.dataGridViewTarifsVehicule.TabIndex = 29;
+            // 
+            // buttonCalculerPrixVehicule
+            // 
+            this.buttonCalculerPrixVehicule.Location = new System.Drawing.Point(13, 422);
+            this.buttonCalculerPrixVehicule.Name = "buttonCalculerPrixVehicule";
+            this.buttonCalculerPrixVehicule.Size = new System.Drawing.Size(289, 38);
+            this.buttonCalculerPrixVehicule.TabIndex = 30;
+            this.buttonCalculerPrixVehicule.Text = "Calculer";
+            this.buttonCalculerPrixVehicule.UseVisualStyleBackColor = true;
+            // 
             // fenNouveauElementVehicule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,7 +402,9 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(682, 348);
+            this.ClientSize = new System.Drawing.Size(834, 472);
+            this.Controls.Add(this.buttonCalculerPrixVehicule);
+            this.Controls.Add(this.dataGridViewTarifsVehicule);
             this.Controls.Add(this.textBoxPeage);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxNbJoursLocation);
@@ -411,6 +433,7 @@
             this.panelTypeVehiculeLocation.PerformLayout();
             this.panelTypeVehiculeEntreprise.ResumeLayout(false);
             this.panelTypeVehiculeEntreprise.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifsVehicule)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,5 +472,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxPeage;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dataGridViewTarifsVehicule;
+        private System.Windows.Forms.Button buttonCalculerPrixVehicule;
     }
 }

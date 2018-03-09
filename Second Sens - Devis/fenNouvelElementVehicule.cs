@@ -61,10 +61,10 @@ namespace Second_Sens___Devis
             String nomElement = textBoxNomVehicule.Text;
             int qteVehicule = Convert.ToInt32(textBoxQteVehicule.Text);
 
-            classMetier.classTarif leTarif = new classMetier.classTarif()
+            classMetier.classTarif leTarif = new classMetier.classTarif();
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule loué")
             {
-                classMetier.classElement leVehicule = new classMetier.classElement()
+                classMetier.classElement leVehicule = new classMetier.classElement();
             }
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule société")
             {

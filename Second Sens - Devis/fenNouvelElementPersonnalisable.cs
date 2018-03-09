@@ -63,5 +63,10 @@ namespace Second_Sens___Devis
             fenAjoutPersonnel unNouveauPersonnel = new fenAjoutPersonnel(this);
             unNouveauPersonnel.ShowDialog();
         }
+
+        private void textBoxTarifElement_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
