@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Second_Sens___Devis.classMetier.classDevis">
+    <Position X="3.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>BAAACAAAAAIAAAAAEAAAAAAAAAAAAAAAAAIIAAAAAAI=</HashCode>
+      <FileName>classMetier\classDevis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classElement" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABBAAAAQAAABAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>classMetier\classElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classElementPersonnalisable" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAgIAAEAA=</HashCode>
+      <FileName>classMetier\classElementPersonnalisable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classEquipe" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAIAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>classMetier\classEquipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classIndemKm" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAQAgAIAAAAACQAAAIAAAAAA=</HashCode>
+      <FileName>classMetier\classIndemKm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classPersonnalisation" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGQAAAAAAAAAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>classMetier\classPersonnalisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classTarif" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAQwCAAAAAAAAAAQAIAAEAAAAAAAAQQIAAAAAg=</HashCode>
+      <FileName>classMetier\classTarif.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.classMetier.classVehiculeSociete" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAEAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>classMetier\classVehiculeSociete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenAide">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACACAADAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>fenAide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenAjoutModelPersoPersonnalisation" Collapsed="true">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgAAAAAAACAAAECAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>fenAjoutModelPersoPersonnalisation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenAjoutPersoElementStreetMarketingPredifini" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIQCAAAACAQAAAACACAAAACAAAAIAAAAAAAAAAABAA=</HashCode>
+      <FileName>fenAjoutPersoElementStreetMarketingPredifini.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenChargement" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAQAAAACAAAAEAAACAAAACAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>fenChargement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenMajTarifs" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACCAAAAAACAAQBAAAACAIABDAAAAEAECEAAAAAABBEA=</HashCode>
+      <FileName>fenMajTarifs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenMenuPrincipal" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>84EgQAwAoGAaDZjxAAaAiBQShBFzAAIIIESLDAaTmAA=</HashCode>
+      <FileName>fenMenuPrincipal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenNouveauDevis" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgABAACAAABAAAACAAAADAAIAoAAAAAABgAgAAIA=</HashCode>
+      <FileName>fenNouveauDevis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenNouveauFraisTechnique" Collapsed="true">
+    <Position X="12.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAiAAAACAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>fenNouveauFraisTechnique.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenAjoutPersonnel" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAJAICAACAEBAAjAQACGAAgAAAAIABAyARAAAEA=</HashCode>
+      <FileName>fenNouveauPersonnel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenNouvelElement" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABAQBASgMABoEGEiAAAACAAQAjAgAAAAAgAAAIAA=</HashCode>
+      <FileName>fenNouvelElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenNouvelElementPersonnalisable" Collapsed="true">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAlAAAMAACBQAAAgAAiAIAAyAAQAIAABAAEQEAAHCAI=</HashCode>
+      <FileName>fenNouvelElementPersonnalisable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenNouveauElementVehicule" Collapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8EAACAAAACAhABABAAHAISAyEJIgEAACAQAQQAAAAAg=</HashCode>
+      <FileName>fenNouvelElementVehicule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenNouvelleEquipe" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQEAAAAACBIAFAAAACAggADAAEgAAAEIgCAEAAAAQQ=</HashCode>
+      <FileName>fenNouvelleEquipe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.fenResumeDevis" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAABBAAAACgIAADAHgAAAAAAAAABAAAwAQ=</HashCode>
+      <FileName>fenResumeDevis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.lienBdD" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAAAAAABAkAAAAACAABAAAAAAAAAAAgAAAAAAAAgEAA=</HashCode>
+      <FileName>lienBdD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.Program" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.requetesMySQL" Collapsed="true">
+    <Position X="7" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIQgAAAAAAAAAAAAAAAAAAAAEAAQAAIAAAAEAAAAA=</HashCode>
+      <FileName>requetesMySQL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.Properties.Resources" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Second_Sens___Devis.Properties.Settings" Collapsed="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

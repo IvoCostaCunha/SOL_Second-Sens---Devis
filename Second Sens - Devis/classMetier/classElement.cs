@@ -10,6 +10,7 @@ namespace Second_Sens___Devis.classMetier
     {
         protected String leNomElement;
         protected classTarif leTarif;
+        protected int leNbElement;
 
         /// <summary>
         /// Constructeur en cas de nouvel élément
@@ -25,8 +26,9 @@ namespace Second_Sens___Devis.classMetier
         /// </summary>
         /// <param name="unNomElement"></param>
         /// <param name="unTarif"></param>
-        public classElement(String unNomElement, classTarif unTarif)
+        public classElement(String unNomElement, classTarif unTarif, int unNbElement)
         {
+            leNbElement = unNbElement;
             leNomElement = unNomElement;
             leTarif = unTarif;
         }
