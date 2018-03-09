@@ -168,7 +168,7 @@ namespace Second_Sens___Devis
 
         private void elementPersonnalisableToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fenAjoutElementPerso leNouvelElementPerso = new fenAjoutElementPerso(this);
+            //fenAjoutElementPerso leNouvelElementPerso = new fenAjoutElementPerso(this);
         }
     }
 }

@@ -46,15 +46,18 @@ namespace Second_Sens___Devis
             List<double> lesResultats = laRequete.queryDouble(requete);
             double calcul = 0;
 
-            if(desKmAn >= 5000 && desKmAn <= 20000)
+            if (desKmAn >= 5000 && desKmAn <= 20000)
             {
                 calcul = (lesResultats[0] * desKmAn) * lesResultats[1];
+                laIndemKm = new classMetier.classIndemKm(unNbCV, lesResultats[0], lesResultats[1], Convert.ToInt32(DateTime.Now.ToString("yyyy")), desKmAn);
             }
 
             else
             {
                 calcul = lesResultats[0] * desKmAn;
             }
+
+            
 
             return calcul;
         }
@@ -95,11 +98,11 @@ namespace Second_Sens___Devis
             classMetier.classTarif leTarif = new classMetier.classTarif(0,0,0,Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[0]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[1]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[2]));
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule loué")
             {
-                classMetier.classElement leVehicule = new classMetier.classElement(nomElement, leTarif, laQteVehicule);
+                leVehicule = new classMetier.classElement(nomElement, leTarif, laQteVehicule);
             }
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule société")
             {
-
+                leVehiculeSociete = new classMetier.classVehiculeSociete(nomElement, leTarif, laQteVehicule, laIndemKm);
             }
         }
 
@@ -126,10 +129,24 @@ namespace Second_Sens___Devis
             {
                 double laDistanceTrajet = Convert.ToDouble(textBoxKmTrajet.Text);
                 int leNbCV = Convert.ToInt32(textBoxNbCV.Text);
+
+                if(leNbCV <= 3)
+                {
+                    leNbCV = 3;
+                }
+                else if(leNbCV > 3 && leNbCV <= 5)
+                {
+                    leNbCV = 5;
+                }
+                else if(leNbCV >= 7)
+                {
+                    leNbCV = 7;
+                }
+
                 double lesKmAn = Convert.ToDouble(textBoxKmParAn.Text);
                 double indemKm = calculIndemKm(leNbCV,lesKmAn);
 
-                prixVehicule = leNbVehicules * leNbJours * (laDistanceTrajet * 2 * indemKm * 1.3 + leTarifPeages * 1.15);
+                prixVehicule = leNbVehicules * leNbJours * ((laDistanceTrajet * 2) + (indemKm * 1.3) + (leTarifPeages * 1.15));
             }
 
             dataGridViewTarifsVehicule.Rows.Add(prixVehicule.ToString(), (prixVehicule * 0.5).ToString(), (prixVehicule * 0.5).ToString());

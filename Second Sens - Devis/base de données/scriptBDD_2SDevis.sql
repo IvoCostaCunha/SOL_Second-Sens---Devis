@@ -1,4 +1,5 @@
-
+CREATE OR REPLACE DATABASE SECONDSENS_DEVIS;
+USE SECONDSENS_DEVIS;
 CREATE TABLE TARIFS
 (idTarif varchar(25) not null primary key,
 coutHoraire double, 
@@ -21,7 +22,7 @@ nbCV int,
 coef double,
 coef2 double,
 annee int,
-nbKmAn int);
+nbKmAn varchar(25));
 
 CREATE TABLE ELEMENT_PERSONNALISABLE
 (idElementPerso varchar(25) not null primary key,

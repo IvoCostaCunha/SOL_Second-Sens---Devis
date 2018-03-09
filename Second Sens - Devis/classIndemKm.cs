@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-namespace Second_Sens___Devis.classMetier
+namespace Second_Sens___Devis
 {
     public class classIndemKm
     {

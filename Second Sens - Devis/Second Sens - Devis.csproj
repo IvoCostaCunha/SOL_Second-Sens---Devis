@@ -56,14 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="classMetier\classDevis.cs" />
-    <Compile Include="classMetier\classElement.cs" />
-    <Compile Include="classMetier\classElementPersonnalisable.cs" />
-    <Compile Include="classMetier\classEquipe.cs" />
-    <Compile Include="classMetier\classIndemKm.cs" />
-    <Compile Include="classMetier\classPersonnalisation.cs" />
-    <Compile Include="classMetier\classTarif.cs" />
-    <Compile Include="classMetier\classVehiculeSociete.cs" />
+    <Compile Include="classDevis.cs" />
+    <Compile Include="classElement.cs" />
+    <Compile Include="classElementPersonnalisable.cs" />
+    <Compile Include="classEquipe.cs" />
+    <Compile Include="classIndemKm.cs" />
+    <Compile Include="classPersonnalisation.cs" />
+    <Compile Include="classTarif.cs" />
+    <Compile Include="classVehiculeSociete.cs" />
     <Compile Include="fenAide.cs">
       <SubType>Form</SubType>
     </Compile>
