@@ -28,20 +28,32 @@ namespace Second_Sens___Devis
 
         private double calculIndemKm(int unNbCV, double desKmAn)
         {
-            String requete = "SELECT coef,coef2 FROM indemnkm where nbCV=" + unNbCV.ToString() + " and nbKmAn="
-                + desKmAn;ToString();
+            String requete = "SELECT coef,coef2 FROM indemnkm where nbCV=" + unNbCV.ToString() + " and nbKmAn='";
+            if(desKmAn >= 5000 && desKmAn <= 20000)
+            {
+                requete += "20000'";
+            }
+            else if (desKmAn < 5000)
+            {
+                requete += "5000'";
+            }
+            else
+            {
+                requete += "max'";
+            }
+            MessageBox.Show(requete);
             requetesMySQL laRequete = new requetesMySQL();
-            List<double> lesResusltats = laRequete.queryDouble(requete);
+            List<double> lesResultats = laRequete.queryDouble(requete);
             double calcul = 0;
 
-            if(desKmAn >= 5000 && desKmAn >= 20000)
+            if(desKmAn >= 5000 && desKmAn <= 20000)
             {
-                calcul = (lesResusltats[0] * desKmAn) * lesResusltats[1];
+                calcul = (lesResultats[0] * desKmAn) * lesResultats[1];
             }
 
             else
             {
-                calcul = lesResusltats[0] * desKmAn;
+                calcul = lesResultats[0] * desKmAn;
             }
 
             return calcul;
@@ -93,11 +105,14 @@ namespace Second_Sens___Devis
 
         private void buttonCalculerPrixVehicule_Click(object sender, EventArgs e)
         {
+            if (dataGridViewTarifsVehicule.Rows.Count > 0)
+            {
+                dataGridViewTarifsVehicule.Rows.Remove(dataGridViewTarifsVehicule.Rows[0]);
+            }
             double prixVehicule = 0;
 
             int leNbVehicules = Convert.ToInt32(textBoxQteVehicule.Text);
             int leNbJours = Convert.ToInt32(textBoxNbJoursLocation.Text);
-            double laDistanceTrajet = Convert.ToDouble(textBoxKmTrajet.Text);
             double leTarifPeages = Convert.ToDouble(textBoxPeage.Text);
 
             if(comboBoxTypeVehicule.SelectedIndex == 0)
@@ -109,6 +124,7 @@ namespace Second_Sens___Devis
 
             else if(comboBoxTypeVehicule.SelectedIndex == 1)
             {
+                double laDistanceTrajet = Convert.ToDouble(textBoxKmTrajet.Text);
                 int leNbCV = Convert.ToInt32(textBoxNbCV.Text);
                 double lesKmAn = Convert.ToDouble(textBoxKmParAn.Text);
                 double indemKm = calculIndemKm(leNbCV,lesKmAn);

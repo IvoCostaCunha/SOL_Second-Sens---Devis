@@ -353,6 +353,8 @@
             // 
             // dataGridViewTarifsVehicule
             // 
+            this.dataGridViewTarifsVehicule.AllowUserToAddRows = false;
+            this.dataGridViewTarifsVehicule.AllowUserToDeleteRows = false;
             this.dataGridViewTarifsVehicule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTarifsVehicule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
