@@ -20,6 +20,11 @@ namespace Second_Sens___Devis
             InitializeComponent();
         }
 
+        public fenAjoutElementPerso()
+        {
+            InitializeComponent();
+        }
+
         private void fenAjoutPersoElementStreetMarketing_Load(object sender, EventArgs e)
         {
                     
@@ -27,12 +32,35 @@ namespace Second_Sens___Devis
 
         private void textBoxTarifPersonnalisationPredefinie_TextChanged(object sender, EventArgs e)
         {
-            textBoxMarge.Text = Convert.ToString(Convert.ToInt32(textBoxTarifPersonnalisationPredefinie.Text) - Convert.ToInt32(textBoxCoutRevient.Text));
+            if (textBoxTarifPersonnalisationPredefinie.Text != "") 
+            {
+                try
+                {
+                    textBoxMarge.Text = Convert.ToString(Convert.ToDouble(textBoxTarifPersonnalisationPredefinie.Text) - Convert.ToDouble(textBoxCoutRevient.Text));
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Veuillez n'entrer que des nombres");
+                }
+            }
+            
         }
 
         private void textBoxCoutRevient_TextChanged(object sender, EventArgs e)
         {
-            textBoxMarge.Text = Convert.ToString(Convert.ToInt32(textBoxTarifPersonnalisationPredefinie.Text) - Convert.ToInt32(textBoxCoutRevient.Text));
+            if (textBoxCoutRevient.Text != "")
+            {
+                try
+                {
+                    textBoxMarge.Text = Convert.ToString(Convert.ToDouble(textBoxTarifPersonnalisationPredefinie.Text) - Convert.ToDouble(textBoxCoutRevient.Text));
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("Veuillez n'entrer que des nombres");
+                }
+            }
         }
     }
 }

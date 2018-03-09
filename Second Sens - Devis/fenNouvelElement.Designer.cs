@@ -33,14 +33,8 @@
             this.tabControlTarifsElement = new System.Windows.Forms.TabControl();
             this.tabTarifHeure = new System.Windows.Forms.TabPage();
             this.dataGridViewTarifHeure = new System.Windows.Forms.DataGridView();
-            this.colTarifTotalHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifRevientHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifMargeHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabTarifJour = new System.Windows.Forms.TabPage();
             this.dataGridViewTarifJour = new System.Windows.Forms.DataGridView();
-            this.colTarifTotalJour = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifRevientJour = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTarifMargeJour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.labelQteElement = new System.Windows.Forms.Label();
             this.labelNomElement = new System.Windows.Forms.Label();
             this.textBoxNomElement = new System.Windows.Forms.TextBox();
@@ -52,6 +46,12 @@
             this.textBoxnbJours = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.buttonAjouter = new System.Windows.Forms.Button();
+            this.colTarifTotalHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifRevientHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifMargeHeure = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifTotalJour = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifRevientJour = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTarifMargeJour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControlTarifsElement.SuspendLayout();
             this.tabTarifHeure.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTarifHeure)).BeginInit();
@@ -106,32 +106,22 @@
             // 
             // dataGridViewTarifHeure
             // 
+            this.dataGridViewTarifHeure.AllowUserToAddRows = false;
+            this.dataGridViewTarifHeure.AllowUserToDeleteRows = false;
+            this.dataGridViewTarifHeure.AllowUserToResizeColumns = false;
+            this.dataGridViewTarifHeure.AllowUserToResizeRows = false;
             this.dataGridViewTarifHeure.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTarifHeure.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colTarifTotalHeure,
             this.colTarifRevientHeure,
             this.colTarifMargeHeure});
-            this.dataGridViewTarifHeure.Location = new System.Drawing.Point(4, 4);
+            this.dataGridViewTarifHeure.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewTarifHeure.Location = new System.Drawing.Point(2, 2);
             this.dataGridViewTarifHeure.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewTarifHeure.Name = "dataGridViewTarifHeure";
             this.dataGridViewTarifHeure.RowTemplate.Height = 28;
-            this.dataGridViewTarifHeure.Size = new System.Drawing.Size(461, 122);
+            this.dataGridViewTarifHeure.Size = new System.Drawing.Size(465, 141);
             this.dataGridViewTarifHeure.TabIndex = 7;
-            // 
-            // colTarifTotalHeure
-            // 
-            this.colTarifTotalHeure.HeaderText = "Total";
-            this.colTarifTotalHeure.Name = "colTarifTotalHeure";
-            // 
-            // colTarifRevientHeure
-            // 
-            this.colTarifRevientHeure.HeaderText = "Revient";
-            this.colTarifRevientHeure.Name = "colTarifRevientHeure";
-            // 
-            // colTarifMargeHeure
-            // 
-            this.colTarifMargeHeure.HeaderText = "Marge";
-            this.colTarifMargeHeure.Name = "colTarifMargeHeure";
             // 
             // tabTarifJour
             // 
@@ -148,32 +138,22 @@
             // 
             // dataGridViewTarifJour
             // 
+            this.dataGridViewTarifJour.AllowUserToAddRows = false;
+            this.dataGridViewTarifJour.AllowUserToDeleteRows = false;
+            this.dataGridViewTarifJour.AllowUserToResizeColumns = false;
+            this.dataGridViewTarifJour.AllowUserToResizeRows = false;
             this.dataGridViewTarifJour.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTarifJour.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colTarifTotalJour,
             this.colTarifRevientJour,
             this.colTarifMargeJour});
-            this.dataGridViewTarifJour.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewTarifJour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewTarifJour.Location = new System.Drawing.Point(2, 2);
             this.dataGridViewTarifJour.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewTarifJour.Name = "dataGridViewTarifJour";
             this.dataGridViewTarifJour.RowTemplate.Height = 28;
-            this.dataGridViewTarifJour.Size = new System.Drawing.Size(473, 141);
+            this.dataGridViewTarifJour.Size = new System.Drawing.Size(465, 141);
             this.dataGridViewTarifJour.TabIndex = 8;
-            // 
-            // colTarifTotalJour
-            // 
-            this.colTarifTotalJour.HeaderText = "Total";
-            this.colTarifTotalJour.Name = "colTarifTotalJour";
-            // 
-            // colTarifRevientJour
-            // 
-            this.colTarifRevientJour.HeaderText = "Revient";
-            this.colTarifRevientJour.Name = "colTarifRevientJour";
-            // 
-            // colTarifMargeJour
-            // 
-            this.colTarifMargeJour.HeaderText = "Marge";
-            this.colTarifMargeJour.Name = "colTarifMargeJour";
             // 
             // labelQteElement
             // 
@@ -281,6 +261,42 @@
             this.buttonAjouter.Text = "Ajouter l\'élément";
             this.buttonAjouter.UseVisualStyleBackColor = true;
             // 
+            // colTarifTotalHeure
+            // 
+            this.colTarifTotalHeure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTarifTotalHeure.HeaderText = "Total";
+            this.colTarifTotalHeure.Name = "colTarifTotalHeure";
+            // 
+            // colTarifRevientHeure
+            // 
+            this.colTarifRevientHeure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTarifRevientHeure.HeaderText = "Revient";
+            this.colTarifRevientHeure.Name = "colTarifRevientHeure";
+            // 
+            // colTarifMargeHeure
+            // 
+            this.colTarifMargeHeure.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTarifMargeHeure.HeaderText = "Marge";
+            this.colTarifMargeHeure.Name = "colTarifMargeHeure";
+            // 
+            // colTarifTotalJour
+            // 
+            this.colTarifTotalJour.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTarifTotalJour.HeaderText = "Total";
+            this.colTarifTotalJour.Name = "colTarifTotalJour";
+            // 
+            // colTarifRevientJour
+            // 
+            this.colTarifRevientJour.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTarifRevientJour.HeaderText = "Revient";
+            this.colTarifRevientJour.Name = "colTarifRevientJour";
+            // 
+            // colTarifMargeJour
+            // 
+            this.colTarifMargeJour.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colTarifMargeJour.HeaderText = "Marge";
+            this.colTarifMargeJour.Name = "colTarifMargeJour";
+            // 
             // fenNouvelElement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,12 +345,6 @@
         private System.Windows.Forms.Label labelNomElement;
         private System.Windows.Forms.TextBox textBoxNomElement;
         private System.Windows.Forms.TextBox textBoxQteElement;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifTotalHeure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifRevientHeure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifMargeHeure;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifTotalJour;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifRevientJour;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifMargeJour;
         private System.Windows.Forms.ComboBox comboBoxTypeElem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -342,5 +352,11 @@
         private System.Windows.Forms.TextBox textBoxnbJours;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button buttonAjouter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifTotalHeure;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifRevientHeure;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifMargeHeure;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifTotalJour;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifRevientJour;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTarifMargeJour;
     }
 }
