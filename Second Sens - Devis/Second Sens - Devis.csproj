@@ -76,11 +76,11 @@
     <Compile Include="fenAjoutModelPersoPersonnalisation.Designer.cs">
       <DependentUpon>fenAjoutModelPersoPersonnalisation.cs</DependentUpon>
     </Compile>
-    <Compile Include="fenAjoutPersoElementStreetMarketingPredifini.cs">
+    <Compile Include="fenAjoutElementPerso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fenAjoutPersoElementStreetMarketingPredifini.Designer.cs">
-      <DependentUpon>fenAjoutPersoElementStreetMarketingPredifini.cs</DependentUpon>
+    <Compile Include="fenAjoutElementPerso.Designer.cs">
+      <DependentUpon>fenAjoutElementPerso.cs</DependentUpon>
     </Compile>
     <Compile Include="fenChargement.cs">
       <SubType>Form</SubType>
@@ -158,8 +158,8 @@
     <EmbeddedResource Include="fenAjoutModelPersoPersonnalisation.resx">
       <DependentUpon>fenAjoutModelPersoPersonnalisation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fenAjoutPersoElementStreetMarketingPredifini.resx">
-      <DependentUpon>fenAjoutPersoElementStreetMarketingPredifini.cs</DependentUpon>
+    <EmbeddedResource Include="fenAjoutElementPerso.resx">
+      <DependentUpon>fenAjoutElementPerso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fenChargement.resx">
       <DependentUpon>fenChargement.cs</DependentUpon>

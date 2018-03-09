@@ -165,5 +165,10 @@ namespace Second_Sens___Devis
                 dataGridViewAjoutDivers.Rows.Remove(unRow);
             }
         }
+
+        private void elementPersonnalisableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fenAjoutElementPerso leNouvelElementPerso = new fenAjoutElementPerso(this);
+        }
     }
 }

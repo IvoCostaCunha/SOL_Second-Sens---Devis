@@ -69,6 +69,10 @@
             this.buttonSupprimerHonoraire = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridViewHonoraire = new System.Windows.Forms.DataGridView();
+            this.colNomHonoraire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDureeHonoraire = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColTypeDuree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonAjouterHonoraire = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxNomHonoraire = new System.Windows.Forms.TextBox();
@@ -82,10 +86,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.colNomHonoraire = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDureeHonoraire = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColTypeDuree = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.elementPersonnalisableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.élémentSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personnalisationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panelNouveauDevis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAjoutDivers)).BeginInit();
@@ -101,6 +105,7 @@
             this.fichierToolStripMenuItem,
             this.tarifsToolStripMenuItem,
             this.devisToolStripMenuItem,
+            this.ajouterToolStripMenuItem,
             this.aProposToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -121,7 +126,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -201,7 +206,7 @@
             // 
             this.comboBoxEquipesPrédefinies.FormattingEnabled = true;
             this.comboBoxEquipesPrédefinies.Location = new System.Drawing.Point(11, 281);
-            this.comboBoxEquipesPrédefinies.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxEquipesPrédefinies.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxEquipesPrédefinies.Name = "comboBoxEquipesPrédefinies";
             this.comboBoxEquipesPrédefinies.Size = new System.Drawing.Size(257, 24);
             this.comboBoxEquipesPrédefinies.TabIndex = 7;
@@ -212,7 +217,7 @@
             this.listBoxEquipes.FormattingEnabled = true;
             this.listBoxEquipes.ItemHeight = 16;
             this.listBoxEquipes.Location = new System.Drawing.Point(576, 61);
-            this.listBoxEquipes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxEquipes.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxEquipes.Name = "listBoxEquipes";
             this.listBoxEquipes.Size = new System.Drawing.Size(488, 228);
             this.listBoxEquipes.TabIndex = 12;
@@ -220,7 +225,7 @@
             // buttonAjouterEquipePredefinie
             // 
             this.buttonAjouterEquipePredefinie.Location = new System.Drawing.Point(272, 279);
-            this.buttonAjouterEquipePredefinie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAjouterEquipePredefinie.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterEquipePredefinie.Name = "buttonAjouterEquipePredefinie";
             this.buttonAjouterEquipePredefinie.Size = new System.Drawing.Size(272, 26);
             this.buttonAjouterEquipePredefinie.TabIndex = 13;
@@ -231,7 +236,7 @@
             // buttonAnnuler
             // 
             this.buttonAnnuler.Location = new System.Drawing.Point(11, 814);
-            this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAnnuler.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnuler.Name = "buttonAnnuler";
             this.buttonAnnuler.Size = new System.Drawing.Size(190, 57);
             this.buttonAnnuler.TabIndex = 15;
@@ -242,7 +247,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(576, 332);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(219, 39);
             this.button2.TabIndex = 16;
@@ -252,7 +257,7 @@
             // buttonResumeDevis
             // 
             this.buttonResumeDevis.Location = new System.Drawing.Point(206, 814);
-            this.buttonResumeDevis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonResumeDevis.Margin = new System.Windows.Forms.Padding(2);
             this.buttonResumeDevis.Name = "buttonResumeDevis";
             this.buttonResumeDevis.Size = new System.Drawing.Size(338, 57);
             this.buttonResumeDevis.TabIndex = 17;
@@ -263,7 +268,7 @@
             // buttonModifierEquipe
             // 
             this.buttonModifierEquipe.Location = new System.Drawing.Point(799, 332);
-            this.buttonModifierEquipe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonModifierEquipe.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModifierEquipe.Name = "buttonModifierEquipe";
             this.buttonModifierEquipe.Size = new System.Drawing.Size(265, 39);
             this.buttonModifierEquipe.TabIndex = 18;
@@ -316,7 +321,7 @@
             this.panelNouveauDevis.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNouveauDevis.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelNouveauDevis.Location = new System.Drawing.Point(0, 24);
-            this.panelNouveauDevis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelNouveauDevis.Margin = new System.Windows.Forms.Padding(2);
             this.panelNouveauDevis.Name = "panelNouveauDevis";
             this.panelNouveauDevis.Size = new System.Drawing.Size(1283, 658);
             this.panelNouveauDevis.TabIndex = 1;
@@ -337,7 +342,7 @@
             // textBoxNombreHonoraires
             // 
             this.textBoxNombreHonoraires.Location = new System.Drawing.Point(129, 544);
-            this.textBoxNombreHonoraires.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNombreHonoraires.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNombreHonoraires.Name = "textBoxNombreHonoraires";
             this.textBoxNombreHonoraires.Size = new System.Drawing.Size(261, 23);
             this.textBoxNombreHonoraires.TabIndex = 52;
@@ -345,7 +350,7 @@
             // textBoxDuree
             // 
             this.textBoxDuree.Location = new System.Drawing.Point(129, 574);
-            this.textBoxDuree.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDuree.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDuree.Name = "textBoxDuree";
             this.textBoxDuree.Size = new System.Drawing.Size(72, 23);
             this.textBoxDuree.TabIndex = 51;
@@ -375,7 +380,7 @@
             // textBoxTarifDivers
             // 
             this.textBoxTarifDivers.Location = new System.Drawing.Point(1209, 84);
-            this.textBoxTarifDivers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxTarifDivers.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxTarifDivers.Name = "textBoxTarifDivers";
             this.textBoxTarifDivers.Size = new System.Drawing.Size(252, 23);
             this.textBoxTarifDivers.TabIndex = 48;
@@ -383,7 +388,7 @@
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(1465, 133);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(158, 27);
             this.button7.TabIndex = 47;
@@ -421,7 +426,7 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(1465, 51);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(159, 56);
             this.button6.TabIndex = 45;
@@ -443,7 +448,7 @@
             // textBoxNomDivers
             // 
             this.textBoxNomDivers.Location = new System.Drawing.Point(1209, 53);
-            this.textBoxNomDivers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNomDivers.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNomDivers.Name = "textBoxNomDivers";
             this.textBoxNomDivers.Size = new System.Drawing.Size(252, 23);
             this.textBoxNomDivers.TabIndex = 43;
@@ -511,7 +516,7 @@
             // buttonSupprimerHonoraire
             // 
             this.buttonSupprimerHonoraire.Location = new System.Drawing.Point(384, 658);
-            this.buttonSupprimerHonoraire.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSupprimerHonoraire.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSupprimerHonoraire.Name = "buttonSupprimerHonoraire";
             this.buttonSupprimerHonoraire.Size = new System.Drawing.Size(158, 27);
             this.buttonSupprimerHonoraire.TabIndex = 39;
@@ -547,10 +552,40 @@
             this.dataGridViewHonoraire.Size = new System.Drawing.Size(364, 136);
             this.dataGridViewHonoraire.TabIndex = 37;
             // 
+            // colNomHonoraire
+            // 
+            this.colNomHonoraire.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colNomHonoraire.HeaderText = "Nom";
+            this.colNomHonoraire.Name = "colNomHonoraire";
+            this.colNomHonoraire.ReadOnly = true;
+            this.colNomHonoraire.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // colDureeHonoraire
+            // 
+            this.colDureeHonoraire.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.colDureeHonoraire.HeaderText = "Duree";
+            this.colDureeHonoraire.Name = "colDureeHonoraire";
+            this.colDureeHonoraire.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnNombre
+            // 
+            this.ColumnNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColumnNombre.HeaderText = "Nombre";
+            this.ColumnNombre.Name = "ColumnNombre";
+            this.ColumnNombre.ReadOnly = true;
+            this.ColumnNombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColTypeDuree
+            // 
+            this.ColTypeDuree.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ColTypeDuree.HeaderText = "Type duree";
+            this.ColTypeDuree.Name = "ColTypeDuree";
+            this.ColTypeDuree.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // buttonAjouterHonoraire
             // 
             this.buttonAjouterHonoraire.Location = new System.Drawing.Point(394, 513);
-            this.buttonAjouterHonoraire.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAjouterHonoraire.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterHonoraire.Name = "buttonAjouterHonoraire";
             this.buttonAjouterHonoraire.Size = new System.Drawing.Size(159, 56);
             this.buttonAjouterHonoraire.TabIndex = 34;
@@ -572,7 +607,7 @@
             // textBoxNomHonoraire
             // 
             this.textBoxNomHonoraire.Location = new System.Drawing.Point(129, 513);
-            this.textBoxNomHonoraire.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNomHonoraire.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNomHonoraire.Name = "textBoxNomHonoraire";
             this.textBoxNomHonoraire.Size = new System.Drawing.Size(261, 23);
             this.textBoxNomHonoraire.TabIndex = 31;
@@ -643,7 +678,7 @@
             // btnNouvelleEquipePerso
             // 
             this.btnNouvelleEquipePerso.Location = new System.Drawing.Point(16, 381);
-            this.btnNouvelleEquipePerso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNouvelleEquipePerso.Margin = new System.Windows.Forms.Padding(2);
             this.btnNouvelleEquipePerso.Name = "btnNouvelleEquipePerso";
             this.btnNouvelleEquipePerso.Size = new System.Drawing.Size(527, 48);
             this.btnNouvelleEquipePerso.TabIndex = 22;
@@ -684,35 +719,34 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Nouvelle équipe existante";
             // 
-            // colNomHonoraire
+            // ajouterToolStripMenuItem
             // 
-            this.colNomHonoraire.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colNomHonoraire.HeaderText = "Nom";
-            this.colNomHonoraire.Name = "colNomHonoraire";
-            this.colNomHonoraire.ReadOnly = true;
-            this.colNomHonoraire.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ajouterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.elementPersonnalisableToolStripMenuItem,
+            this.élémentSimpleToolStripMenuItem,
+            this.personnalisationToolStripMenuItem});
+            this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(58, 22);
+            this.ajouterToolStripMenuItem.Text = "Ajouter";
             // 
-            // colDureeHonoraire
+            // elementPersonnalisableToolStripMenuItem
             // 
-            this.colDureeHonoraire.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.colDureeHonoraire.HeaderText = "Duree";
-            this.colDureeHonoraire.Name = "colDureeHonoraire";
-            this.colDureeHonoraire.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.elementPersonnalisableToolStripMenuItem.Name = "elementPersonnalisableToolStripMenuItem";
+            this.elementPersonnalisableToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.elementPersonnalisableToolStripMenuItem.Text = "Élément personnalisable";
+            this.elementPersonnalisableToolStripMenuItem.Click += new System.EventHandler(this.elementPersonnalisableToolStripMenuItem_Click);
             // 
-            // ColumnNombre
+            // élémentSimpleToolStripMenuItem
             // 
-            this.ColumnNombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColumnNombre.HeaderText = "Nombre";
-            this.ColumnNombre.Name = "ColumnNombre";
-            this.ColumnNombre.ReadOnly = true;
-            this.ColumnNombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.élémentSimpleToolStripMenuItem.Name = "élémentSimpleToolStripMenuItem";
+            this.élémentSimpleToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.élémentSimpleToolStripMenuItem.Text = "Élément Simple";
             // 
-            // ColTypeDuree
+            // personnalisationToolStripMenuItem
             // 
-            this.ColTypeDuree.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ColTypeDuree.HeaderText = "Type duree";
-            this.ColTypeDuree.Name = "ColTypeDuree";
-            this.ColTypeDuree.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.personnalisationToolStripMenuItem.Name = "personnalisationToolStripMenuItem";
+            this.personnalisationToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.personnalisationToolStripMenuItem.Text = "Personnalisation";
             // 
             // fenMenuPrincipal
             // 
@@ -723,7 +757,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenMenuPrincipal";
             this.Text = "Menu Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -801,5 +835,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colDureeHonoraire;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColTypeDuree;
+        private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem elementPersonnalisableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem élémentSimpleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personnalisationToolStripMenuItem;
     }
 }

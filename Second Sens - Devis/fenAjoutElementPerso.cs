@@ -24,5 +24,15 @@ namespace Second_Sens___Devis
         {
                     
         }
+
+        private void textBoxTarifPersonnalisationPredefinie_TextChanged(object sender, EventArgs e)
+        {
+            textBoxMarge.Text = Convert.ToString(Convert.ToInt32(textBoxTarifPersonnalisationPredefinie.Text) - Convert.ToInt32(textBoxCoutRevient.Text));
+        }
+
+        private void textBoxCoutRevient_TextChanged(object sender, EventArgs e)
+        {
+            textBoxMarge.Text = Convert.ToString(Convert.ToInt32(textBoxTarifPersonnalisationPredefinie.Text) - Convert.ToInt32(textBoxCoutRevient.Text));
+        }
     }
 }

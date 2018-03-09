@@ -37,8 +37,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxCoutRevient = new System.Windows.Forms.TextBox();
+            this.textBoxMarge = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelAideModelPredefini
@@ -70,23 +70,24 @@
             this.textBoxTarifPersonnalisationPredefinie.Name = "textBoxTarifPersonnalisationPredefinie";
             this.textBoxTarifPersonnalisationPredefinie.Size = new System.Drawing.Size(64, 20);
             this.textBoxTarifPersonnalisationPredefinie.TabIndex = 9;
+            this.textBoxTarifPersonnalisationPredefinie.TextChanged += new System.EventHandler(this.textBoxTarifPersonnalisationPredefinie_TextChanged);
             // 
             // buttonAjouterPersonnalisationPredefinie
             // 
-            this.buttonAjouterPersonnalisationPredefinie.Location = new System.Drawing.Point(239, 184);
+            this.buttonAjouterPersonnalisationPredefinie.Location = new System.Drawing.Point(239, 169);
             this.buttonAjouterPersonnalisationPredefinie.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAjouterPersonnalisationPredefinie.Name = "buttonAjouterPersonnalisationPredefinie";
-            this.buttonAjouterPersonnalisationPredefinie.Size = new System.Drawing.Size(197, 27);
+            this.buttonAjouterPersonnalisationPredefinie.Size = new System.Drawing.Size(197, 42);
             this.buttonAjouterPersonnalisationPredefinie.TabIndex = 6;
             this.buttonAjouterPersonnalisationPredefinie.Text = "Ajouter";
             this.buttonAjouterPersonnalisationPredefinie.UseVisualStyleBackColor = true;
             // 
             // buttonAnnulerAjoutPersonnalisation
             // 
-            this.buttonAnnulerAjoutPersonnalisation.Location = new System.Drawing.Point(110, 184);
+            this.buttonAnnulerAjoutPersonnalisation.Location = new System.Drawing.Point(110, 169);
             this.buttonAnnulerAjoutPersonnalisation.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAnnulerAjoutPersonnalisation.Name = "buttonAnnulerAjoutPersonnalisation";
-            this.buttonAnnulerAjoutPersonnalisation.Size = new System.Drawing.Size(125, 27);
+            this.buttonAnnulerAjoutPersonnalisation.Size = new System.Drawing.Size(125, 42);
             this.buttonAnnulerAjoutPersonnalisation.TabIndex = 11;
             this.buttonAnnulerAjoutPersonnalisation.Text = "Annuler";
             this.buttonAnnulerAjoutPersonnalisation.UseVisualStyleBackColor = true;
@@ -128,29 +129,30 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Nom";
             // 
-            // textBox2
+            // textBoxCoutRevient
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 98);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(64, 20);
-            this.textBox2.TabIndex = 16;
+            this.textBoxCoutRevient.Location = new System.Drawing.Point(134, 98);
+            this.textBoxCoutRevient.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCoutRevient.Name = "textBoxCoutRevient";
+            this.textBoxCoutRevient.Size = new System.Drawing.Size(64, 20);
+            this.textBoxCoutRevient.TabIndex = 16;
+            this.textBoxCoutRevient.TextChanged += new System.EventHandler(this.textBoxCoutRevient_TextChanged);
             // 
-            // textBox3
+            // textBoxMarge
             // 
-            this.textBox3.Location = new System.Drawing.Point(202, 98);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 20);
-            this.textBox3.TabIndex = 17;
+            this.textBoxMarge.Location = new System.Drawing.Point(202, 98);
+            this.textBoxMarge.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMarge.Name = "textBoxMarge";
+            this.textBoxMarge.Size = new System.Drawing.Size(64, 20);
+            this.textBoxMarge.TabIndex = 17;
             // 
             // fenAjoutElementPerso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 222);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxMarge);
+            this.Controls.Add(this.textBoxCoutRevient);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -179,7 +181,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxCoutRevient;
+        private System.Windows.Forms.TextBox textBoxMarge;
     }
 }
