@@ -36,10 +36,11 @@ namespace Second_Sens___Devis
         }
         private void comboBoxTypeElem_SelectedIndexChanged(object sender, EventArgs e)
         {
+            dataGridViewTarifHeure.Rows.Clear();
+            dataGridViewTarifJour.Rows.Clear();
             try
             {
                 String requete = "SELECT coutHoraire, coutRevientHoraire, margeHoraire from tarifs, elements where tarifs.idTarif = elements.idTarif and nomElement ='" + comboBoxTypeElem.SelectedItem.ToString() + "'";
-                MessageBox.Show(requete);
                 requetesMySQL laRequete = new requetesMySQL();
                 List<Double> lesPrixElement = laRequete.queryDouble(requete);
                 dataGridViewTarifHeure.Rows.Add(lesPrixElement[0].ToString(), lesPrixElement[1].ToString(), lesPrixElement[2].ToString());

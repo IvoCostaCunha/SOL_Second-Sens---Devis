@@ -11,6 +11,8 @@ namespace Second_Sens___Devis
         protected String leNomElement;
         protected classTarif leTarif;
         protected int leNbElement;
+        protected int leNbJours;
+        protected int leNbHeuresParJour;
 
         /// <summary>
         /// Constructeur en cas de nouvel élément
@@ -31,6 +33,23 @@ namespace Second_Sens___Devis
             leNbElement = unNbElement;
             leNomElement = unNomElement;
             leTarif = unTarif;
+        }
+
+        /// <summary>
+        /// Constructeur complet avec les durées
+        /// </summary>
+        /// <param name="unNomElement"></param>
+        /// <param name="unTarif"></param>
+        /// <param name="unNbElement"></param>
+        /// <param name="unNbJours"></param>
+        /// <param name="unNbHeuresParJour"></param>
+        public classElement(String unNomElement, classTarif unTarif, int unNbElement, int unNbJours, int unNbHeuresParJour)
+        {
+            leNbElement = unNbElement;
+            leNomElement = unNomElement;
+            leTarif = unTarif;
+            leNbJours = unNbJours;
+            leNbHeuresParJour = unNbHeuresParJour;
         }
 
         /// <summary>
