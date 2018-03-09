@@ -59,17 +59,22 @@ namespace Second_Sens___Devis
         private void buttonValiderAjoutVehicule_Click(object sender, EventArgs e)
         {
             String nomElement = textBoxNomVehicule.Text;
-            int qteVehicule = Convert.ToInt32(textBoxQteVehicule.Text);
+            int laQteVehicule = Convert.ToInt32(textBoxQteVehicule.Text);
 
-            classMetier.classTarif leTarif = new classMetier.classTarif();
+            classMetier.classTarif leTarif = new classMetier.classTarif(0,0,0,Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[0]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[1]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[2]));
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule loué")
             {
-                classMetier.classElement leVehicule = new classMetier.classElement();
+                classMetier.classElement leVehicule = new classMetier.classElement(nomElement, leTarif, laQteVehicule);
             }
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule société")
             {
 
             }
+        }
+
+        private void buttonCalculerPrixVehicule_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Second_Sens___Devis.classMetier
         /// <param name="unNomVehiculeSociété"></param>
         /// <param name="unTarif"></param>
         /// <param name="uneIndemKm"></param>
-        public classVehiculeSociete(String unNomVehiculeSociété, classTarif unTarif, classIndemKm uneIndemKm) : base (unNomVehiculeSociété, unTarif, unNbElement)
+        public classVehiculeSociete(String unNomVehiculeSociété, classTarif unTarif, int unNbVehicule, classIndemKm uneIndemKm) : base (unNomVehiculeSociété, unTarif, unNbVehicule)
         {
             this.leNomElement = unNomVehiculeSociété;
             this.leTarif = unTarif;
