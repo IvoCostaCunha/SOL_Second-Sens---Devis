@@ -186,7 +186,24 @@ namespace Second_Sens___Devis
         private void button2_Click(object sender, EventArgs e)
         {
             /* button 2 ??? bouton buttonSupprimerEquipes plutôt nan ? */
-            listBoxEquipes.Items.Remove(listBoxEquipes.SelectedItem);
+            int index = 0;
+            bool found = false;
+
+            foreach (classEquipe uneEquipe in lesEquipes)
+            {
+                if(uneEquipe.getNomEquipe() == listBoxEquipes.SelectedItem.ToString())
+                {
+                    index = lesEquipes.IndexOf(uneEquipe);
+                    found = true;
+                }
+            }
+
+            if (found)
+            {
+                lesEquipes.Remove(lesEquipes[index]);
+            }
+            
+            majListeEquipes();
         }
     }
 }
