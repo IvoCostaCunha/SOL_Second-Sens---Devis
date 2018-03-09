@@ -99,8 +99,9 @@ namespace Second_Sens___Devis
             tarifMarge = 0;
             foreach(classElement unElement in lesElements)
             {
-                tarifTotal += unElement.
+                //tarifTotal += unElement
             }
+            return null;
         }
     }
 }

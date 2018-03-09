@@ -216,8 +216,8 @@ namespace Second_Sens___Devis
                     laEquipeSelectionne = uneEquipe;
                 }
             }
-            laEquipeSelectionne.getLeta
-            dataGridViewDetailEquipe.Rows.Add(laEquipeSelectionne.getNomEquipe(), laEquipeSelectionne.get)
+            //laEquipeSelectionne.getLeta
+            //dataGridViewDetailEquipe.Rows.Add(laEquipeSelectionne.getNomEquipe(), laEquipeSelectionne.get)
         }
     }
 }

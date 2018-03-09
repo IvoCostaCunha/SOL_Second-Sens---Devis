@@ -65,7 +65,7 @@ namespace Second_Sens___Devis
         /// Fonction qui retourne le tarif associé a l'élément
         /// </summary>
         /// <returns></returns>
-        protected classTarif getTarif()
+        public classTarif getTarif()
         {
             return this.leTarif;
         }
@@ -74,7 +74,7 @@ namespace Second_Sens___Devis
         /// Méthode qui attribue a un élément un tarif de classe classTarif
         /// </summary>
         /// <param name="unTarif">Le tarif de classTarif</param>
-        protected void setTarif(classTarif unTarif)
+        public void setTarif(classTarif unTarif)
         {
             leTarif = unTarif;
         }
