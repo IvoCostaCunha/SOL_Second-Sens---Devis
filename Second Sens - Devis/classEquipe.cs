@@ -10,6 +10,8 @@ namespace Second_Sens___Devis
     {
         private String leNomEquipe;
         private List<classElement> lesElements;
+        private List<classElementPersonnalisable> lesElementsPersonnalisables;
+        private List<classVehiculeSociete> lesVehiculesSociete;
         
         /// <summary>
         /// Constructeur en cas de nouvelle équipe personnalisé
@@ -19,6 +21,8 @@ namespace Second_Sens___Devis
         {
             leNomEquipe = unNomEquipe;
             lesElements = new List<classElement>();
+            lesElementsPersonnalisables = new List<classElementPersonnalisable>();
+            lesVehiculesSociete = new List<classVehiculeSociete>();
         }
 
         /// <summary>
@@ -48,6 +52,21 @@ namespace Second_Sens___Devis
         public List<classElement> getLesElements()
         {
             return this.lesElements;
+        }
+
+        public void ajouterElement(classElement unElement)
+        {
+            lesElements.Add(unElement);
+        }
+
+        public void ajouterElementPersonnalisable(classElementPersonnalisable unElementPerso)
+        {
+            lesElementsPersonnalisables.Add(unElementPerso);
+        }
+
+        public void ajouterUnVehiculeSociete(classVehiculeSociete unVehiculeSociete)
+        {
+            lesVehiculesSociete.Add(unVehiculeSociete);
         }
     }
 }

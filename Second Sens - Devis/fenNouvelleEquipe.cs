@@ -14,12 +14,11 @@ namespace Second_Sens___Devis
     {
         fenMenuPrincipal leMenuPrincipal;
 
-        public classVehiculeSociete leVehiculeSociete;
-        public classIndemKm laIndemKm;
-        public classElement leVehicule;
+        public classEquipe laEquipe;
 
         public fenNouvelleEquipe(fenMenuPrincipal unMenuPrincipal)
         {
+            laEquipe = new classEquipe("test");
             leMenuPrincipal = unMenuPrincipal;
             InitializeComponent();
         }
