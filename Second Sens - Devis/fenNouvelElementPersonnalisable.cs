@@ -41,7 +41,7 @@ namespace Second_Sens___Devis
 
         private void buttonAjouterPersonnalisation_Click(object sender, EventArgs e)
         {
-            fenAjoutPersoElementStreetMarketingPredifini unElementPersoPredefini = new fenAjoutPersoElementStreetMarketingPredifini(this);
+            fenAjoutElementPerso unElementPersoPredefini = new fenAjoutElementPerso(this);
             unElementPersoPredefini.ShowDialog();
         }
 

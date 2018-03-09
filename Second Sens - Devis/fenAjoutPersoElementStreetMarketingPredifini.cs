@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Second_Sens___Devis
 {
-    public partial class fenAjoutPersoElementStreetMarketingPredifini : Form
+    public partial class fenAjoutElementPerso : Form
     {
         fenNouvelElementPersonnalisable leNouveauElementStreetMarketing;
 
-        public fenAjoutPersoElementStreetMarketingPredifini(fenNouvelElementPersonnalisable unNouveauElementStreetMarketing)
+        public fenAjoutElementPerso(fenNouvelElementPersonnalisable unNouveauElementStreetMarketing)
         {
             leNouveauElementStreetMarketing = unNouveauElementStreetMarketing;
             InitializeComponent();

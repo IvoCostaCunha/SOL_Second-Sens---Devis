@@ -22,7 +22,11 @@ namespace Second_Sens___Devis
 
         private void fenMajTarifs_Load(object sender, EventArgs e)
         {
-
+            /*String requete = "SELECT coutHoraire, coutRevientHoraire, margeHoraire from tarifs, elements where tarifs.idTarif = elements.idTarif and nomElement";
+            MessageBox.Show(requete);
+            requetesMySQL laRequete = new requetesMySQL();
+            List<Double> lesPrixElement = laRequete.queryDouble(requete);
+            dataGridViewTarifsGeneraux.Rows.Add(lesPrixElement[0].ToString(), lesPrixElement[1].ToString(), lesPrixElement[2].ToString()); */
         }
 
         private void buttonAnnulerModif_Click(object sender, EventArgs e)
