@@ -14,7 +14,7 @@ namespace Second_Sens___Devis
     {
         
         fenChargement leChargement;
-        public classMetier.classDevis leNouveauDevis;
+        public classDevis leNouveauDevis;
         public fenMenuPrincipal(fenChargement unChargement)
         {
             leChargement = unChargement;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Second_Sens___Devis.classMetier
+namespace Second_Sens___Devis
 {
-    class classEquipe
+    public class classEquipe
     {
         private String leNomEquipe;
         private List<classElement> lesElements;

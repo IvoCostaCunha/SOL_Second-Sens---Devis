@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Second_Sens___Devis
 {
-    class classElement
+    public class classElement
     {
         protected String leNomElement;
         protected classTarif leTarif;

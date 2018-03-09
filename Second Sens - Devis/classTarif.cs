@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Second_Sens___Devis
 {
-    class classTarif
+    public class classTarif
     {
         private double leTarifTotalHeure;
         private double leTarifRevientHeure;

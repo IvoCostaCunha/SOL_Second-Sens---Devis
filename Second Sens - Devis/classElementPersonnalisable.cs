@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Second_Sens___Devis.classMetier
-{
-    class classElementPersonnalisable : classElement
+namespace Second_Sens___Devis
+{ 
+    public class classElementPersonnalisable : classElement
     {
         private List<classPersonnalisation> lesPersonnalisations;
 

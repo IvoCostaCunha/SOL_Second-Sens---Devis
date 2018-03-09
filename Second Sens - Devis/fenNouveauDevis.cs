@@ -40,7 +40,7 @@ namespace Second_Sens___Devis
                     try
                     {
                         Convert.ToInt32(textBoxDureeOpe.Text);
-                        classMetier.classDevis leNouveauDevis = new classMetier.classDevis(textBoxNomOperation.Text, Convert.ToDateTime(textBoxDateOperation.Text), Convert.ToInt32(textBoxDureeOpe.Text));
+                        classDevis leNouveauDevis = new classDevis(textBoxNomOperation.Text, Convert.ToDateTime(textBoxDateOperation.Text), Convert.ToInt32(textBoxDureeOpe.Text));
                         leMenuPrincipal.leNouveauDevis = leNouveauDevis;
                         leMenuPrincipal.label1.Text = textBoxNomOperation.Text;
                         leMenuPrincipal.label2.Text = textBoxDateOperation.Text;

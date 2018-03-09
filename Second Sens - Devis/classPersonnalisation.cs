@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Second_Sens___Devis
 {
-    class classPersonnalisation
+    public class classPersonnalisation
     {
         private String leLibPerso;
         private double leTarifPersonnalisation;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Second_Sens___Devis
 {
-    class classVehiculeSociete : classElement
+    public class classVehiculeSociete : classElement
     {
         private classIndemKm laIndemKm;
 

@@ -49,7 +49,7 @@ namespace Second_Sens___Devis
             if (desKmAn >= 5000 && desKmAn <= 20000)
             {
                 calcul = (lesResultats[0] * desKmAn) * lesResultats[1];
-                laIndemKm = new classMetier.classIndemKm(unNbCV, lesResultats[0], lesResultats[1], Convert.ToInt32(DateTime.Now.ToString("yyyy")), desKmAn);
+                laEquipe.laIndemKm = new classIndemKm(unNbCV, lesResultats[0], lesResultats[1], Convert.ToInt32(DateTime.Now.ToString("yyyy")), desKmAn);
             }
 
             else
@@ -95,14 +95,14 @@ namespace Second_Sens___Devis
             String nomElement = textBoxNomVehicule.Text;
             int laQteVehicule = Convert.ToInt32(textBoxQteVehicule.Text);
 
-            classMetier.classTarif leTarif = new classMetier.classTarif(0,0,0,Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[0]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[1]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[2]));
+            classTarif leTarif = new classTarif(0,0,0,Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[0]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[1]), Convert.ToDouble(dataGridViewTarifsVehicule.Rows[0].Cells[2]));
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule loué")
             {
-                leVehicule = new classMetier.classElement(nomElement, leTarif, laQteVehicule);
+                laEquipe.leVehicule = new classElement(nomElement, leTarif, laQteVehicule);
             }
             if(comboBoxTypeVehicule.SelectedItem.ToString() == "Vehicule société")
             {
-                leVehiculeSociete = new classMetier.classVehiculeSociete(nomElement, leTarif, laQteVehicule, laIndemKm);
+                laEquipe.leVehiculeSociete = new classVehiculeSociete(nomElement, leTarif, laQteVehicule, laEquipe.laIndemKm);
             }
         }
 
