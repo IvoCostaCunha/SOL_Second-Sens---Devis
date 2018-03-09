@@ -15,8 +15,10 @@ namespace Second_Sens___Devis
         
         fenChargement leChargement;
         public classDevis leNouveauDevis;
+        public List<classEquipe> lesEquipes;
         public fenMenuPrincipal(fenChargement unChargement)
         {
+            lesEquipes = new List<classEquipe>();
             leChargement = unChargement;
             InitializeComponent();
         }
@@ -34,6 +36,15 @@ namespace Second_Sens___Devis
             if(leChargement.progressBarChargement.Value == leChargement.progressBarChargement.Maximum)
             {
                 leChargement.Hide();
+            }
+        }
+
+        public void majListeEquipes()
+        {
+            listBoxEquipes.Items.Clear();
+            foreach(classEquipe uneEquipe in lesEquipes)
+            {
+                listBoxEquipes.Items.Add(uneEquipe.getNomEquipe());
             }
         }
 
@@ -170,6 +181,12 @@ namespace Second_Sens___Devis
         {
             fenAjoutElementPerso leNouvelElementPerso = new fenAjoutElementPerso();
             leNouvelElementPerso.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            /* button 2 ??? bouton buttonSupprimerEquipes plutôt nan ? */
+            listBoxEquipes.Items.Remove(listBoxEquipes.SelectedItem);
         }
     }
 }

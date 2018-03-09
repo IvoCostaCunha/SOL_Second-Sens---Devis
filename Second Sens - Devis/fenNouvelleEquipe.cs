@@ -91,6 +91,13 @@ namespace Second_Sens___Devis
                 listBoxAjoutsEffectues.Items.Add(unVehiculeSociete);
             }
         }
+
+        private void buttonValiderEquipe_Click(object sender, EventArgs e)
+        {
+            leMenuPrincipal.lesEquipes.Add(this.laEquipe);
+            leMenuPrincipal.majListeEquipes();
+            this.Hide();
+        }
     }
 }
  

@@ -50,29 +50,26 @@
             // 
             this.labelElementsAjoutes.AutoSize = true;
             this.labelElementsAjoutes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelElementsAjoutes.Location = new System.Drawing.Point(409, 6);
-            this.labelElementsAjoutes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelElementsAjoutes.Location = new System.Drawing.Point(614, 9);
             this.labelElementsAjoutes.Name = "labelElementsAjoutes";
-            this.labelElementsAjoutes.Size = new System.Drawing.Size(142, 24);
+            this.labelElementsAjoutes.Size = new System.Drawing.Size(218, 32);
             this.labelElementsAjoutes.TabIndex = 2;
             this.labelElementsAjoutes.Text = "Ajouts effectués";
             // 
             // buttonSupprimerElement
             // 
-            this.buttonSupprimerElement.Location = new System.Drawing.Point(210, 452);
-            this.buttonSupprimerElement.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSupprimerElement.Location = new System.Drawing.Point(315, 695);
             this.buttonSupprimerElement.Name = "buttonSupprimerElement";
-            this.buttonSupprimerElement.Size = new System.Drawing.Size(199, 25);
+            this.buttonSupprimerElement.Size = new System.Drawing.Size(298, 38);
             this.buttonSupprimerElement.TabIndex = 14;
             this.buttonSupprimerElement.Text = "Supprimer élement";
             this.buttonSupprimerElement.UseVisualStyleBackColor = true;
             // 
             // buttonAnnulerEquipe
             // 
-            this.buttonAnnulerEquipe.Location = new System.Drawing.Point(210, 481);
-            this.buttonAnnulerEquipe.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAnnulerEquipe.Location = new System.Drawing.Point(315, 740);
             this.buttonAnnulerEquipe.Name = "buttonAnnulerEquipe";
-            this.buttonAnnulerEquipe.Size = new System.Drawing.Size(199, 25);
+            this.buttonAnnulerEquipe.Size = new System.Drawing.Size(298, 38);
             this.buttonAnnulerEquipe.TabIndex = 15;
             this.buttonAnnulerEquipe.Text = "Annuler";
             this.buttonAnnulerEquipe.UseVisualStyleBackColor = true;
@@ -80,30 +77,28 @@
             // 
             // buttonValiderEquipe
             // 
-            this.buttonValiderEquipe.Location = new System.Drawing.Point(8, 481);
-            this.buttonValiderEquipe.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonValiderEquipe.Location = new System.Drawing.Point(12, 740);
             this.buttonValiderEquipe.Name = "buttonValiderEquipe";
-            this.buttonValiderEquipe.Size = new System.Drawing.Size(198, 25);
+            this.buttonValiderEquipe.Size = new System.Drawing.Size(297, 38);
             this.buttonValiderEquipe.TabIndex = 16;
             this.buttonValiderEquipe.Text = "Valider équipe";
             this.buttonValiderEquipe.UseVisualStyleBackColor = true;
+            this.buttonValiderEquipe.Click += new System.EventHandler(this.buttonValiderEquipe_Click);
             // 
             // buttonModifierElement
             // 
-            this.buttonModifierElement.Location = new System.Drawing.Point(8, 452);
-            this.buttonModifierElement.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonModifierElement.Location = new System.Drawing.Point(12, 695);
             this.buttonModifierElement.Name = "buttonModifierElement";
-            this.buttonModifierElement.Size = new System.Drawing.Size(198, 25);
+            this.buttonModifierElement.Size = new System.Drawing.Size(297, 38);
             this.buttonModifierElement.TabIndex = 17;
             this.buttonModifierElement.Text = "Modifier élément";
             this.buttonModifierElement.UseVisualStyleBackColor = true;
             // 
             // bntAjoutElementStandard
             // 
-            this.bntAjoutElementStandard.Location = new System.Drawing.Point(52, 91);
-            this.bntAjoutElementStandard.Margin = new System.Windows.Forms.Padding(2);
+            this.bntAjoutElementStandard.Location = new System.Drawing.Point(78, 140);
             this.bntAjoutElementStandard.Name = "bntAjoutElementStandard";
-            this.bntAjoutElementStandard.Size = new System.Drawing.Size(277, 27);
+            this.bntAjoutElementStandard.Size = new System.Drawing.Size(416, 42);
             this.bntAjoutElementStandard.TabIndex = 27;
             this.bntAjoutElementStandard.Text = "Composant d\'equipe standard";
             this.bntAjoutElementStandard.UseVisualStyleBackColor = true;
@@ -113,19 +108,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(6, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 24);
+            this.label1.Size = new System.Drawing.Size(222, 32);
             this.label1.TabIndex = 28;
             this.label1.Text = "Ajouts possibles";
             // 
             // btnAjoutElementPerso
             // 
-            this.btnAjoutElementPerso.Location = new System.Drawing.Point(52, 122);
-            this.btnAjoutElementPerso.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAjoutElementPerso.Location = new System.Drawing.Point(78, 188);
             this.btnAjoutElementPerso.Name = "btnAjoutElementPerso";
-            this.btnAjoutElementPerso.Size = new System.Drawing.Size(277, 27);
+            this.btnAjoutElementPerso.Size = new System.Drawing.Size(416, 42);
             this.btnAjoutElementPerso.TabIndex = 29;
             this.btnAjoutElementPerso.Text = "Composant d\'équipe personnalisable";
             this.btnAjoutElementPerso.UseVisualStyleBackColor = true;
@@ -135,19 +128,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(8, 179);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(12, 275);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 24);
+            this.label2.Size = new System.Drawing.Size(140, 32);
             this.label2.TabIndex = 31;
             this.label2.Text = "Vehicules";
             // 
             // bntAjoutVehicule
             // 
-            this.bntAjoutVehicule.Location = new System.Drawing.Point(52, 211);
-            this.bntAjoutVehicule.Margin = new System.Windows.Forms.Padding(2);
+            this.bntAjoutVehicule.Location = new System.Drawing.Point(78, 325);
             this.bntAjoutVehicule.Name = "bntAjoutVehicule";
-            this.bntAjoutVehicule.Size = new System.Drawing.Size(277, 27);
+            this.bntAjoutVehicule.Size = new System.Drawing.Size(416, 42);
             this.bntAjoutVehicule.TabIndex = 32;
             this.bntAjoutVehicule.Text = "Ajouter vehicule";
             this.bntAjoutVehicule.UseVisualStyleBackColor = true;
@@ -157,10 +148,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(8, 42);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(12, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 24);
+            this.label3.Size = new System.Drawing.Size(174, 32);
             this.label3.TabIndex = 33;
             this.label3.Text = "Composants";
             // 
@@ -168,51 +158,48 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 63);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(14, 97);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(225, 17);
+            this.label4.Size = new System.Drawing.Size(311, 25);
             this.label4.TabIndex = 34;
             this.label4.Text = "Comprend le personnel également";
             // 
             // listBoxAjoutsEffectues
             // 
             this.listBoxAjoutsEffectues.FormattingEnabled = true;
-            this.listBoxAjoutsEffectues.Location = new System.Drawing.Point(413, 29);
-            this.listBoxAjoutsEffectues.Margin = new System.Windows.Forms.Padding(2);
+            this.listBoxAjoutsEffectues.ItemHeight = 20;
+            this.listBoxAjoutsEffectues.Location = new System.Drawing.Point(620, 45);
             this.listBoxAjoutsEffectues.Name = "listBoxAjoutsEffectues";
-            this.listBoxAjoutsEffectues.Size = new System.Drawing.Size(448, 199);
+            this.listBoxAjoutsEffectues.Size = new System.Drawing.Size(670, 304);
             this.listBoxAjoutsEffectues.TabIndex = 35;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(409, 245);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(614, 377);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 24);
+            this.label5.Size = new System.Drawing.Size(187, 32);
             this.label5.TabIndex = 36;
             this.label5.Text = "Détails ajouts";
             // 
             // dataGridViewDetailAjouts
             // 
             this.dataGridViewDetailAjouts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDetailAjouts.Location = new System.Drawing.Point(413, 271);
-            this.dataGridViewDetailAjouts.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewDetailAjouts.Location = new System.Drawing.Point(620, 417);
             this.dataGridViewDetailAjouts.Name = "dataGridViewDetailAjouts";
             this.dataGridViewDetailAjouts.RowTemplate.Height = 28;
-            this.dataGridViewDetailAjouts.Size = new System.Drawing.Size(448, 235);
+            this.dataGridViewDetailAjouts.Size = new System.Drawing.Size(672, 362);
             this.dataGridViewDetailAjouts.TabIndex = 37;
             // 
             // fenNouvelleEquipe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(887, 517);
+            this.ClientSize = new System.Drawing.Size(1330, 795);
             this.Controls.Add(this.dataGridViewDetailAjouts);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listBoxAjoutsEffectues);
@@ -228,7 +215,6 @@
             this.Controls.Add(this.buttonAnnulerEquipe);
             this.Controls.Add(this.buttonSupprimerElement);
             this.Controls.Add(this.labelElementsAjoutes);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "fenNouvelleEquipe";
             this.Text = "Nouvelle équipe";
             this.Load += new System.EventHandler(this.fenNouvelleEquipe_Load);
