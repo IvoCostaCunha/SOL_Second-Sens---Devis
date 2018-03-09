@@ -152,7 +152,8 @@ namespace Second_Sens___Devis
                 double lesKmAn = Convert.ToDouble(textBoxKmParAn.Text);
                 double indemKm = calculIndemKm(leNbCV,lesKmAn);
 
-                prixVehicule = leNbVehicules * leNbJours * ((laDistanceTrajet * 2) + (indemKm * 1.3) + (leTarifPeages * 1.15));
+                //a faire uniquement selon le trajet parcouru lors de l'operation par le vehicule
+                prixVehicule = leNbVehicules * leNbJours * ((laDistanceTrajet * 2 * indemKm * 1.3 + (leTarifPeages * 1.15)));
             }
 
             dataGridViewTarifsVehicule.Rows.Add(prixVehicule.ToString(), (prixVehicule * 0.5).ToString(), (prixVehicule * 0.5).ToString());
