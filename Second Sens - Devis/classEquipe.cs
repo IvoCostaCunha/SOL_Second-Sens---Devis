@@ -36,6 +36,11 @@ namespace Second_Sens___Devis
             lesElements = desElements;
         }
 
+        public classEquipe()
+        {
+
+        }
+
         /// <summary>
         /// Fonction qui returne le nom de l'équipe
         /// </summary>
@@ -77,6 +82,11 @@ namespace Second_Sens___Devis
         public void ajouterUnVehiculeSociete(classVehiculeSociete unVehiculeSociete)
         {
             lesVehiculesSociete.Add(unVehiculeSociete);
+        }
+
+        public void setNomEquipe(String unNomEquipe)
+        {
+            this.leNomEquipe = unNomEquipe;
         }
     }
 }

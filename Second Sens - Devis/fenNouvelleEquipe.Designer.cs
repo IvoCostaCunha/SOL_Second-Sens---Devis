@@ -43,6 +43,8 @@
             this.listBoxAjoutsEffectues = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridViewDetailAjouts = new System.Windows.Forms.DataGridView();
+            this.textBoxNomEquipe = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetailAjouts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +98,7 @@
             // 
             // bntAjoutElementStandard
             // 
-            this.bntAjoutElementStandard.Location = new System.Drawing.Point(78, 140);
+            this.bntAjoutElementStandard.Location = new System.Drawing.Point(72, 210);
             this.bntAjoutElementStandard.Name = "bntAjoutElementStandard";
             this.bntAjoutElementStandard.Size = new System.Drawing.Size(416, 42);
             this.bntAjoutElementStandard.TabIndex = 27;
@@ -116,7 +118,7 @@
             // 
             // btnAjoutElementPerso
             // 
-            this.btnAjoutElementPerso.Location = new System.Drawing.Point(78, 188);
+            this.btnAjoutElementPerso.Location = new System.Drawing.Point(72, 258);
             this.btnAjoutElementPerso.Name = "btnAjoutElementPerso";
             this.btnAjoutElementPerso.Size = new System.Drawing.Size(416, 42);
             this.btnAjoutElementPerso.TabIndex = 29;
@@ -128,7 +130,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 275);
+            this.label2.Location = new System.Drawing.Point(6, 345);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 32);
             this.label2.TabIndex = 31;
@@ -136,7 +138,7 @@
             // 
             // bntAjoutVehicule
             // 
-            this.bntAjoutVehicule.Location = new System.Drawing.Point(78, 325);
+            this.bntAjoutVehicule.Location = new System.Drawing.Point(72, 395);
             this.bntAjoutVehicule.Name = "bntAjoutVehicule";
             this.bntAjoutVehicule.Size = new System.Drawing.Size(416, 42);
             this.bntAjoutVehicule.TabIndex = 32;
@@ -148,7 +150,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 65);
+            this.label3.Location = new System.Drawing.Point(6, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(174, 32);
             this.label3.TabIndex = 33;
@@ -158,7 +160,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 97);
+            this.label4.Location = new System.Drawing.Point(8, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(311, 25);
             this.label4.TabIndex = 34;
@@ -192,6 +194,23 @@
             this.dataGridViewDetailAjouts.Size = new System.Drawing.Size(672, 362);
             this.dataGridViewDetailAjouts.TabIndex = 37;
             // 
+            // textBoxNomEquipe
+            // 
+            this.textBoxNomEquipe.Location = new System.Drawing.Point(265, 70);
+            this.textBoxNomEquipe.Name = "textBoxNomEquipe";
+            this.textBoxNomEquipe.Size = new System.Drawing.Size(229, 26);
+            this.textBoxNomEquipe.TabIndex = 38;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(14, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 25);
+            this.label6.TabIndex = 39;
+            this.label6.Text = "Nom équipe";
+            // 
             // fenNouvelleEquipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -200,6 +219,8 @@
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1330, 795);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBoxNomEquipe);
             this.Controls.Add(this.dataGridViewDetailAjouts);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listBoxAjoutsEffectues);
@@ -240,5 +261,7 @@
         private System.Windows.Forms.ListBox listBoxAjoutsEffectues;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridViewDetailAjouts;
+        private System.Windows.Forms.TextBox textBoxNomEquipe;
+        private System.Windows.Forms.Label label6;
     }
 }

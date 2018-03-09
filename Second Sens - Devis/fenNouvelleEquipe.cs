@@ -18,14 +18,14 @@ namespace Second_Sens___Devis
 
         public fenNouvelleEquipe(fenMenuPrincipal unMenuPrincipal)
         {
-            laEquipe = new classEquipe("test");
+            laEquipe = new classEquipe();
             leMenuPrincipal = unMenuPrincipal;
             InitializeComponent();
         }
 
         private void fenNouvelleEquipe_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonAnnulerEquipe_Click(object sender, EventArgs e)
@@ -94,6 +94,7 @@ namespace Second_Sens___Devis
 
         private void buttonValiderEquipe_Click(object sender, EventArgs e)
         {
+            laEquipe.setNomEquipe(this.textBoxNomEquipe.Text);
             leMenuPrincipal.lesEquipes.Add(this.laEquipe);
             leMenuPrincipal.majListeEquipes();
             this.Hide();
