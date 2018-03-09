@@ -33,12 +33,17 @@
             this.textBoxTarifPersonnalisationPredefinie = new System.Windows.Forms.TextBox();
             this.buttonAjouterPersonnalisationPredefinie = new System.Windows.Forms.Button();
             this.buttonAnnulerAjoutPersonnalisation = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBoxType = new System.Windows.Forms.ComboBox();
+            this.textBoxNom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxCoutRevient = new System.Windows.Forms.TextBox();
             this.textBoxMarge = new System.Windows.Forms.TextBox();
+            this.checkBoxHeures = new System.Windows.Forms.CheckBox();
+            this.checkBoxJours = new System.Windows.Forms.CheckBox();
+            this.textBoxMargeJour = new System.Windows.Forms.TextBox();
+            this.textBoxPrixRevientJour = new System.Windows.Forms.TextBox();
+            this.textBoxCoutJour = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelAideModelPredefini
@@ -81,6 +86,7 @@
             this.buttonAjouterPersonnalisationPredefinie.TabIndex = 6;
             this.buttonAjouterPersonnalisationPredefinie.Text = "Ajouter";
             this.buttonAjouterPersonnalisationPredefinie.UseVisualStyleBackColor = true;
+            this.buttonAjouterPersonnalisationPredefinie.Click += new System.EventHandler(this.buttonAjouterPersonnalisationPredefinie_Click);
             // 
             // buttonAnnulerAjoutPersonnalisation
             // 
@@ -92,20 +98,20 @@
             this.buttonAnnulerAjoutPersonnalisation.Text = "Annuler";
             this.buttonAnnulerAjoutPersonnalisation.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboBoxType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(66, 46);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 12;
+            this.comboBoxType.FormattingEnabled = true;
+            this.comboBoxType.Location = new System.Drawing.Point(66, 46);
+            this.comboBoxType.Name = "comboBoxType";
+            this.comboBoxType.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxType.TabIndex = 12;
             // 
-            // textBox1
+            // textBoxNom
             // 
-            this.textBox1.Location = new System.Drawing.Point(66, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 13;
+            this.textBoxNom.Location = new System.Drawing.Point(66, 73);
+            this.textBoxNom.Name = "textBoxNom";
+            this.textBoxNom.Size = new System.Drawing.Size(200, 20);
+            this.textBoxNom.TabIndex = 13;
             // 
             // label1
             // 
@@ -146,17 +152,66 @@
             this.textBoxMarge.Size = new System.Drawing.Size(64, 20);
             this.textBoxMarge.TabIndex = 17;
             // 
+            // checkBoxHeures
+            // 
+            this.checkBoxHeures.AutoSize = true;
+            this.checkBoxHeures.Location = new System.Drawing.Point(271, 101);
+            this.checkBoxHeures.Name = "checkBoxHeures";
+            this.checkBoxHeures.Size = new System.Drawing.Size(74, 17);
+            this.checkBoxHeures.TabIndex = 18;
+            this.checkBoxHeures.Text = "En heures";
+            this.checkBoxHeures.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxJours
+            // 
+            this.checkBoxJours.AutoSize = true;
+            this.checkBoxJours.Location = new System.Drawing.Point(271, 125);
+            this.checkBoxJours.Name = "checkBoxJours";
+            this.checkBoxJours.Size = new System.Drawing.Size(64, 17);
+            this.checkBoxJours.TabIndex = 22;
+            this.checkBoxJours.Text = "En jours";
+            this.checkBoxJours.UseVisualStyleBackColor = true;
+            // 
+            // textBoxMargeJour
+            // 
+            this.textBoxMargeJour.Location = new System.Drawing.Point(202, 122);
+            this.textBoxMargeJour.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMargeJour.Name = "textBoxMargeJour";
+            this.textBoxMargeJour.Size = new System.Drawing.Size(64, 20);
+            this.textBoxMargeJour.TabIndex = 21;
+            // 
+            // textBoxPrixRevientJour
+            // 
+            this.textBoxPrixRevientJour.Location = new System.Drawing.Point(134, 122);
+            this.textBoxPrixRevientJour.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPrixRevientJour.Name = "textBoxPrixRevientJour";
+            this.textBoxPrixRevientJour.Size = new System.Drawing.Size(64, 20);
+            this.textBoxPrixRevientJour.TabIndex = 20;
+            // 
+            // textBoxCoutJour
+            // 
+            this.textBoxCoutJour.Location = new System.Drawing.Point(66, 122);
+            this.textBoxCoutJour.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxCoutJour.Name = "textBoxCoutJour";
+            this.textBoxCoutJour.Size = new System.Drawing.Size(64, 20);
+            this.textBoxCoutJour.TabIndex = 19;
+            // 
             // fenAjoutElementPerso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 222);
+            this.Controls.Add(this.checkBoxJours);
+            this.Controls.Add(this.textBoxMargeJour);
+            this.Controls.Add(this.textBoxPrixRevientJour);
+            this.Controls.Add(this.textBoxCoutJour);
+            this.Controls.Add(this.checkBoxHeures);
             this.Controls.Add(this.textBoxMarge);
             this.Controls.Add(this.textBoxCoutRevient);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBoxNom);
+            this.Controls.Add(this.comboBoxType);
             this.Controls.Add(this.buttonAjouterPersonnalisationPredefinie);
             this.Controls.Add(this.buttonAnnulerAjoutPersonnalisation);
             this.Controls.Add(this.textBoxTarifPersonnalisationPredefinie);
@@ -177,11 +232,16 @@
         private System.Windows.Forms.Label labelAideModelPredefini;
         private System.Windows.Forms.Button buttonAjouterPersonnalisationPredefinie;
         private System.Windows.Forms.Button buttonAnnulerAjoutPersonnalisation;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBoxType;
+        private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxCoutRevient;
         private System.Windows.Forms.TextBox textBoxMarge;
+        private System.Windows.Forms.CheckBox checkBoxHeures;
+        private System.Windows.Forms.CheckBox checkBoxJours;
+        private System.Windows.Forms.TextBox textBoxMargeJour;
+        private System.Windows.Forms.TextBox textBoxPrixRevientJour;
+        private System.Windows.Forms.TextBox textBoxCoutJour;
     }
 }

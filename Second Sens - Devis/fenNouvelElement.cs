@@ -13,7 +13,8 @@ namespace Second_Sens___Devis
     public partial class fenNouvelElement : Form
     {
         fenNouvelleEquipe laNouvelleEquipe;
-
+        classElement leElement;
+        classTarif leTarifs;
         private List<String> getNomsElem()
         {
             String requete = "SELECT nomElement from elements where type_element <> 'honoraire'";
@@ -38,11 +39,16 @@ namespace Second_Sens___Devis
         {
             dataGridViewTarifHeure.Rows.Clear();
             dataGridViewTarifJour.Rows.Clear();
+            String requete = "SELECT coutHoraire, coutRevientHoraire, margeHoraire from tarifs, elements where tarifs.idTarif = elements.idTarif and nomElement ='" + comboBoxTypeElem.SelectedItem.ToString() + "'";
+            requetesMySQL laRequete = new requetesMySQL();
+
+            List<Double> lesPrixElement = laRequete.queryDouble(requete);
+            String requete2 = "SELECT coutJour, coutRevientJour, margeJour from tarifs, elements where tarifs.idTarif = elements.idTarif and nomElement =" + comboBoxTypeElem.SelectedItem.ToString() + "'";
+            requetesMySQL laRequete2 = new requetesMySQL();
+            List<Double> lesPrixElementJour = laRequete2.queryDouble(requete2);
             try
             {
-                String requete = "SELECT coutHoraire, coutRevientHoraire, margeHoraire from tarifs, elements where tarifs.idTarif = elements.idTarif and nomElement ='" + comboBoxTypeElem.SelectedItem.ToString() + "'";
-                requetesMySQL laRequete = new requetesMySQL();
-                List<Double> lesPrixElement = laRequete.queryDouble(requete);
+                
                 dataGridViewTarifHeure.Rows.Add(lesPrixElement[0].ToString(), lesPrixElement[1].ToString(), lesPrixElement[2].ToString());
             }
             catch (Exception)
@@ -51,9 +57,7 @@ namespace Second_Sens___Devis
             }
             try
             {
-                String requete2 = "SELECT coutJour, coutRevientJour, margeJour from tarifs, elements where tarifs.idTarif = elements.idTarif and nomElement =" + comboBoxTypeElem.SelectedItem.ToString() + "'";
-                requetesMySQL laRequete2 = new requetesMySQL();
-                List<Double> lesPrixElementJour = laRequete2.queryDouble(requete2);
+                
                 dataGridViewTarifJour.Rows.Add(lesPrixElementJour[0].ToString(), lesPrixElementJour[1].ToString(), lesPrixElementJour[2].ToString());
             }
             catch (Exception)
@@ -61,7 +65,15 @@ namespace Second_Sens___Devis
 
                 dataGridViewTarifJour.Rows.Add("Pas de tarif", "Pas de tarif", "Pas de tarif");
             }
+            classTarif leTarifs = new classTarif(lesPrixElement[0], lesPrixElement[1], lesPrixElement[2], lesPrixElementJour[0], lesPrixElementJour[1], lesPrixElementJour[2]);
             
+        }
+
+        private void buttonAjouter_Click(object sender, EventArgs e)
+        {
+            classElement leNouvelElement = new classElement(textBoxNomElement.Text, leTarifs, Convert.ToInt32(textBoxQteElement.Text), Convert.ToInt32(textBoxnbHparJour.Text), Convert.ToInt32(textBoxnbJours.Text));
+            laNouvelleEquipe.laEquipe.getLesElements().Add(leNouvelElement);
+            laNouvelleEquipe.majListeEquipes();
         }
     }
 }
