@@ -67,15 +67,15 @@ namespace Second_Sens___Devis
             {
                 if (lesPrixElement.Count == 0 && lesPrixElementJour.Count != 0)
                 {
-                    classTarif leTarifs = new classTarif(0, 0, 0, lesPrixElementJour[0], lesPrixElementJour[1], lesPrixElementJour[2]);
+                    leTarifs = new classTarif(0, 0, 0, lesPrixElementJour[0], lesPrixElementJour[1], lesPrixElementJour[2]);
                 }
                 else if (lesPrixElementJour.Count == 0 && lesPrixElement.Count != 0)
                 {
-                    classTarif leTarifs = new classTarif(lesPrixElement[0], lesPrixElement[1], lesPrixElement[2], 0, 0, 0);
+                    leTarifs = new classTarif(lesPrixElement[0], lesPrixElement[1], lesPrixElement[2], 0, 0, 0);
                 }
                 else if (lesPrixElement.Count > 0 && lesPrixElementJour.Count > 0)
                 {
-                    classTarif leTarifs = new classTarif(lesPrixElement[0], lesPrixElement[1], lesPrixElement[2], lesPrixElementJour[0], lesPrixElementJour[1], lesPrixElementJour[2]);
+                    leTarifs = new classTarif(lesPrixElement[0], lesPrixElement[1], lesPrixElement[2], lesPrixElementJour[0], lesPrixElementJour[1], lesPrixElementJour[2]);
                 }
                 //classTarif leTarifs = new classTarif(lesPrixElement[0], lesPrixElement[1], lesPrixElement[2], lesPrixElementJour[0], lesPrixElementJour[1], lesPrixElementJour[2]); 
             }
@@ -98,7 +98,6 @@ namespace Second_Sens___Devis
 
             catch (Exception erreur)
             {
-
                 MessageBox.Show(erreur.ToString());
             }
         }
