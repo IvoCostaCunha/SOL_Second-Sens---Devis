@@ -24,17 +24,6 @@ namespace Second_Sens___Devis.classMetier
         }
 
         /// <summary>
-        /// Constructeur de la classe classElementPersonnalisable si les personnalisations ne sont pas encore définies
-        /// </summary>
-        /// <param name="unNomElement"></param>
-        /// <param name="unTarif"></param>
-        public classElementPersonnalisable(String unNomElement, classTarif unTarif) : base(unNomElement, unTarif)
-        {
-            this.leNomElement = unNomElement;
-            this.leTarif = unTarif;
-        }
-
-        /// <summary>
         /// Constructeur de la classe classElementPersonnalisable si nouvel element personnalisable
         /// </summary>
         /// <param name="unNomElement"></param>
